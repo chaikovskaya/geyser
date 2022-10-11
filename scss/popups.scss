@@ -1,0 +1,193 @@
+
+/* Fancybox */
+.fancybox-bg {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.fancybox-slide {
+    padding: 50px 40px;
+}
+
+.fancybox-content {
+    overflow: visible;
+    padding: 0;
+}
+
+.fancybox-close-small {
+    width: 33px;
+    height: 33px;
+    top: -50px;
+    padding: 0;
+    opacity: 1;
+}
+
+.fancybox-close {
+    position: absolute;
+    top: -27px;
+    left: 100%;
+    z-index: 1;
+    margin-left: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 50%;
+    background: url("../images/icons/popup-close.svg") no-repeat 0 0;
+}
+.fancybox-close:hover {
+}
+
+.fancybox-close-icon {
+}
+.fancybox-close:hover .fancybox-close-icon {
+    path {
+        fill: #D50A0A;
+    }
+}
+
+.fancybox-nav-block {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.fancybox-button {
+    padding: 0;
+    vertical-align: middle;
+}
+
+.fancybox-button--arrow_left {
+    width: 33px;
+    height: 100%;
+    background-color: transparent;
+    margin-left: -43px;
+}
+.fancybox-button--arrow_right {
+    width: 33px;
+    height: 100%;
+    background-color: transparent;
+    margin-right: -43px;
+}
+
+.fancybox-button-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #fff;
+    &_left { }
+    &_right {
+    }
+}
+.fancybox-button .fancybox-button-arrow {
+    width: 21px;
+    height: 12px;
+    background: url(../images/icons/arrow-left-dark.svg) no-repeat 0 0;
+}
+.fancybox-button--arrow_right .fancybox-button-arrow {
+    background-image: url("../images/icons/arrow-right-dark.svg");
+}
+.fancybox-button[disabled] .fancybox-button-icon {
+}
+.fancybox-button[disabled] .fancybox-button-icon {
+}
+.fancybox-button:hover .fancybox-button-icon {
+    background-color: $color-red;
+}
+.fancybox-button:hover .fancybox-button-arrow {
+    background-image: url("../images/icons/arrow-left.svg");
+}
+.fancybox-button--arrow_right:hover .fancybox-button-arrow {
+    background-image: url("../images/icons/arrow-right.svg");
+}
+
+.fancybox-slide--image {
+    .fancybox-close-small {
+        top: -50px;
+        right: -50px;
+        background-color: transparent;
+    }
+}
+
+.fancybox-toolbar {
+    display: none;
+}
+.fancybox-infobar {
+    display: none;
+}
+
+@media screen
+and (max-width: $tablet) {
+}
+@media screen
+and (max-width: $mobile) {
+    .fancybox-slide {
+        padding: 50px 11px;
+    }
+    .fancybox-close {
+        top: -32px;
+        margin-left: -24px;
+    }
+    .fancybox-button--arrow_left {
+        margin-left: 10px;
+    }
+    .fancybox-button--arrow_right {
+        margin-right: 10px;
+    }
+}
+/* /Fancybox */
+
+
+@keyframes preloader-animation {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.preloader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    &-container {
+        width: 70px;
+        height: 70px;
+        border: 6px solid rgb(234, 234, 234);
+        border-top: 6px solid #003589;
+        border-radius: 50%;
+        animation: preloader-animation 1s linear infinite;
+    }
+    @media screen
+    and (max-width: $tablet) {
+        width: 70px;
+        height: 70px;
+        &-container {
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+
+.decor-popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
