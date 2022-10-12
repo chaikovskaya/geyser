@@ -1,11 +1,38 @@
 
 .header {
+    &-top {
+        padding-top: 27px;
+        padding-bottom: 17px;
+        border-bottom: 1px solid rgba(128, 152, 182, 0.5);
+    }
+    &-top-container {
+        display: flex;
+        align-items: center;
+    }
+    &-top-item {
+        margin-right: 30px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &-phone-number {
+        margin-bottom: 9px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 17px;
+        color: #000000;
+        a {
+            text-decoration: none;
+        }
+    }
+    &-phone-department {
+        font-size: 11px;
+        line-height: 11px;
+        color: #1B1B1B;
+    }
 
     @media screen
     and (max-width: $desktop) {
-    }
-    @media screen
-    and (max-width: $notebook) {
     }
     @media screen
     and (max-width: $tablet){

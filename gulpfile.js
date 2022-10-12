@@ -10,13 +10,6 @@ function style() {
         .pipe(gulp.dest('./css'))
         .pipe(browserSync.stream());
 }
-function style1() {
-    return gulp.src('scss/bootstrap-grid.scss')
-        .pipe(concat('bootstrap-grid.scss'))
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('./css'))
-        .pipe(browserSync.stream());
-}
 
 function watch() {
     browserSync.init({
@@ -26,13 +19,11 @@ function watch() {
         }
     });
     gulp.watch('scss/**/*.scss', style);
-    gulp.watch('scss/**/*.scss', style1);
     gulp.watch('./*.html').on('change', browserSync.reload);
 
 }
 exports.style = style;
-exports.style1 = style1;
 exports.watch = watch;
 
-let def = gulp.series(style, style1, watch);
+let def = gulp.series(style, watch);
 gulp.task('default', def);

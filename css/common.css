@@ -1,3 +1,60 @@
+/* Gotham Pro */
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local("Gotham Pro"), url("../fonts/gotham_pro/gothampro_light.ttf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local("Gotham Pro"), url("../fonts/gotham_pro/gothampro_lightitalic.ttf");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local("Gotham Pro"), url("../fonts/gotham_pro/gothampro.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local("Gotham Pro"), url("../fonts/gotham_pro/gothampro_medium.ttf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local("Gotham Pro"), url("../fonts/gotham_pro/gothampro_mediumitalic.ttf");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local("Gotham Pro"), url("../fonts/gotham_pro/gothampro_italic.ttf");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local("Gotham Pro"), url("../fonts/gotham_pro/gothampro_bold.ttf");
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local("Gotham Pro"), url("../fonts/gotham_pro/gothampro_bolditalic.ttf");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local("Gotham Pro"), url("../fonts/gotham_pro/gothampro_black.ttf");
+  font-weight: 900; }
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: local("Gotham Pro"), url("../fonts/gotham_pro/gothampro_blackitalic.ttf");
+  font-weight: 900;
+  font-style: italic; }
+
+/* / Gotham Pro */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -14,14 +71,14 @@ html, body {
   padding: 0; }
 
 body {
-  font: 14px/21px 'Aeonik Pro TRIAL', sans-serif;
+  font: 15px/24px 'Gotham Pro', sans-serif;
   color: #333;
   background-color: #fff; }
 
 h1,
 .h1 {
   margin-bottom: 20px;
-  font: 700 28px/41px 'Aeonik Pro TRIAL', sans-serif;
+  font: 700 28px/41px 'Gotham Pro', sans-serif;
   color: #000000; }
 
 a.h1 {
@@ -32,18 +89,18 @@ a.h1 {
 h2,
 .h2 {
   margin-bottom: 15px;
-  font: 700 20px/24px 'Aeonik Pro TRIAL', sans-serif;
+  font: 700 20px/24px 'Gotham Pro', sans-serif;
   color: #000000; }
 
 h3,
 .h3 {
   margin-bottom: 20px;
-  font: 18px/20px 'Aeonik Pro TRIAL', sans-serif;
+  font: 18px/20px 'Gotham Pro', sans-serif;
   color: #000000; }
 
 h4,
 .h4 {
-  font: 700 18px/20px 'Aeonik Pro TRIAL', sans-serif;
+  font: 700 18px/20px 'Gotham Pro', sans-serif;
   color: #000000; }
 
 .table {
@@ -251,11 +308,11 @@ blockquote {
   padding-bottom: 65px; }
 
 .container {
-  min-width: 337px;
-  max-width: 1340px;
+  min-width: 377px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding-right: 85px;
-  padding-left: 85px; }
+  padding-right: 15px;
+  padding-left: 15px; }
 
 .content {
   color: #4F4F4F; }
@@ -483,7 +540,7 @@ blockquote {
   @media screen and (max-width: 992px) {
     .breadcrumbs {
       margin-bottom: 15px; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 720px) {
     .breadcrumbs {
       flex-wrap: wrap; }
       .breadcrumbs-list {
@@ -720,7 +777,7 @@ label.form-error {
   -webkit-appearance: none;
   text-align: center;
   background-color: transparent;
-  font-family: 'Aeonik Pro TRIAL', sans-serif;
+  font-family: 'Gotham Pro', sans-serif;
   font-size: 14px;
   line-height: 1.4em;
   letter-spacing: 0.03em;
@@ -816,7 +873,7 @@ label.form-error {
 .selectric-items .selectric-hidden {
   display: none; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
   .selectric-items {
     display: block;
     position: fixed;
@@ -1053,7 +1110,7 @@ label.form-error {
 .fancybox-infobar {
   display: none; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
   .fancybox-slide {
     padding: 50px 11px; }
   .fancybox-close {
@@ -1105,6 +1162,34 @@ label.form-error {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); }
+
+.header-top {
+  padding-top: 27px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid rgba(128, 152, 182, 0.5); }
+
+.header-top-container {
+  display: flex;
+  align-items: center; }
+
+.header-top-item {
+  margin-right: 30px; }
+  .header-top-item:last-child {
+    margin-right: 0; }
+
+.header-phone-number {
+  margin-bottom: 9px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 17px;
+  color: #000000; }
+  .header-phone-number a {
+    text-decoration: none; }
+
+.header-phone-department {
+  font-size: 11px;
+  line-height: 11px;
+  color: #1B1B1B; }
 
 .mob-menu {
   display: none;
@@ -1329,7 +1414,7 @@ label.form-error {
   align-items: center;
   justify-content: space-between;
   min-height: 57px;
-  padding: 12px 10px;
+  padding: 12px 15px;
   text-decoration: none;
   font-size: 15px;
   line-height: 21px;
@@ -1447,7 +1532,7 @@ label.form-error {
     color: #000000;
     text-decoration: none; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
   .mob-menu {
     display: block; } }
 
