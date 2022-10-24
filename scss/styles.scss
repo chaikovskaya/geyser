@@ -1,8 +1,8 @@
 
-$mobile: 720px;
+$mobile: 770px;
 $tablet: 992px;
-$desktop: 1200px;
-$gutters: 30px;
+$desktop: 1250px;
+$gutters: 80px;
 $gutter: $gutters/2;
 
 $color: #333;
@@ -298,11 +298,11 @@ blockquote {
 }
 
 .container {
-	min-width: 377px;
+	min-width: 370px;
 	max-width: $desktop;
 	margin: 0 auto;
-	padding-right: 15px;
-	padding-left: 15px;
+	padding-right: 40px;
+	padding-left: 40px;
 }
 
 .content {
@@ -691,6 +691,28 @@ blockquote {
 	}
 }
 /* /pager */
+
+.icon {
+	display: inline-block;
+	background: no-repeat 0 0;
+	background-size: 100% auto;
+	&_buttom {
+		min-width: 10px;
+		width: 10px;
+		height: 6px;
+		background-image: url("../images/icons/arrow-bottom.svg");
+	}
+	&_burger {
+		min-width: 17px;
+		width: 17px;
+		height: 12px;
+		background-image: url("../images/icons/burger.svg");
+	}
+
+	@media screen
+	and (max-width: $tablet){
+	}
+}
 
 
 @media screen
