@@ -1292,6 +1292,7 @@ label.form-error {
   background-image: url("../images/icons/phone-light.svg"); }
 
 .header-menu {
+  position: relative;
   display: flex;
   align-items: center;
   padding-top: 17px;
@@ -1374,12 +1375,77 @@ label.form-error {
     color: #FFFFFF;
     background-color: #213194;
     border-radius: 50em; }
+    .menu-catalog-switcher:hover {
+      color: #FFFFFF; }
+  .menu-catalog-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 7;
+    width: 100%;
+    padding-top: 5px;
+    background-color: #fff; }
+  .menu-catalog_active .menu-catalog-container {
+    display: block; }
+  .menu-catalog-list {
+    display: flex;
+    flex-wrap: wrap; }
+  .menu-catalog-item {
+    width: 33.3%;
+    margin-bottom: 39px;
+    padding-right: 25px; }
+    .menu-catalog-item:last-child {
+      margin-bottom: 0; }
+  .menu-catalog-link {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #111111;
+    text-decoration: none; }
+  .menu-catalog-decor-left {
+    position: absolute;
+    top: 0;
+    right: 50%;
+    z-index: -1;
+    width: 100vw;
+    max-width: none;
+    height: 100%;
+    background-color: #fff; }
+  .menu-catalog-decor-right {
+    position: absolute;
+    top: 0;
+    left: 49%;
+    z-index: -1;
+    width: 100vw;
+    max-width: none;
+    height: 100%;
+    background-color: #fff; }
+  .menu-catalog-block .menu-catalog-decor-left {
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2); }
+  .menu-catalog-block .menu-catalog-decor-right {
+    box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.2); }
   @media screen and (max-width: 992px) {
     .menu-catalog {
       margin-right: 20px; }
       .menu-catalog-switcher {
         padding: 11px 22px 10px;
-        font-size: 13px; } }
+        font-size: 13px; }
+      .menu-catalog-label {
+        display: none; }
+      .menu-catalog-icon {
+        margin-right: 0; } }
+
+.submenu-catalog-list {
+  padding-top: 21px; }
+
+.submenu-catalog-item {
+  margin-bottom: 20px; }
+  .submenu-catalog-item:last-child {
+    margin-bottom: 0; }
+
+.submenu-catalog-link {
+  text-decoration: none; }
 
 .main-menu {
   display: flex;
@@ -1420,7 +1486,31 @@ label.form-error {
       margin-left: 8px; } }
 
 .main-submenu {
-  display: none; }
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  z-index: 9;
+  width: 242px;
+  background-color: #fff;
+  padding: 21px 20px 32px;
+  box-shadow: 0px 0px 40px rgba(206, 206, 206, 0.3);
+  border-radius: 0px 5px 5px 5px; }
+  .main-submenu-item {
+    margin-bottom: 23px;
+    font-size: 15px;
+    line-height: 14px; }
+    .main-submenu-item:last-child {
+      margin-bottom: 0; }
+  .main-submenu-link {
+    text-decoration: none;
+    color: #000000; }
+    .main-submenu-link:hover {
+      color: #213194;
+      font-weight: 500; }
+
+.main-menu-item:hover .main-submenu {
+  display: block; }
 
 .mob-menu {
   display: none;
