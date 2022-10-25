@@ -264,6 +264,8 @@
     &-list {
         display: flex;
         flex-wrap: wrap;
+        max-height: calc(100vh - 165px);
+        overflow: auto;
     }
     &-item {
         width: 33.3%;
