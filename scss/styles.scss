@@ -265,7 +265,7 @@ blockquote {
 
 /* simplebar */
 .simplebar-track.simplebar-vertical {
-	width: 10px;
+	width: 7px;
 }
 .simplebar-scrollbar:before {
 	left: 0;
@@ -306,9 +306,6 @@ blockquote {
 }
 
 .content {
-	color: #4F4F4F;
-    b {
-	}
     ul {
         margin-left: 0;
 		margin-top: 7px;
@@ -707,6 +704,36 @@ blockquote {
 		width: 17px;
 		height: 12px;
 		background-image: url("../images/icons/burger.svg");
+	}
+	&_close {
+		min-width: 24px;
+		width: 24px;
+		height: 25px;
+		background-image: url("../images/icons/close.svg");
+	}
+	&_arrow-right {
+		min-width: 7px;
+		width: 7px;
+		height: 11px;
+		background-image: url("../images/icons/arrow-right.svg");
+	}
+	&_arrow-left {
+		min-width: 8px;
+		width: 8px;
+		height: 11px;
+		background-image: url("../images/icons/arrow-left.svg");
+	}
+	&_mail {
+		min-width: 11px;
+		width: 11px;
+		height: 8px;
+		background-image: url("../images/footer/mail-icon.svg");
+	}
+	&_location {
+		min-width: 13px;
+		width: 13px;
+		height: 12px;
+		background-image: url("../images/footer/location-icon.svg");
 	}
 
 	@media screen

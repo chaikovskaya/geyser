@@ -237,6 +237,17 @@ label.form-error {
         color: #000000;
         background-color: rgba(235, 240, 250, 0.8);
     }
+    &_simple-light {
+        padding: 11px 16px 9px;
+        font-size: 10px;
+        line-height: 1em;
+        color: #FFFFFF;
+        background-color: transparent;
+        border: 1px solid #F2F2F2;
+        &:hover {
+            color: #FFFFFF;
+        }
+    }
 
     @media screen
     and (max-width: $desktop){

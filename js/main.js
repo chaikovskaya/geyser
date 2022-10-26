@@ -255,6 +255,22 @@ function initAjaxMore() {
     });
 }
 
+function initMainmenu() {
+    $('.js-main-menu-item').each(function(){
+        let $element = $(this),
+            $switcher = $('.js-main-menu-switcher'),
+            classActive = $switcher.data('mainmenu-class');
+
+        $element.hover(
+            function () {
+                $switcher.removeClass(classActive);
+            },
+            function () {
+            }
+        );
+    });
+}
+
 function initResizeWindow() {
     var width = $(window).outerWidth();
     if (width <= GLOBAL.mobile) {
@@ -282,4 +298,5 @@ $(document).ready(function () {
     initMobileMenu();
     initForm();
     initAjaxMore();
+    initMainmenu();
 });
