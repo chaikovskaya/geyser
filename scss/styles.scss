@@ -748,6 +748,10 @@ and (max-width: $desktop){
 
 @media screen
 and (max-width: $tablet){
+	.container {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
 }
 
 @media screen

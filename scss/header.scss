@@ -21,7 +21,9 @@
     &-top-item_phone-simple {}
     &-top-item_presentation {}
     &-top-item_callback {}
-    &-top-item_socials {}
+    &-top-item_socials {
+        margin-right: 0;
+    }
     &-phone {
         position: relative;
     }
@@ -830,6 +832,17 @@ body.mob-menu-show {
         background-image: url("../images/icons/socials-tg-light.svg");
     }
     &-link:hover &-icon_youtube {
+        background-image: url("../images/icons/socials-youtube-light.svg");
+    }
+
+    &_light {}
+    &_light &-link {
+        border-color: #FFFFFF;
+    }
+    &_light &-icon_tg {
+        background-image: url("../images/icons/socials-tg-light.svg");
+    }
+    &_light &-icon_youtube {
         background-image: url("../images/icons/socials-youtube-light.svg");
     }
 }

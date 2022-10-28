@@ -238,7 +238,7 @@ label.form-error {
         background-color: rgba(235, 240, 250, 0.8);
     }
     &_simple-light {
-        padding: 11px 16px 9px;
+        padding: 10px 16px 8px;
         font-size: 10px;
         line-height: 1em;
         color: #FFFFFF;
@@ -257,6 +257,10 @@ label.form-error {
         &_simple {
             padding-left: 16px;
             padding-right: 16px;
+        }
+        &_simple-light {
+            padding-left: 9px;
+            padding-right: 9px;
         }
     }
     @media screen
