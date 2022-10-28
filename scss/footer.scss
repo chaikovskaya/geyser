@@ -110,6 +110,7 @@
         line-height: 15px;
         letter-spacing: 0.01em;
     }
+    &-socials { }
     &-address {
         margin-bottom: 26px;
     }
@@ -250,6 +251,8 @@
     and (max-width: $mobile){
         &-main-container {
             flex-wrap: wrap;
+            padding-top: 26px;
+            padding-bottom: 15px;
         }
         &-item_company {
             width: 100%;
@@ -260,12 +263,34 @@
         }
         &-item_contacts {
             width: 100%;
+            display: flex;
+            flex-wrap: wrap;
         }
         &-menu_simple {
             display: none;
         }
         &-button-download {
             display: none;
+        }
+        &-address {
+            order: 1;
+            width: 100%;
+            margin-bottom: 0;
+        }
+        &-socials {
+            margin-left: auto;
+        }
+        &-bottom-container {
+            flex-wrap: wrap;
+        }
+        &-copyright {
+            width: 100%;
+            margin-bottom: 29px;
+            padding-right: 0;
+            border-bottom: 1px solid rgba(242, 242, 242, 0.4);
+        }
+        &-develop {
+            width: 100%;
         }
     }
 }

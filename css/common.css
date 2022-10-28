@@ -2203,15 +2203,34 @@ body.mob-menu-show {
       line-height: 15px; } }
   @media screen and (max-width: 770px) {
     .footer-main-container {
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      padding-top: 26px;
+      padding-bottom: 15px; }
     .footer-item_company {
       width: 100%;
       padding-right: 0; }
     .footer-item_menu {
       display: none; }
     .footer-item_contacts {
-      width: 100%; }
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap; }
     .footer-menu_simple {
       display: none; }
     .footer-button-download {
-      display: none; } }
+      display: none; }
+    .footer-address {
+      order: 1;
+      width: 100%;
+      margin-bottom: 0; }
+    .footer-socials {
+      margin-left: auto; }
+    .footer-bottom-container {
+      flex-wrap: wrap; }
+    .footer-copyright {
+      width: 100%;
+      margin-bottom: 29px;
+      padding-right: 0;
+      border-bottom: 1px solid rgba(242, 242, 242, 0.4); }
+    .footer-develop {
+      width: 100%; } }
