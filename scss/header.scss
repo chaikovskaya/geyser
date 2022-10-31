@@ -198,11 +198,6 @@
             font-size: 10px;
             line-height: 10px;
         }
-        &-callback-link {
-            min-width: 35px;
-            width: 35px;
-            height: 35px;
-        }
         &-callback-icon {
             width: 17px;
             height: 17px;
@@ -225,6 +220,11 @@
         }
         &-menu {
             display: none;
+        }
+        &-callback-link {
+            min-width: 35px;
+            width: 35px;
+            height: 35px;
         }
     }
 }

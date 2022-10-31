@@ -301,8 +301,8 @@ blockquote {
 	min-width: 370px;
 	max-width: $desktop;
 	margin: 0 auto;
-	padding-right: 40px;
-	padding-left: 40px;
+	padding-right: $gutter;
+	padding-left: $gutter;
 }
 
 .content {
@@ -748,9 +748,11 @@ and (max-width: $desktop){
 
 @media screen
 and (max-width: $tablet){
+	$gutters: 60px;
+	$gutter: $gutters/2;
 	.container {
-		padding-right: 30px;
-		padding-left: 30px;
+		padding-left: $gutter;
+		padding-right: $gutter;
 	}
 }
 
