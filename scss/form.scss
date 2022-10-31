@@ -248,6 +248,40 @@ label.form-error {
             color: #FFFFFF;
         }
     }
+    &_dark {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        padding: 13px 43px 11px 43px;
+        font-size: 15px;
+        line-height: 1.1em;
+        background-color: #213194;
+        transition: padding-right 0.2s linear;
+    }
+    &-icon {
+        position: absolute;
+        top: 6px;
+        left: 100%;
+        margin-left: -35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 0;
+        height: 0;
+        background-color: #fff;
+        border-radius: 50%;
+        transition: width 0.25s ease-in-out, margin-left 0.25s ease-in-out;
+    }
+    &-icon-pic {
+        margin-left: 3px;
+    }
+    &_dark:hover {
+        padding-right: 60px;
+    }
+    &_dark:hover &-icon {
+        width: 28px;
+        height: 28px;
+    }
 
     @media screen
     and (max-width: $desktop){
@@ -261,6 +295,10 @@ label.form-error {
         &_simple-light {
             padding-left: 9px;
             padding-right: 9px;
+        }
+        &_dark {
+            padding: 12px 32px 10px 32px;
+            font-size: 13px;
         }
     }
     @media screen

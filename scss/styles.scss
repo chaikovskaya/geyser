@@ -299,6 +299,7 @@ blockquote {
 
 .container {
 	min-width: 370px;
+	width: 100%;
 	max-width: $desktop;
 	margin: 0 auto;
 	padding-right: $gutter;
@@ -458,41 +459,30 @@ blockquote {
 		align-items: center;
 	}
 	&-button {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		min-width: 33px;
-		width: 33px;
-		height: 33px;
-		border-radius: 50%;
 		cursor: pointer;
-		&:hover {
-			background-color: #BA001A;
-		}
-		&:active {
-			background-color: #950216;
-		}
 	}
 	&-button-icon {
 		display: block;
-		width: 21px;
-		height: 12px;
-		background: url("../images/icons/arrow-left-dark.svg") no-repeat 0 0;
+		width: 9px;
+		height: 14px;
+		background: url("../images/main-banner/icons/arrow-left-light.svg") no-repeat 0 0;
 	}
 	&-button-icon_right {
-		background: url("../images/icons/arrow-right-dark.svg") no-repeat 0 0;
+		background: url("../images/main-banner/icons/arrow-right-light.svg") no-repeat 0 0;
 	}
 	&-button:hover:not(&-button_disabled) &-button-icon,
 	&-button:active:not(&-button_disabled) &-button-icon {
-		background-image: url("../images/icons/arrow-left.svg");
+		background-image: url("../images/main-banner/icons/arrow-left-white.svg");
 	}
 	&-button_next:hover:not(&-button_disabled) &-button-icon_right,
 	&-button_next:active:not(&-button_disabled) &-button-icon_right {
-		background-image: url("../images/icons/arrow-right.svg");
+		background-image: url("../images/main-banner/icons/arrow-right-white.svg");
 	}
 	&-button_prev {
+		margin-right: 11px;
 	}
 	&-button_next {
+		margin-left: 11px;
 	}
 	&-button_disabled {
 	}
@@ -503,19 +493,21 @@ blockquote {
 		opacity: 0.4;
 	}
 	&-count {
-		margin-left: 13px;
-		margin-right: 13px;
-		color: #111111;
+		font-size: 16px;
+		line-height: 19px;
+		color: rgba(255, 255, 255, 0.5);
 	}
 	&-count-current {
-		margin-right: 7px;
-		font-size: 28px;
-		line-height: 36.48px;
+		font-weight: 600;
+		color: rgba(255, 255, 255, 1);
 	}
-	&-count-common {
-		margin-left: 4px;
-		font-size: 14px;
-		line-height: 16px;
+	&-count-common {}
+	&-count-decor {
+		width: 19px;
+		height: 1px;
+		margin-left: 9px;
+		margin-right: 11px;
+		background-color: #fff;
 	}
 
 	@media screen
@@ -735,9 +727,26 @@ blockquote {
 		height: 12px;
 		background-image: url("../images/footer/location-icon.svg");
 	}
+	&_check {
+		min-width: 18px;
+		width: 18px;
+		height: 18px;
+		background-image: url("../images/main-banner/icons/check-icon.svg");
+	}
+	&_arrow-right-button {
+		min-width: 9px;
+		width: 9px;
+		height: 15px;
+		background-image: url("../images/main-banner/icons/arrow-right-button.svg");
+	}
 
 	@media screen
 	and (max-width: $tablet){
+		&_check {
+			min-width: 15px;
+			width: 15px;
+			height: 15px;
+		}
 	}
 }
 

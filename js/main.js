@@ -143,16 +143,14 @@ function initSliderMainBanner() {
             },
             slidesPerView: 'auto',
             threshold: 10,
+            spaceBetween: 0,
             breakpoints: {
                 0: {
                     simulateTouch: false,
-                    spaceBetween: 15,
                 },
                 768: {
-                    spaceBetween: 16,
                 },
                 992: {
-                    spaceBetween: 28,
                 },
             },
             on: {
@@ -162,9 +160,6 @@ function initSliderMainBanner() {
                 },
                 slideChangeTransitionEnd: function () {
                     var index = $slider.find('.swiper-slide-active').data('slider-index');
-                    if (index < 10) {
-                        index = '0' + index;
-                    }
                     $count.text(index);
                 },
             },

@@ -1,0 +1,139 @@
+
+.main-banner {
+    position: relative;
+    margin-bottom: 77px;
+    &-list {
+        height: 700px;
+    }
+    &-item {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background-color: #1A1A1B;
+    }
+    &-container {
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -225px;
+            width: 1064px;
+            height: 700px;
+            background: linear-gradient(109.17deg, rgba(9, 19, 35, 0.56) 66.17%, rgba(9, 19, 35, 0) 74.97%);
+        }
+    }
+    &-pic {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+        height: 100%;
+        max-width: none;
+        object-fit: cover;
+    }
+    &-detail {
+        position: relative;
+        z-index: 1;
+        width: 50%;
+        color: #FFFFFF;
+    }
+    &-company {
+        margin-bottom: 31px;
+        font-size: 18px;
+        line-height: 29px;
+    }
+    &-name {
+        margin-bottom: 18px;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 70px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+    &-info {
+        display: flex;
+        margin-bottom: 30px;
+        font-size: 15px;
+        line-height: 26px;
+    }
+    &-info-icon {
+        margin-top: 3px;
+        margin-right: 16px;
+    }
+    &-info-inner {}
+    &-block {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        overflow: hidden;
+        width: 270px;
+        min-height: 360px;
+        padding: 30px 23px 141px;
+        background-color: #213194;
+        border-radius: 5px 5px 0 0;
+        color: #fff;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: -47px;
+            left: -73px;
+            width: 185px;
+            height: 183px;
+            background: url("../images/main-banner/main-banner-decor.svg") no-repeat 0 0;
+        }
+    }
+    &-block-inner {
+    }
+    &-block-label {
+        margin-bottom: 15px;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 60px;
+    }
+    &-slider-nav {
+        position: relative;
+    }
+    &-slider-nav-block {
+        position: absolute;
+        top: -59px;
+        right: 24px;
+        z-index: 1;
+    }
+
+    @media screen
+    and (max-width: $tablet){
+        &-list {
+            height: 400px;
+        }
+        &-company {
+            margin-bottom: 25px;
+            font-size: 15px;
+            line-height: 24px;
+        }
+        &-name {
+            font-size: 28px;
+            line-height: 39px;
+        }
+        &-info {
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &-info-icon {
+            margin-top: 3px;
+            margin-right: 13px;
+        }
+    }
+    @media screen
+    and (max-width: $mobile){
+    }
+}
