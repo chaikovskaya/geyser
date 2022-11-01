@@ -183,3 +183,11 @@
   font-style: italic;
 }
 /* / Raleway */
+
+
+@font-face {
+  font-family: 'ALSRubl';
+  src: local("ALSRubl"),
+  url('../fonts/ALSRubl/rouble.otf');
+  font-weight: 400;
+}

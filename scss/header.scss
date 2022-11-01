@@ -129,6 +129,9 @@
     &-callback-link:hover &-callback-icon {
         background-image: url("../images/icons/phone-light.svg");
     }
+    &-callback-link:active {
+        background-color: #0E1E82;
+    }
 
     &-menu {
         position: relative;
@@ -834,10 +837,19 @@ body.mob-menu-show {
     &-link:hover &-icon_youtube {
         background-image: url("../images/icons/socials-youtube-light.svg");
     }
+    &-link:active {
+        background-color: #0E1E82;
+    }
 
     &_light {}
     &_light &-link {
         border-color: #FFFFFF;
+    }
+    &_light &-link:hover {
+        background-color: transparent;
+    }
+    &_light &-link:active {
+        background-color: #0E1E82;
     }
     &_light &-icon_tg {
         background-image: url("../images/icons/socials-tg-light.svg");

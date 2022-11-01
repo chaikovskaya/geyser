@@ -124,49 +124,6 @@ function initSelect() {
     });
 }
 
-var sliderMainBanner;
-function initSliderMainBanner() {
-    jQuery('.js-slider-main-banner').each(function() {
-        var $slider = $(this),
-            sliderLength = $slider.find('.swiper-slide').length,
-            $count = $slider.find('.js-slider-count');
-
-        var isStart = sliderLength > 1 ? true : false;
-
-        sliderMainBanner = new Swiper($slider[0], {
-            loop: isStart,
-            pagination: false,
-            navigation: {
-                nextEl: $slider.find('.js-slider-next')[0],
-                prevEl: $slider.find('.js-slider-prev')[0],
-                disabledClass: "slider-button_disabled",
-            },
-            slidesPerView: 'auto',
-            threshold: 10,
-            spaceBetween: 0,
-            breakpoints: {
-                0: {
-                    simulateTouch: false,
-                },
-                768: {
-                },
-                992: {
-                },
-            },
-            on: {
-                beforeInit: function () {
-                },
-                init: function () {
-                },
-                slideChangeTransitionEnd: function () {
-                    var index = $slider.find('.swiper-slide-active').data('slider-index');
-                    $count.text(index);
-                },
-            },
-        });
-    });
-}
-
 function initMobileMenu() {
     if (typeof(MobileMenu) === 'undefined' || !jQuery.isFunction(MobileMenu)) {
         return false;
@@ -266,6 +223,90 @@ function initMainmenu() {
     });
 }
 
+var sliderMainBanner;
+function initSliderMainBanner() {
+    jQuery('.js-slider-main-banner').each(function() {
+        var $slider = $(this),
+            sliderLength = $slider.find('.swiper-slide').length,
+            $count = $slider.find('.js-slider-count');
+
+        var isStart = sliderLength > 1 ? true : false;
+
+        sliderMainBanner = new Swiper($slider[0], {
+            loop: isStart,
+            pagination: false,
+            navigation: {
+                nextEl: $slider.find('.js-slider-next')[0],
+                prevEl: $slider.find('.js-slider-prev')[0],
+                disabledClass: "slider-button_disabled",
+            },
+            slidesPerView: 'auto',
+            threshold: 10,
+            spaceBetween: 0,
+            breakpoints: {
+                0: {
+                    simulateTouch: false,
+                },
+                768: {
+                },
+                992: {
+                },
+            },
+            on: {
+                beforeInit: function () {
+                },
+                init: function () {
+                },
+                slideChangeTransitionEnd: function () {
+                    var index = $slider.find('.swiper-slide-active').data('slider-index');
+                    $count.text(index);
+                },
+            },
+        });
+    });
+}
+
+var sliderProduction;
+function initSliderProduction() {
+    jQuery('.js-slider-production').each(function() {
+        var $slider = $(this),
+            sliderLength = $slider.find('.swiper-slide').length;
+
+        var isStart = sliderLength > 1 ? true : false;
+
+        sliderProduction = new Swiper($slider[0], {
+            loop: false,
+            pagination: false,
+            navigation: {
+                nextEl: $slider.find('.js-slider-next')[0],
+                prevEl: $slider.find('.js-slider-prev')[0],
+                disabledClass: "slider-button_disabled",
+            },
+            threshold: 10,
+            slidesPerView: "auto",
+            breakpoints: {
+                0: {
+                    simulateTouch: false,
+                    spaceBetween: 25,
+                },
+                768: {
+                    spaceBetween: 25,
+                },
+                992: {
+                    loop: false,
+                    spaceBetween: 30,
+                },
+            },
+            on: {
+                beforeInit: function () {
+                },
+                init: function () {
+                },
+            },
+        });
+    });
+}
+
 function initResizeWindow() {
     var width = $(window).outerWidth();
     if (width <= GLOBAL.mobile) {
@@ -289,9 +330,10 @@ $(document).ready(function () {
     initMask();
     initPopup();
     initSelect();
-    initSliderMainBanner();
     initMobileMenu();
     initForm();
     initAjaxMore();
     initMainmenu();
+    initSliderMainBanner();
+    initSliderProduction();
 });

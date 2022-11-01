@@ -247,6 +247,9 @@ label.form-error {
         &:hover {
             color: #FFFFFF;
         }
+        &:active {
+            outline: 1px solid #F2F2F2;
+        }
     }
     &_dark {
         position: relative;
@@ -255,10 +258,20 @@ label.form-error {
         padding: 13px 43px 11px 43px;
         font-size: 15px;
         line-height: 1.1em;
+        color: #FFFFFF;
         background-color: #213194;
         transition: padding-right 0.2s linear;
+        &:hover {
+            padding-right: 60px;
+            color: #FFFFFF;
+        }
+        &:active {
+            padding-right: 60px;
+            background-color: #0E1E82;
+        }
     }
     &-icon {
+        overflow: hidden;
         position: absolute;
         top: 6px;
         left: 100%;
@@ -275,12 +288,51 @@ label.form-error {
     &-icon-pic {
         margin-left: 3px;
     }
-    &_dark:hover {
-        padding-right: 60px;
-    }
-    &_dark:hover &-icon {
+    &_dark:hover &-icon,
+    &_dark:active &-icon {
         width: 28px;
         height: 28px;
+    }
+    &_light {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        padding: 12px 43px 12px 43px;
+        font-size: 15px;
+        line-height: 1.1em;
+        transition: padding-right 0.2s linear;
+        background-color: #FFFFFF;
+        color: #213194;
+        box-shadow: 0px 0px 15px rgba(193, 201, 220, 0.2);
+        &:hover {
+            color: #fff;
+            background-color: #213194;
+            box-shadow: none;
+        }
+        &:active {
+            color: #fff;
+            background-color: #0E1E82;
+        }
+    }
+    &_light:hover &-icon,
+    &_light:active &-icon {
+        width: 28px;
+        height: 28px;
+    }
+    &_modified {
+        padding: 12px 35px 11px;
+        border: 1px solid #213194;
+        color: #213194;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1em;
+        &:hover {
+            color: #213194;
+        }
+        &:active {
+            outline: 1px solid #213194;
+            color: #213194;
+        }
     }
 
     @media screen
@@ -297,8 +349,37 @@ label.form-error {
             padding-right: 9px;
         }
         &_dark {
-            padding: 12px 32px 10px 32px;
+            padding: 12px 46px 10px 32px;
             font-size: 13px;
+            &:hover {
+                padding-right: 46px;
+            }
+        }
+        &_dark &-icon {
+            width: 25px;
+            height: 25px;
+            margin-left: -30px;
+        }
+        &_dark:hover &-icon {
+            width: 25px;
+            height: 25px;
+        }
+        &_modified {
+            padding: 10px 25px 10px;
+            font-size: 13px;
+        }
+        &_light {
+            padding: 10px 20px 9px;
+            font-size: 13px;
+        }
+        &_light &-icon {
+            top: 4px;
+            margin-left: -30px;
+        }
+        &_light:hover &-icon,
+        &_light:active &-icon {
+            width: 25px;
+            height: 25px;
         }
     }
     @media screen
