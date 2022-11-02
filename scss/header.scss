@@ -288,6 +288,9 @@
         line-height: 27px;
         color: #111111;
         text-decoration: none;
+        &:hover {
+            color: #213194;
+        }
     }
     &-decor-left {
         position: absolute;
@@ -347,6 +350,9 @@
     }
     &-link {
         text-decoration: none;
+        &:hover {
+            color: #213194;
+        }
     }
 }
 

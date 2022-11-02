@@ -1724,6 +1724,8 @@ label.form-error {
     line-height: 27px;
     color: #111111;
     text-decoration: none; }
+    .menu-catalog-link:hover {
+      color: #213194; }
   .menu-catalog-decor-left {
     position: absolute;
     top: 0;
@@ -1767,6 +1769,8 @@ label.form-error {
 
 .submenu-catalog-link {
   text-decoration: none; }
+  .submenu-catalog-link:hover {
+    color: #213194; }
 
 .main-menu {
   display: flex;
@@ -2991,3 +2995,95 @@ body.mob-menu-show {
       width: 100%;
       height: 100%;
       background: linear-gradient(109.17deg, rgba(9, 19, 35, 0.57) 63.59%, rgba(9, 19, 35, 0) 75.89%); } }
+
+.basic {
+  position: relative;
+  margin-bottom: 85px;
+  background-color: #213194; }
+  .basic-container {
+    position: relative;
+    z-index: 1;
+    min-height: 235px;
+    padding-top: 49px;
+    padding-bottom: 53px; }
+  .basic-decor {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1700px;
+    max-width: 100%;
+    height: 100%;
+    transform: translateX(-50%);
+    background: url("../images/basic/basic-bgr.png") no-repeat center top;
+    background-size: cover; }
+    .basic-decor:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 80px;
+      height: 100%;
+      background: linear-gradient(90deg, #213194 0%, transparent 100%); }
+    .basic-decor:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 80px;
+      height: 100%;
+      background: linear-gradient(90deg, transparent 0%, #213194 100%); }
+  .basic-decor-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 49, 148, 0.85); }
+  .basic-list {
+    display: flex;
+    flex-wrap: wrap; }
+  .basic-list-item {
+    width: 33.3%;
+    padding-right: 30px;
+    text-align: center; }
+    .basic-list-item:last-child {
+      padding-right: 0; }
+  .basic-list-name {
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 110px;
+    color: #FFFFFF; }
+  .basic-list-info {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF; }
+  @media screen and (max-width: 992px) {
+    .basic {
+      margin-bottom: 65px; }
+      .basic-container {
+        min-height: 150px;
+        padding-top: 30px;
+        padding-bottom: 32px; }
+      .basic-list-name {
+        margin-bottom: 8px;
+        font-size: 55px;
+        line-height: 63px; }
+      .basic-list-info {
+        font-size: 14px;
+        line-height: 16px; } }
+  @media screen and (max-width: 768px) {
+    .basic {
+      margin-bottom: 60px; }
+      .basic-list {
+        flex-wrap: wrap; }
+      .basic-list-item {
+        width: 100%;
+        margin-bottom: 32px;
+        padding-right: 0; }
+        .basic-list-item:last-child {
+          margin-bottom: 0; } }
