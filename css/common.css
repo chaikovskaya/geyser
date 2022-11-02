@@ -688,7 +688,7 @@ blockquote {
   @media screen and (max-width: 992px) {
     .breadcrumbs {
       margin-bottom: 15px; } }
-  @media screen and (max-width: 770px) {
+  @media screen and (max-width: 768px) {
     .breadcrumbs {
       flex-wrap: wrap; }
       .breadcrumbs-list {
@@ -832,7 +832,7 @@ blockquote {
     padding-right: 30px; }
   h1,
   .h1 {
-    margin-bottom: 21px;
+    margin-bottom: 24px;
     font-size: 24px;
     line-height: 28px; } }
 
@@ -1197,7 +1197,7 @@ label.form-error {
 .selectric-items .selectric-hidden {
   display: none; }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
   .selectric-items {
     display: block;
     position: fixed;
@@ -1434,7 +1434,7 @@ label.form-error {
 .fancybox-infobar {
   display: none; }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
   .fancybox-slide {
     padding: 50px 11px; }
   .fancybox-close {
@@ -1660,7 +1660,7 @@ label.form-error {
     width: 17px;
     height: 17px; } }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
   .header-top-container {
     height: 61px;
     padding-top: 14px; }
@@ -2157,7 +2157,7 @@ label.form-error {
   background: url(../images/icons/phone-light.svg) no-repeat 0 0;
   background-size: 100% auto; }
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 768px) {
   .mob-menu {
     display: block; } }
 
@@ -2402,7 +2402,7 @@ body.mob-menu-show {
     .footer-develop {
       font-size: 12px;
       line-height: 15px; } }
-  @media screen and (max-width: 770px) {
+  @media screen and (max-width: 768px) {
     .footer-main-container {
       flex-wrap: wrap;
       padding-top: 26px;
@@ -2457,30 +2457,50 @@ body.mob-menu-show {
     height: 100%;
     display: flex;
     align-items: center;
-    background-color: #1A1A1B; }
+    background-color: #0F131E; }
   .main-banner-container {
     position: relative;
     height: 100%;
     display: flex;
     align-items: center; }
-    .main-banner-container:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -225px;
-      width: 1064px;
-      max-width: none;
-      height: 100%;
-      background: linear-gradient(109.17deg, rgba(9, 19, 35, 0.56) 66.17%, rgba(9, 19, 35, 0) 74.97%); }
-  .main-banner-pic {
+  .main-banner-img {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    max-width: none;
+    width: max-content;
+    height: 100%; }
+    .main-banner-img:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1064px;
+      max-width: none;
+      height: 100%;
+      background: linear-gradient(109.17deg, rgba(9, 19, 35, 0.56) 66.17%, rgba(9, 19, 35, 0) 74.97%); }
+    .main-banner-img:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 240px;
+      max-width: none;
+      height: 100%;
+      background: linear-gradient(90deg, transparent 0%, #0F131E 100%); }
+  .main-banner-pic {
     width: auto;
     height: 100%;
-    max-width: none;
     object-fit: cover; }
+  .main-banner-decor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    max-width: none;
+    height: 100%;
+    background: linear-gradient(90deg, #0F131E 0%, transparent 100%); }
   .main-banner-detail {
     position: relative;
     z-index: 1;
@@ -2549,12 +2569,11 @@ body.mob-menu-show {
   @media screen and (max-width: 992px) {
     .main-banner {
       margin-bottom: 60px; }
-      .main-banner-container:after {
-        left: -66px;
-        width: 607px;
-        background: linear-gradient(109.17deg, rgba(9, 19, 35, 0.57) 63.59%, rgba(9, 19, 35, 0) 75.89%); }
       .main-banner-list {
         height: 400px; }
+      .main-banner-img:before {
+        width: 607px;
+        background: linear-gradient(109.17deg, rgba(9, 19, 35, 0.57) 63.59%, rgba(9, 19, 35, 0) 75.89%); }
       .main-banner-company {
         margin-bottom: 25px;
         font-size: 15px;
@@ -2590,24 +2609,27 @@ body.mob-menu-show {
       .main-banner-slider-nav-block {
         top: -44px;
         right: 52px; } }
-  @media screen and (max-width: 770px) {
+  @media screen and (max-width: 768px) {
     .main-banner-container {
       align-items: flex-start;
       padding-top: 47px; }
-      .main-banner-container:after {
-        width: 100%;
-        left: 0;
-        background: linear-gradient(121.11deg, rgba(9, 19, 35, 0.57) 56.08%, rgba(9, 19, 35, 0) 69.48%); }
     .main-banner-list {
       height: 637px; }
+    .main-banner-img:before {
+      width: 100%;
+      background: linear-gradient(121.11deg, rgba(9, 19, 35, 0.57) 56.08%, rgba(9, 19, 35, 0) 69.48%); }
     .main-banner-detail {
       width: 100%; }
     .main-banner-block {
       left: 30px;
       right: auto;
       width: calc(100% - 60px);
+      max-width: 450px;
       min-height: 246px;
-      padding: 17px 13px 90px 19px; }
+      padding: 17px 19px 90px; }
+    .main-banner-slider-nav {
+      margin-left: 0;
+      max-width: 510px; }
     .main-banner-company {
       font-size: 15px;
       line-height: 24px; } }
@@ -2627,11 +2649,13 @@ body.mob-menu-show {
     height: 359px;
     background: url("../images/production/production-decor.png") no-repeat 0 0;
     background-size: 100% auto; }
-  .production-button {
-    margin-left: auto; }
   .production-wrapper {
     position: relative;
     width: 100%; }
+  .production-inner {
+    overflow: hidden;
+    margin: -20px;
+    padding: 20px; }
   .production-list {
     display: flex; }
   .production-list-item {
@@ -2646,18 +2670,29 @@ body.mob-menu-show {
         width: 180px;
         height: 304px; }
       .production-list-item {
-        width: 213px; } }
-  @media screen and (max-width: 770px) {
+        width: 213px; }
+      .production-inner {
+        overflow: visible; } }
+  @media screen and (max-width: 768px) {
     .production {
       flex-direction: column;
       align-items: baseline; }
       .production:after {
         display: none; }
       .production-wrapper {
-        margin-bottom: 30px; }
-      .production-button {
-        order: 1;
-        margin-right: auto; } }
+        margin-bottom: 30px; } }
+
+.section-button {
+  margin-left: auto;
+  margin-bottom: 31px; }
+  @media screen and (max-width: 992px) {
+    .section-button {
+      margin-bottom: 21px; } }
+  @media screen and (max-width: 768px) {
+    .section-button {
+      order: 1;
+      margin-right: auto;
+      margin-bottom: 0; } }
 
 .product {
   display: flex;

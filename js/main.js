@@ -270,12 +270,13 @@ var sliderProduction;
 function initSliderProduction() {
     jQuery('.js-slider-production').each(function() {
         var $slider = $(this),
+            $list = $(this).find('.js-slider-list'),
             sliderLength = $slider.find('.swiper-slide').length;
 
         var isStart = sliderLength > 1 ? true : false;
 
-        sliderProduction = new Swiper($slider[0], {
-            loop: false,
+        sliderProduction = new Swiper($list[0], {
+            loop: isStart,
             pagination: false,
             navigation: {
                 nextEl: $slider.find('.js-slider-next')[0],
@@ -291,10 +292,11 @@ function initSliderProduction() {
                 },
                 768: {
                     spaceBetween: 25,
+                    loop: sliderLength > 3 ? true : false,
                 },
                 992: {
-                    loop: false,
                     spaceBetween: 30,
+                    loop: sliderLength > 4 ? true : false,
                 },
             },
             on: {
