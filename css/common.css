@@ -161,8 +161,8 @@ body {
 
 h1,
 .h1 {
-  margin-bottom: 33px;
-  font: 700 32px/37px 'Raleway', sans-serif;
+  margin-bottom: 24px;
+  font: 700 32px/48px 'Raleway', sans-serif;
   color: #000000;
   text-transform: uppercase; }
 
@@ -173,20 +173,21 @@ a.h1 {
 
 h2,
 .h2 {
-  margin-bottom: 15px;
-  font: 700 20px/24px 'Raleway', sans-serif;
-  color: #000000; }
+  margin-bottom: 21px;
+  font: 600 24px/30px 'Raleway', sans-serif;
+  color: #111; }
 
 h3,
 .h3 {
-  margin-bottom: 20px;
-  font: 18px/20px 'Raleway', sans-serif;
-  color: #000000; }
+  margin-bottom: 15px;
+  font: 700 18px/20px 'Raleway', sans-serif;
+  color: #111; }
 
 h4,
 .h4 {
+  margin-bottom: 15px;
   font: 700 18px/20px 'Raleway', sans-serif;
-  color: #000000; }
+  color: #111; }
 
 .table {
   min-width: 100%;
@@ -832,9 +833,9 @@ blockquote {
     padding-right: 30px; }
   h1,
   .h1 {
-    margin-bottom: 24px;
+    margin-bottom: 18px;
     font-size: 24px;
-    line-height: 28px; } }
+    line-height: 34px; } }
 
 .field {
   margin-bottom: 20px; }
@@ -2490,9 +2491,9 @@ body.mob-menu-show {
       height: 100%;
       background: linear-gradient(90deg, transparent 0%, #0F131E 100%); }
   .main-banner-pic {
+    display: block;
     width: auto;
-    height: 100%;
-    object-fit: cover; }
+    height: 100%; }
   .main-banner-decor {
     position: absolute;
     top: 0;
@@ -2504,12 +2505,12 @@ body.mob-menu-show {
   .main-banner-detail {
     position: relative;
     z-index: 1;
-    width: 50%;
-    color: #FFFFFF; }
+    width: 50%; }
   .main-banner-company {
     margin-bottom: 31px;
     font-size: 18px;
-    line-height: 29px; }
+    line-height: 29px;
+    color: #FFFFFF; }
   .main-banner-name {
     margin-bottom: 18px;
     font-weight: 700;
@@ -2517,6 +2518,7 @@ body.mob-menu-show {
     line-height: 70px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: #FFFFFF;
     font-family: 'Raleway', sans-serif; }
   .main-banner-info {
     display: flex;
@@ -2527,7 +2529,8 @@ body.mob-menu-show {
     margin-top: 3px;
     margin-right: 16px; }
   .main-banner-info-inner {
-    max-width: 427px; }
+    max-width: 427px;
+    color: #fff; }
   .main-banner-block {
     position: absolute;
     right: 40px;
@@ -2538,8 +2541,7 @@ body.mob-menu-show {
     min-height: 360px;
     padding: 30px 23px 141px;
     background-color: #213194;
-    border-radius: 5px 5px 0 0;
-    color: #fff; }
+    border-radius: 5px 5px 0 0; }
     .main-banner-block:after {
       content: '';
       position: absolute;
@@ -2551,12 +2553,14 @@ body.mob-menu-show {
       background-size: 100% auto; }
   .main-banner-block-inner {
     font-size: 15px;
-    line-height: 24px; }
+    line-height: 24px;
+    color: #fff; }
   .main-banner-block-label {
     margin-bottom: 15px;
     font-weight: 700;
     font-size: 64px;
-    line-height: 60px; }
+    line-height: 60px;
+    color: #fff; }
   .main-banner-button {
     box-shadow: 0px 0px 40px rgba(1, 16, 26, 0.54); }
   .main-banner-slider-nav {
@@ -2821,3 +2825,169 @@ body.mob-menu-show {
         min-width: 40px;
         padding: 2px 8px 2px;
         font-size: 12px; } }
+
+.advantages {
+  position: relative;
+  min-height: 536px;
+  background-color: #0F131E; }
+  .advantages-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    padding-top: 99px;
+    padding-bottom: 69px; }
+  .advantages-detail {
+    width: 34%;
+    padding-right: 38px;
+    padding-top: 14px; }
+  .advantages-name {
+    margin-bottom: 21px;
+    color: #fff; }
+  .advantages-info {
+    margin-bottom: 32px;
+    color: #fff; }
+  .advantages-block {
+    width: 66%; }
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px; }
+  .advantages-list-item {
+    width: 50%;
+    margin-bottom: 30px;
+    padding-right: 15px;
+    padding-left: 15px; }
+  .advantages-list-block {
+    height: 100%;
+    min-height: 153px;
+    padding: 26px 20px 26px 30px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out; }
+    .advantages-list-block:hover {
+      background-color: #213194;
+      border-color: #213194; }
+  .advantages-list-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+    color: #fff; }
+  .advantages-list-icon {
+    min-width: 31px;
+    width: 31px;
+    height: 32px;
+    margin-right: 16px; }
+  .advantages-list-info {
+    color: #fff;
+    font-size: 16px;
+    line-height: 26px; }
+  .advantages-point {
+    display: none; }
+  .advantages-decor {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1700px;
+    max-width: 100%;
+    height: 100%;
+    transform: translateX(-50%); }
+    .advantages-decor:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 240px;
+      max-width: none;
+      height: 100%;
+      background: linear-gradient(90deg, #0F131E 0%, transparent 100%); }
+    .advantages-decor:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 240px;
+      max-width: none;
+      height: 100%;
+      background: linear-gradient(90deg, transparent 0%, #0F131E 100%); }
+  .advantages-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  @media screen and (max-width: 992px) {
+    .advantages {
+      min-height: 392px; }
+      .advantages-container {
+        padding-top: 50px;
+        padding-bottom: 26px; }
+      .advantages-name {
+        margin-bottom: 16px; }
+      .advantages-info {
+        margin-bottom: 19px;
+        font-size: 14px;
+        line-height: 21px; }
+      .advantages-list-block {
+        padding: 19px 20px 19px;
+        min-height: 134px; }
+      .advantages-list {
+        margin-right: -10px;
+        margin-left: -10px; }
+      .advantages-list-item {
+        margin-bottom: 24px;
+        padding-right: 10px;
+        padding-left: 10px; }
+      .advantages-list-name {
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 18px;
+        letter-spacing: 0.02em; }
+      .advantages-list-icon {
+        margin-right: 12px; }
+      .advantages-list-info {
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: -0.02em; }
+      .advantages-label {
+        display: none; }
+      .advantages-point {
+        display: inline-block; }
+      .advantages-decor:before {
+        width: 690px;
+        background: linear-gradient(109.17deg, rgba(9, 19, 35, 0.57) 63.59%, rgba(9, 19, 35, 0) 75.89%); }
+      .advantages-decor:after {
+        display: none; }
+      .advantages-list-icon {
+        min-width: 23px;
+        width: 23px;
+        height: 23px;
+        margin-right: 12px; } }
+  @media screen and (max-width: 768px) {
+    .advantages-container {
+      flex-wrap: wrap;
+      padding-top: 45px;
+      padding-bottom: 52px; }
+    .advantages-detail {
+      width: 100%;
+      padding-top: 0;
+      padding-right: 0;
+      margin-bottom: 35px; }
+    .advantages-block {
+      width: 100%; }
+    .advantages-list-item {
+      width: 100%; }
+      .advantages-list-item:last-child {
+        margin-bottom: 0; }
+    .advantages-list-block {
+      min-height: 111px; }
+    .advantages-decor:before {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(109.17deg, rgba(9, 19, 35, 0.57) 63.59%, rgba(9, 19, 35, 0) 75.89%); } }
