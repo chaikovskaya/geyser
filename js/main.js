@@ -284,17 +284,19 @@ function initSliderProduction() {
                 disabledClass: "slider-button_disabled",
             },
             threshold: 10,
-            slidesPerView: "auto",
             breakpoints: {
                 0: {
                     simulateTouch: false,
                     spaceBetween: 25,
+                    slidesPerView: "auto",
                 },
                 768: {
+                    slidesPerView: "auto",
                     spaceBetween: 25,
                     loop: sliderLength > 3 ? true : false,
                 },
                 992: {
+                    slidesPerView: 4,
                     spaceBetween: 30,
                     loop: sliderLength > 4 ? true : false,
                 },

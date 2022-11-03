@@ -235,6 +235,7 @@ label.form-error {
         line-height: 1em;
         letter-spacing: 0.015em;
         color: #000000;
+        font-weight: 500;
         background-color: rgba(235, 240, 250, 0.8);
     }
     &_simple-light {
@@ -303,6 +304,7 @@ label.form-error {
         transition: padding-right 0.2s linear;
         background-color: #FFFFFF;
         color: #213194;
+        font-weight: 500;
         box-shadow: 0px 0px 15px rgba(193, 201, 220, 0.2);
         &:hover {
             color: #fff;

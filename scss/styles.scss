@@ -384,6 +384,15 @@ blockquote {
 		clear: both;
 		margin-bottom: 17px;
 	}
+
+	@media screen
+	and (max-width: $tablet) {
+		font-size: 14px;
+		line-height: 21px;
+	}
+	@media screen
+	and (max-width: $mobile) {
+	}
 }
 
 .img-right {
