@@ -311,6 +311,51 @@ function initSliderProduction() {
     });
 }
 
+var sliderStories;
+function initSliderStories() {
+    jQuery('.js-slider-stories').each(function() {
+        var $slider = $(this),
+            $list = $(this).find('.js-slider-list'),
+            sliderLength = $slider.find('.swiper-slide').length;
+
+        var isStart = sliderLength > 1 ? true : false;
+
+        sliderStories = new Swiper($list[0], {
+            loop: isStart,
+            pagination: false,
+            navigation: {
+                nextEl: $slider.find('.js-slider-next')[0],
+                prevEl: $slider.find('.js-slider-prev')[0],
+                disabledClass: "slider-button_disabled",
+            },
+            threshold: 10,
+            breakpoints: {
+                0: {
+                    simulateTouch: false,
+                    spaceBetween: 25,
+                    slidesPerView: "auto",
+                },
+                768: {
+                    slidesPerView: "auto",
+                    spaceBetween: 25,
+                    loop: sliderLength > 3 ? true : false,
+                },
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                    loop: sliderLength > 4 ? true : false,
+                },
+            },
+            on: {
+                beforeInit: function () {
+                },
+                init: function () {
+                },
+            },
+        });
+    });
+}
+
 function initResizeWindow() {
     var width = $(window).outerWidth();
     if (width <= GLOBAL.mobile) {
@@ -340,4 +385,5 @@ $(document).ready(function () {
     initMainmenu();
     initSliderMainBanner();
     initSliderProduction();
+    initSliderStories();
 });
