@@ -356,6 +356,34 @@ function initSliderStories() {
     });
 }
 
+function initPopupCallback() {
+    $element = $('.js-popup-callback');
+
+    $element.fancybox({
+        src  : $element.data('src'),
+        type : 'ajax',
+        toolbar  : false,
+        smallBtn : true,
+        btnTpl: {
+            smallBtn:
+                '<button type="button" data-fancybox-close class="fancybox-close" title="{{CLOSE}}">' +
+                '<i class="fancybox-close-icon"></i>' +
+                '</button>'
+        },
+        lang: "ru",
+        i18n: {
+            ru: {
+                CLOSE: "Закрыть",
+            },
+        },
+        afterShow: function (data) {
+            initValidate(data.$refs.container.find('.js-form-validate'));
+            initForm();
+            initMask();
+        },
+    });
+}
+
 function initResizeWindow() {
     var width = $(window).outerWidth();
     if (width <= GLOBAL.mobile) {
@@ -386,4 +414,5 @@ $(document).ready(function () {
     initSliderMainBanner();
     initSliderProduction();
     initSliderStories();
+    initPopupCallback();
 });

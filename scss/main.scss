@@ -1293,7 +1293,7 @@
             content: '';
             position: absolute;
             top: 54px;
-            right: -420px;
+            right: -491px;
             width: 534px;
             height: 867px;
             background: url("../images/avail/avail-decor-2.png") no-repeat 0 0;
@@ -1307,6 +1307,8 @@
     }
     &-img {
         width: 55%;
+        margin-left: auto;
+        display: flex;
     }
     &-content {
         ul li {
@@ -1325,9 +1327,11 @@
     }
     &-banners {
         display: flex;
+        margin-left: auto;
     }
     &-banners-item {
-        width: 271px;
+        width: 50%;
+        max-width: 271px;
         margin-right: 30px;
         &:last-child {
             margin-right: 0;
@@ -1387,16 +1391,9 @@
 
     @media screen
     and (max-width: $tablet) {
-        margin-bottom: 60px;
-        &-container {
-            flex-direction: column;
-        }
+        padding-bottom: 60px;
         &-detail {
-            width: 100%;
-            padding-right: 0;
-        }
-        &-img {
-            width: 100%;
+            padding-top: 0;
         }
         &-banners-item {
             margin-right: 20px;
@@ -1415,10 +1412,25 @@
             line-height: 19px;
         }
     }
+    @media screen
+    and (max-width: $mobile) {
+        &-container {
+            flex-direction: column;
+        }
+        &-detail {
+            width: 100%;
+            padding-right: 0;
+        }
+        &-img {
+            width: 100%;
+        }
+        &-banners {
+            margin-left: 0;
+        }
+    }
 }
 
 .stories {
-    margin-bottom: 85px;
     &-container {
         display: flex;
         align-items: center;
@@ -1491,5 +1503,202 @@
         text-decoration-line: underline;
         color: #111111;
         font-weight: 500;
+    }
+
+    @media screen
+    and (max-width: $tablet) {
+        &-list-item {
+            width: 213px;
+        }
+        &-list-img {
+            height: 159px;
+        }
+        &-list-block {
+            padding: 15px 15px 26px 20px;
+        }
+        &-list-title {
+            margin-bottom: 12px;
+            font-size: 15px;
+            line-height: 22px;
+        }
+        &-list-name {
+            margin-bottom: 17px;
+            font-size: 11px;
+            line-height: 14px;
+        }
+        &-list-info {
+            margin-bottom: 13px;
+            font-size: 14px;
+            line-height: 22px;
+        }
+        &-list-more {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+    @media screen
+    and (max-width: $mobile) {
+        &-block {
+            margin-bottom: 25px;
+        }
+        &-list-block {
+            padding: 19px 15px 27px 25px;
+        }
+        &-list-item {
+            width: 273px;
+        }
+        &-list-img {
+            height: 181px;
+        }
+        &-list-title {
+            margin-bottom: 15px;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &-list-name {
+            margin-bottom: 21px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &-list-more {
+            font-size: 15px;
+            line-height: 19px;
+        }
+    }
+}
+
+.feedback {
+    position: relative;
+    background-color: #EBF0FA;
+    &-box {
+        overflow: hidden;
+        position: relative;
+        padding-top: 46px;
+        padding-bottom: 52px;
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 18px;
+            left: 50%;
+            margin-left: 186px;
+            width: 125px;
+            height: 113px;
+            background: url("../images/feedback/feedback-decor-3.png") no-repeat -213px -30px;
+        }
+    }
+    &-container {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: -171px;
+            left: -524px;
+            width: 541px;
+            height: 827px;
+            background: url("../images/feedback/feedback-decor-1.png") no-repeat 0 0;
+            background-size: 100% auto;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: -352px;
+            right: -535px;
+            width: 716px;
+            height: 572px;
+            background: url("../images/feedback/feedback-decor-2.png") no-repeat 0 0;
+            background-size: 100% auto;
+        }
+    }
+    &-name {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 23px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 34px;
+        color: #1F2529;
+    }
+    &-name-label {}
+    &-name-link {
+        text-decoration: none;
+        white-space: nowrap;
+        font-family: 'Gotham Pro', sans-serif;
+    }
+    &-content {
+        margin-bottom: 30px;
+        max-width: 810px;
+    }
+
+    @media screen
+    and (max-width: $tablet) {
+        &:before {
+            content: '';
+            position: absolute;
+            top: -28px;
+            right: 6px;
+            width: 78px;
+            height: 76px;
+            background: url("../images/feedback/feedback-decor-4.png") no-repeat 0 0;
+            background-size: 100% auto;
+        }
+        &-box {
+            padding-top: 32px;
+            padding-bottom: 37px;
+            &:before {
+                bottom: -64px;
+                margin-left: -67px;
+                width: 144px;
+                background-size: 100% auto;
+                background-position: 0 0;
+            }
+        }
+        &-container {
+            &:before {
+                top: -250px;
+                left: -477px;
+            }
+            &:after {
+                top: auto;
+                bottom: -294px;
+                right: -276px;
+                width: 400px;
+            }
+        }
+        &-name {
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 23px;
+        }
+        &-content {
+            margin-bottom: 20px;
+            max-width: 650px;
+        }
+        &-button {
+            padding-left: 22px;
+            padding-right: 46px;
+        }
+    }
+    @media screen
+    and (max-width: $mobile) {
+        &-name-label {
+            display: block;
+        }
+        &-box {
+            padding-top: 28px;
+            padding-bottom: 33px;
+            &:before {
+                display: none;
+            }
+        }
+        &-container {
+            &:before {
+                top: -161px;
+                left: -355px;
+            }
+            &:after {
+                bottom: -301px;
+            }
+        }
     }
 }

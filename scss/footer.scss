@@ -1,7 +1,8 @@
 
 .footer {
-    background-color: #213194;
-    color: #E5E5E5;
+    &-block {
+        background-color: #213194;
+    }
     &-main-container {
         display: flex;
         padding-top: 47px;
@@ -104,6 +105,7 @@
     }
     &-phone {
         margin-bottom: 24px;
+        color: #E5E5E5;
     }
     &-phone-list {
         margin-bottom: 12px;
@@ -131,6 +133,7 @@
     &-socials { }
     &-address {
         margin-bottom: 26px;
+        color: #E5E5E5;
     }
     &-address-item {
         display: flex;
@@ -163,12 +166,14 @@
         font-size: 14px;
         line-height: 18px;
         letter-spacing: 0.01em;
+        color: #E5E5E5;
     }
     &-develop {
         margin-left: auto;
         font-size: 14px;
         line-height: 18px;
         letter-spacing: 0.01em;
+        color: #E5E5E5;
         a {
             text-decoration: none;
             &:hover {
