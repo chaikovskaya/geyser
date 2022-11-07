@@ -1590,18 +1590,32 @@ label.form-error {
   padding-bottom: 17px; }
 
 .header-top-item {
-  margin-right: 30px; }
+  padding-right: 20px; }
   .header-top-item:last-child {
-    margin-right: 0; }
+    padding-right: 0; }
+
+.header-top-item_logo {
+  width: 21%; }
 
 .header-top-item_phone {
-  margin-left: 32px; }
+  width: 18%; }
 
 .header-top-item_phone-simple {
-  margin-left: 10px; }
+  width: 17%; }
+
+.header-top-item_presentation {
+  width: 19%; }
+
+.header-top-item_callback {
+  width: 15%;
+  display: flex;
+  justify-content: flex-end; }
 
 .header-top-item_socials {
-  margin-right: 0; }
+  width: 9%;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0; }
 
 .header-phone {
   position: relative; }
@@ -1714,29 +1728,32 @@ label.form-error {
   padding-bottom: 18px; }
 
 @media screen and (max-width: 1250px) {
-  .header-top-item {
-    margin-right: 20px; }
-  .header-top-item_phone {
-    margin-left: 0; }
-  .header-top-item_phone-simple {
-    margin-left: 0; } }
+  .header-top-item_logo {
+    width: 20%; }
+  .header-top-item_presentation {
+    width: 22%; }
+  .header-top-item_callback {
+    width: 13%; } }
 
 @media screen and (max-width: 992px) {
   .header-top-container {
     height: 63px;
     padding-top: 15px;
     padding-bottom: 12px; }
-  .header-top-item_phone {
-    margin-left: auto; }
   .header-top-item_logo {
-    margin-right: 49px; }
+    width: 27%; }
+  .header-top-item_phone {
+    width: 27%; }
   .header-top-item_phone-simple {
     display: none; }
   .header-top-item_presentation {
-    margin-left: auto; }
+    width: 27%; }
   .header-top-item_callback {
+    width: auto;
     margin-left: auto;
-    margin-right: 15px; }
+    padding-right: 15px; }
+  .header-top-item_socials {
+    width: auto; }
   .header-logo {
     min-width: 140px;
     width: 140px;
@@ -1771,6 +1788,8 @@ label.form-error {
   .header-top-container {
     height: 61px;
     padding-top: 14px; }
+  .header-top-item_logo {
+    width: 50%; }
   .header-top-item_phone {
     display: none; }
   .header-top-item_presentation {

@@ -12,21 +12,33 @@
         padding-bottom: 17px;
     }
     &-top-item {
-        margin-right: 30px;
+        padding-right: 20px;
         &:last-child {
-            margin-right: 0;
+            padding-right: 0;
         }
     }
+    &-top-item_logo {
+        width: 21%;
+    }
     &-top-item_phone {
-        margin-left: 32px;
+        width: 18%;
     }
     &-top-item_phone-simple {
-        margin-left: 10px;
+        width: 17%;
     }
-    &-top-item_presentation {}
-    &-top-item_callback {}
+    &-top-item_presentation {
+        width: 19%;
+    }
+    &-top-item_callback {
+        width: 15%;
+        display: flex;
+        justify-content: flex-end;
+    }
     &-top-item_socials {
-        margin-right: 0;
+        width: 9%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 0;
     }
     &-phone {
         position: relative;
@@ -148,14 +160,14 @@
 
     @media screen
     and (max-width: $desktop) {
-        &-top-item {
-            margin-right: 20px;
+        &-top-item_logo {
+            width: 20%;
         }
-        &-top-item_phone {
-            margin-left: 0;
+        &-top-item_presentation {
+            width: 22%;
         }
-        &-top-item_phone-simple {
-            margin-left: 0;
+        &-top-item_callback {
+            width: 13%;
         }
     }
     @media screen
@@ -165,21 +177,25 @@
             padding-top: 15px;
             padding-bottom: 12px;
         }
-        &-top-item_phone {
-            margin-left: auto;
-        }
         &-top-item_logo {
-            margin-right: 49px;
+            width: 27%;
+        }
+        &-top-item_phone {
+            width: 27%;
         }
         &-top-item_phone-simple {
             display: none;
         }
         &-top-item_presentation {
-            margin-left: auto;
+            width: 27%;
         }
         &-top-item_callback {
+            width: auto;
             margin-left: auto;
-            margin-right: 15px;
+            padding-right: 15px;
+        }
+        &-top-item_socials {
+            width: auto;
         }
         &-logo {
             min-width: 140px;
@@ -226,6 +242,9 @@
         &-top-container {
             height: 61px;
             padding-top: 14px;
+        }
+        &-top-item_logo {
+            width: 50%;
         }
         &-top-item_phone {
             display: none;
