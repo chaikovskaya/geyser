@@ -2,10 +2,11 @@
 $colorPlaceholder: #4F4F4F;
 
 .field {
-    margin-bottom: 20px;
+    margin-bottom: 27px;
 
     @media screen
     and (max-width: $tablet){
+        margin-bottom: 23px;
     }
     @media screen
     and (max-width: $mobile){
@@ -14,20 +15,20 @@ $colorPlaceholder: #4F4F4F;
 
 .input {
     width: 100%;
-    height: 33px;
-    padding: 7px 20px;
-    color: #111111;
-    font-weight: 300;
-    font-size: 13px;
-    line-height: 15px;
-    border: 1px solid #BDBDBD;
-    border-radius: 17px;
+    height: 43px;
+    padding: 10px 20px 9px;
+    color: #333333;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    border: 1px solid rgba(128, 152, 182, 0.6);
+    border-radius: 50em;
     &:focus {
-        color: #202430;
+        color: #333333;
         border-color: #333333;
     }
     &::placeholder {
-        font-size: 13px;
+        font-size: 14px;
         color: $colorPlaceholder;
     }
     &:-webkit-autofill,
@@ -61,6 +62,8 @@ $colorPlaceholder: #4F4F4F;
 
     @media screen
     and (max-width: $tablet){
+        height: 35px;
+        padding-top: 8px;
     }
     @media screen
     and (max-width: $mobile){
@@ -238,6 +241,7 @@ label.form-error {
         font-weight: 500;
         background-color: rgba(235, 240, 250, 0.8);
     }
+
     &_simple-light {
         padding: 10px 16px 8px;
         font-size: 10px;
@@ -252,6 +256,7 @@ label.form-error {
             outline: 1px solid #F2F2F2;
         }
     }
+
     &_dark {
         position: relative;
         display: inline-flex;
@@ -294,6 +299,24 @@ label.form-error {
         width: 28px;
         height: 28px;
     }
+
+    &_wide {
+        position: relative;
+        align-items: center;
+        padding: 13px 43px 11px;
+        font-size: 15px;
+        line-height: 1.1em;
+        color: #FFFFFF;
+        text-align: center;
+        background-color: #213194;
+        &:hover {
+            color: #FFFFFF;
+        }
+        &:active {
+            background-color: #0E1E82;
+        }
+    }
+
     &_light {
         position: relative;
         display: inline-flex;
@@ -536,18 +559,18 @@ and (max-width: $mobile) {
     align-items: center;
     position: relative;
     &-field {
-        margin-bottom: 20px;
+        margin-bottom: 27px;
     }
     &-decor {
         display: inline-block;
         vertical-align: middle;
         position: relative;
-        width: 36px;
-        min-width: 36px;
-        height: 20px;
-        margin-right: 15px;
+        width: 35px;
+        min-width: 35px;
+        height: 22px;
+        margin-right: 14px;
         padding: 2px;
-        border-radius: 10px;
+        border-radius: 50em;
         background-color: #E4E8F1;
         cursor: pointer;
     }
@@ -556,18 +579,18 @@ and (max-width: $mobile) {
     }
     &-icon {
         position: absolute;
-        top: 3px;
-        left: 4px;
-        width: 14px;
-        height: 14px;
+        top: 4px;
+        left: 5px;
+        width: 13px;
+        height: 13px;
         background-color: #fff;
         border-radius: 50%;
         transition: left 0.1s ease-in-out 0s;
     }
     &-label {
         line-height: 21px;
-        font-size: 13px;
-        color: #333333;
+        font-size: 14px;
+        color: #4F4F4F;
     }
     &-label a {
         color: #a0bbc9;
@@ -584,10 +607,25 @@ and (max-width: $mobile) {
         opacity: 0;
     }
     &-checkbox:checked + &-decor {
-        background-color: #BA001A;
+        background-color: #213194;
     }
     &-checkbox:checked + &-decor &-icon {
-        left: 18px;
+        left: 17px;
+    }
+
+    @media screen
+    and (max-width: $tablet){
+        &-label {
+            line-height: 17px;
+            font-size: 13px;
+            color: #4F4F4F;
+        }
+        &-decor {
+            margin-right: 12px;
+        }
+        &-field {
+            margin-bottom: 23px;
+        }
     }
 }
 

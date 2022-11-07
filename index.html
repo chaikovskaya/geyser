@@ -711,20 +711,20 @@
                 </div>
             </section>
 
-            <div class="basic">
+            <div class="basic js-animate-section-1">
                 <div class="basic-container container">
                     <!-- Желательно только 3 шт. -->
                     <ul class="basic-list">
                         <li class="basic-list-item">
-                            <div class="basic-list-name">2007+</div>
+                            <div class="basic-list-name js-numerator-item" data-numerator-max="2007" data-numerator-step="40" data-numerator-speed="20"><span class="js-numerator-value">0</span>+</div>
                             <div class="basic-list-info">Работаем с 2007 года</div>
                         </li>
                         <li class="basic-list-item">
-                            <div class="basic-list-name">1500+</div>
+                            <div class="basic-list-name js-numerator-item" data-numerator-max="1500" data-numerator-step="30" data-numerator-speed="20"><span class="js-numerator-value">0</span>+</div>
                             <div class="basic-list-info">Более 1500 СТО</div>
                         </li>
                         <li class="basic-list-item">
-                            <div class="basic-list-name">800+</div>
+                            <div class="basic-list-name js-numerator-item" data-numerator-max="800" data-numerator-step="20" data-numerator-speed="20"><span class="js-numerator-value">0</span>+</div>
                             <div class="basic-list-info">Более 800 предприятий</div>
                         </li>
                     </ul>
@@ -827,23 +827,25 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="avail-img">
-                        <ul class="avail-banners">
-                            <li class="avail-banners-item">
-                                <a class="avail-banners-link avail-banners-link_free-delivery" href="#">
-                                    <span class="avail-banners-name">Бесплатная доставка</span>
-                                    <span class="avail-banners-info">*до терминала транспортной компании в Пензе».</span>
-                                    <img class="avail-banners-img" src="./images/avail/avail-img-1.png" alt="" />
-                                </a>
-                            </li>
-                            <li class="avail-banners-item">
-                                <a class="avail-banners-link" href="#">
-                                    <span class="avail-banners-name">В подарок</span>
-                                    <span class="avail-banners-info">средство на 20 циклов очистки деталей.</span>
-                                    <img class="avail-banners-img" src="./images/avail/avail-img-2.png" alt="" />
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="avail-img js-slider-avail">
+                        <div class="avail-img-inner js-slider-list">
+                            <ul class="avail-banners swiper-wrapper">
+                                <li class="avail-banners-item swiper-slide">
+                                    <a class="avail-banners-link avail-banners-link_free-delivery" href="#">
+                                        <span class="avail-banners-name">Бесплатная доставка</span>
+                                        <span class="avail-banners-info">*до терминала транспортной компании в Пензе».</span>
+                                        <img class="avail-banners-img" src="./images/avail/avail-img-1.png" alt="" />
+                                    </a>
+                                </li>
+                                <li class="avail-banners-item swiper-slide">
+                                    <a class="avail-banners-link" href="#">
+                                        <span class="avail-banners-name">В подарок</span>
+                                        <span class="avail-banners-info">средство на 20 циклов очистки деталей.</span>
+                                        <img class="avail-banners-img" src="./images/avail/avail-img-2.png" alt="" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -1110,6 +1112,7 @@
     <script src="./libs/swiper/swiper-bundle.min.js"></script>
     <script src="./libs/Selectric/public/jquery.selectric.min.js"></script>
     <script src="./libs/simplebar/simplebar.min.js"></script>
+    <script defer src="./libs/wow/wow.min.js"></script>
     <script src="./js/JSC.Dropdown.js"></script>
     <script src="./js/JSC.MobileMenu.js"></script>
 
