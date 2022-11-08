@@ -473,6 +473,27 @@ function initAnimateSection() {
     wow.init();
 }
 
+function initExpand() {
+    jQuery('.js-expand').each(function() {
+        var $element = $(this),
+            $block = $element.find('.js-expand-block'),
+            $link = $element.find('.js-expand-link'),
+            local = GLOBAL.parseData(jQuery(this).data('expand')),
+            classActive = local.classActive || 'active',
+            classShow = local.classShow || 'show',
+            heightParent = parseInt($block.css('min-height'),10) || 21,
+            heightChild = $block.height();
+
+        if (heightChild > heightParent) {
+            $element.addClass(classActive);
+
+            $link.on("click", function() {
+                $element.addClass(classShow);
+            });
+        }
+    });
+}
+
 function initResizeWindow() {
     var width = $(window).outerWidth();
     if (width <= GLOBAL.mobile) {
@@ -514,4 +535,5 @@ $(document).ready(function () {
     initSliderStories();
     initPopupCallback();
     initAnimateSection();
+    initExpand();
 });

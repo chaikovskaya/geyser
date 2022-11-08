@@ -601,25 +601,24 @@ blockquote {
 }
 
 .breadcrumbs {
-	display: flex;
-	align-items: flex-start;
-	margin-bottom: 16px;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 10px;
 	&-list {
-		position: relative;
 		line-height: 19px;
 		padding-top: 2px;
-		margin-bottom: 7px;
 		min-height: 21px;
 	}
 	&-item {
 		display: inline;
-		margin-right: 2px;
-		font-size: 13px;
-		line-height: 19px;
-		color: #000000;
-		font-weight: 700;
+		margin-right: 6px;
+		font-size: 14px;
+		line-height: 16px;
+		color: #FFFFFF;
+		font-weight: 500;
 	}
 	&-item_more {
+		display: none;
 		position: absolute;
 		top: 4px;
 		right: 0;
@@ -627,31 +626,35 @@ blockquote {
 		margin-right: 0;
 		padding-right: 5px;
 		padding-left: 5px;
-		display: none;
-		background-color: #fff;
+		background-color: #213194;
 	}
 	&-link {
 		text-decoration: none;
-		color: #000000;
+		color: #FFFFFF;
 		font-weight: 400;
 		&:hover {
-			font-weight: 700;
+			text-decoration: underline;
 		}
 	}
 	&-icon {
-		margin-left: 2px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 6px;
+		width: 10px;
+		height: 1px;
+		background-color: #fff;
 	}
 
 	@media screen
 	and (max-width: $tablet){
-		margin-bottom: 15px;
+		&-item {
+			font-size: 13px;
+			line-height: 15px;
+		}
 	}
 	@media screen
 	and (max-width: $mobile){
 		flex-wrap: wrap;
-		&-list {
-			width: calc(100% - 97px);
-		}
 		&_active &-list {
 			white-space: nowrap;
 			overflow: hidden;

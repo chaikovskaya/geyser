@@ -1726,3 +1726,81 @@
         }
     }
 }
+
+.main-block {
+    height: 258px;
+    margin-bottom: 45px;
+    background-color: #213194;
+    &-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding-top: 38px;
+        padding-bottom: 38px;
+    }
+    &-title {
+        position: relative;
+        z-index: 1;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 50px;
+        line-height: 80px;
+        color: #fff;
+    }
+
+    &_catalog-category {}
+    &_catalog-category &-container {
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -44px;
+            height: 100%;
+            width: 905px;
+            background: url("../images/catalog-category/catalog-category-bgr-1.png") no-repeat 0 0;
+            background-size: cover;
+        }
+    }
+
+    @media screen
+    and (max-width: $tablet) {
+        height: 193px;
+        margin-bottom: 40px;
+        &-container {
+            padding-top: 34px;
+            padding-bottom: 34px;
+        }
+        &-title {
+            font-size: 36px;
+            line-height: 50px;
+        }
+        &_catalog-category &-container {
+            &:after {
+                left: auto;
+                right: 0;
+                width: 502px;
+                margin-left: 0;
+                background-image: url("../images/catalog-category/catalog-category-bgr-2.png");
+            }
+        }
+    }
+    @media screen
+    and (max-width: $mobile) {
+        margin-bottom: 34px;
+        height: 271px;
+        &_catalog-category &-container {
+            &:after {
+                top: auto;
+                bottom: 0;
+                left: 50%;
+                right: auto;
+                width: 327px;
+                height: 171px;
+                transform: translateX(-50%);
+                background-image: url("../images/catalog-category/catalog-category-bgr-3.png");
+            }
+        }
+    }
+}
