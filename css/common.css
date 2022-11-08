@@ -1859,8 +1859,7 @@ label.form-error {
     max-width: none;
     height: 100%;
     background-color: #fff;
-    box-shadow: 0 7px 7px -7px rgba(0, 0, 0, 0.2);
-    border-top: 1px solid rgba(128, 152, 182, 0.5); }
+    box-shadow: 0 7px 7px -7px rgba(0, 0, 0, 0.2), inset 0 7px 7px -7px rgba(0, 0, 0, 0.1); }
   .menu-catalog-decor-right {
     position: absolute;
     top: 0;
@@ -1870,8 +1869,7 @@ label.form-error {
     max-width: none;
     height: 100%;
     background-color: #fff;
-    box-shadow: 0 7px 7px -7px rgba(0, 0, 0, 0.2);
-    border-top: 1px solid rgba(128, 152, 182, 0.5); }
+    box-shadow: 0 7px 7px -7px rgba(0, 0, 0, 0.2), inset 0 7px 7px -7px rgba(0, 0, 0, 0.1); }
   @media screen and (max-width: 992px) {
     .menu-catalog {
       margin-right: 20px; }
@@ -2350,8 +2348,8 @@ body.mob-menu-show {
 
 .footer-main-container {
   display: flex;
-  padding-top: 47px;
-  padding-bottom: 26px; }
+  padding-top: 54px;
+  padding-bottom: 32px; }
 
 .footer-item {
   width: 22%;
@@ -2414,7 +2412,7 @@ body.mob-menu-show {
   margin-bottom: 30px; }
 
 .footer-menu-item {
-  margin-bottom: 11px;
+  margin-bottom: 12px;
   line-height: 18px; }
   .footer-menu-item:last-child {
     margin-bottom: 0; }
@@ -2822,7 +2820,7 @@ body.mob-menu-show {
 
 .geography {
   position: relative;
-  margin-bottom: 77px; }
+  margin-bottom: 88px; }
   .geography-list {
     height: 537px; }
   .geography-item {
@@ -2922,13 +2920,14 @@ body.mob-menu-show {
     padding-top: 70px;
     padding-bottom: 70px; }
   .geography-name {
+    margin-bottom: 30px;
     color: #fff; }
   .geography-content {
     color: #fff;
     font-size: 16px;
     line-height: 26px; }
     .geography-content ul li {
-      margin-bottom: 20px;
+      margin-bottom: 35px;
       margin-left: 0; }
       .geography-content ul li:before {
         display: none; }
@@ -2943,6 +2942,8 @@ body.mob-menu-show {
   @media screen and (max-width: 992px) {
     .geography {
       margin-bottom: 60px; }
+      .geography-name {
+        margin-bottom: 18px; }
       .geography-list {
         height: 392px; }
       .geography-detail {
@@ -3206,7 +3207,7 @@ body.mob-menu-show {
     padding-right: 38px;
     padding-top: 14px; }
   .advantages-name {
-    margin-bottom: 21px;
+    margin-bottom: 30px;
     color: #fff; }
   .advantages-info {
     margin-bottom: 32px;
@@ -3365,7 +3366,7 @@ body.mob-menu-show {
     position: relative;
     z-index: 1;
     min-height: 235px;
-    padding-top: 49px;
+    padding-top: 42px;
     padding-bottom: 53px; }
     .basic-container:after {
       content: '';
@@ -3538,16 +3539,17 @@ body.mob-menu-show {
       background-size: 100% auto; }
   .company-detail {
     width: 41%;
+    padding-top: 10px;
     padding-right: 30px; }
   .company-video {
-    width: 52%;
+    width: 51%;
     margin-left: auto; }
   .company-content {
-    margin-bottom: 25px; }
+    margin-bottom: 34px; }
   .company-link {
     display: block;
     position: relative;
-    width: 850px;
+    width: 862px;
     height: 458px; }
   .company-pic {
     border-radius: 5px;
@@ -3556,7 +3558,7 @@ body.mob-menu-show {
     height: 100%;
     object-fit: cover; }
   .company-play {
-    margin-left: -47px; }
+    margin-left: -55px; }
   @media screen and (max-width: 1250px) {
     .company-play {
       margin-left: 0; }
@@ -3583,7 +3585,7 @@ body.mob-menu-show {
       flex-direction: column;
       padding-top: 57px; }
       .company-container:after {
-        top: 19px;
+        top: 30px;
         left: 26px; }
     .company-detail {
       width: 100%;
@@ -3600,7 +3602,7 @@ body.mob-menu-show {
       border-radius: 0; } }
 
 .avail {
-  padding-bottom: 78px; }
+  padding-bottom: 75px; }
   .avail-container {
     position: relative;
     display: flex; }
@@ -3631,7 +3633,8 @@ body.mob-menu-show {
   .avail-content ul {
     margin-bottom: 0; }
   .avail-content ul li {
-    margin-left: 30px; }
+    margin-left: 35px;
+    margin-bottom: 23px; }
     .avail-content ul li:before {
       margin-left: -28px;
       min-width: 18px;
@@ -3639,7 +3642,8 @@ body.mob-menu-show {
       height: 18px;
       background: url("../images/icons/check-dark.svg") no-repeat 0 0; }
   .avail-name {
-    max-width: 417px; }
+    max-width: 417px;
+    margin-bottom: 28px; }
   .avail-img-inner {
     float: right; }
   .avail-banners {
@@ -3654,7 +3658,7 @@ body.mob-menu-show {
     display: block;
     height: 359px;
     overflow: hidden;
-    padding: 30px 18px 30px 25px;
+    padding: 25px 18px 30px 25px;
     border-radius: 5px;
     background-color: #ECF0FA;
     text-decoration: none; }
@@ -3698,6 +3702,8 @@ body.mob-menu-show {
       padding-bottom: 60px; }
       .avail-detail {
         padding-top: 0; }
+      .avail-name {
+        margin-bottom: 16px; }
       .avail-banners-item {
         margin-right: 20px;
         width: 175px; }
@@ -3780,7 +3786,7 @@ body.mob-menu-show {
 
 .stories-list-info {
   display: block;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
   font-size: 15px;
   line-height: 24px;
   letter-spacing: 0.01em;

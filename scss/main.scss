@@ -272,7 +272,7 @@
 
 .geography {
     position: relative;
-    margin-bottom: 77px;
+    margin-bottom: 88px;
     &-list {
         height: 537px;
     }
@@ -389,6 +389,7 @@
         padding-bottom: 70px;
     }
     &-name {
+        margin-bottom: 30px;
         color: #fff;
     }
     &-content {
@@ -396,7 +397,7 @@
         font-size: 16px;
         line-height: 26px;
         ul li {
-            margin-bottom: 20px;
+            margin-bottom: 35px;
             margin-left: 0;
             &:before {
                 display: none;
@@ -420,6 +421,9 @@
     @media screen
     and (max-width: $tablet){
         margin-bottom: 60px;
+        &-name {
+            margin-bottom: 18px;
+        }
         &-list {
             height: 392px;
         }
@@ -763,7 +767,7 @@
         padding-top: 14px;
     }
     &-name {
-        margin-bottom: 21px;
+        margin-bottom: 30px;
         color: #fff;
     }
     &-info {
@@ -968,7 +972,7 @@
         position: relative;
         z-index: 1;
         min-height: 235px;
-        padding-top: 49px;
+        padding-top: 42px;
         padding-bottom: 53px;
         &:after {
             content: '';
@@ -1184,19 +1188,20 @@
     }
     &-detail {
         width: 41%;
+        padding-top: 10px;
         padding-right: 30px;
     }
     &-video {
-        width: 52%;
+        width: 51%;
         margin-left: auto;
     }
     &-content {
-        margin-bottom: 25px;
+        margin-bottom: 34px;
     }
     &-link {
         display: block;
         position: relative;
-        width: 850px;
+        width: 862px;
         height: 458px;
     }
     &-pic {
@@ -1207,7 +1212,7 @@
         object-fit: cover;
     }
     &-play {
-        margin-left: -47px;
+        margin-left: -55px;
     }
 
     @media screen
@@ -1248,7 +1253,7 @@
             flex-direction: column;
             padding-top: 57px;
             &:after {
-                top: 19px;
+                top: 30px;
                 left: 26px;
             }
         }
@@ -1274,7 +1279,7 @@
 
 
 .avail {
-    padding-bottom: 78px;
+    padding-bottom: 75px;
     &-container {
         position: relative;
         display: flex;
@@ -1312,7 +1317,8 @@
             margin-bottom: 0;
         }
         ul li {
-            margin-left: 30px;
+            margin-left: 35px;
+            margin-bottom: 23px;
             &:before {
                 margin-left: -28px;
                 min-width: 18px;
@@ -1324,6 +1330,7 @@
     }
     &-name {
         max-width: 417px;
+        margin-bottom: 28px;
     }
     &-img-inner {
         float: right;
@@ -1343,7 +1350,7 @@
         display: block;
         height: 359px;
         overflow: hidden;
-        padding: 30px 18px 30px 25px;
+        padding: 25px 18px 30px 25px;
         border-radius: 5px;
         background-color: #ECF0FA;
         text-decoration: none;
@@ -1401,6 +1408,9 @@
         padding-bottom: 60px;
         &-detail {
             padding-top: 0;
+        }
+        &-name {
+            margin-bottom: 16px;
         }
         &-banners-item {
             margin-right: 20px;
@@ -1501,7 +1511,7 @@
     }
     &-list-info {
         display: block;
-        margin-bottom: 14px;
+        margin-bottom: 10px;
         font-size: 15px;
         line-height: 24px;
         letter-spacing: 0.01em;
