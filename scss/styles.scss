@@ -644,6 +644,12 @@ blockquote {
 		height: 1px;
 		background-color: #fff;
 	}
+	&-item_more &-link {
+		display: inline-block;
+		width: 20px;
+		height: 13px;
+		background: url("../images/icons/dots.svg") no-repeat left bottom;
+	}
 
 	@media screen
 	and (max-width: $tablet){
@@ -816,6 +822,12 @@ blockquote {
 		height: 15px;
 		background-image: url("../images/main-banner/icons/arrow-right-button.svg");
 	}
+	&_arrow-right-light {
+		min-width: 9px;
+		width: 9px;
+		height: 14px;
+		background-image: url("../images/icons/slider-arrow-right-light.svg");
+	}
 
 	@media screen
 	and (max-width: $tablet){
@@ -828,6 +840,11 @@ blockquote {
 			min-width: 8px;
 			width: 8px;
 			height: 14px;
+		}
+		&_arrow-right-light {
+			min-width: 8px;
+			width: 8px;
+			height: 13px;
 		}
 	}
 }

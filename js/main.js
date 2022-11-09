@@ -494,6 +494,48 @@ function initExpand() {
     });
 }
 
+var sliderCatalogCategory;
+function initSliderCatalogCategory() {
+    jQuery('.js-slider-catalog-category').each(function() {
+        var $slider = $(this),
+            $list = $(this).find('.js-slider-list'),
+            sliderLength = $slider.find('.swiper-slide').length;
+
+        var isStart = sliderLength > 1 ? true : false;
+
+        sliderCatalogCategory = new Swiper($list[0], {
+            loop: isStart,
+            pagination: false,
+            navigation: {
+                nextEl: $slider.find('.js-slider-next')[0],
+                prevEl: $slider.find('.js-slider-prev')[0],
+                disabledClass: "slider-button_disabled",
+            },
+            threshold: 10,
+            spaceBetween: 25,
+            slidesPerView: "auto",
+            freeMode: true,
+            breakpoints: {
+                0: {
+                    simulateTouch: false,
+                },
+            },
+            on: {
+                beforeInit: function () {
+                },
+                init: function () {
+                },
+            },
+        });
+    });
+}
+function reInitSliderCatalogCategory() {
+    if (sliderCatalogCategory) {
+        sliderCatalogCategory.destroy();
+    }
+    sliderCatalogCategory = undefined;
+}
+
 function initResizeWindow() {
     var width = $(window).outerWidth();
     if (width <= GLOBAL.mobile) {
@@ -501,15 +543,24 @@ function initResizeWindow() {
         if (sliderAvail == undefined) {
             initSliderAvail();
         }
+        if (sliderCatalogCategory == undefined) {
+            initSliderCatalogCategory();
+        }
     } else if (width <= GLOBAL.tablet) {
         GLOBAL.widthWindow = 'isTablet';
         if (sliderAvail) {
             reInitSliderAvail();
         }
+        if (sliderCatalogCategory) {
+            reInitSliderCatalogCategory();
+        }
     } else {
         GLOBAL.widthWindow = '';
         if (sliderAvail) {
             reInitSliderAvail();
+        }
+        if (sliderCatalogCategory) {
+            reInitSliderCatalogCategory();
         }
     }
 }

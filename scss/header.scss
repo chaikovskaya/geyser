@@ -894,6 +894,37 @@ body.mob-menu-show {
     &_light &-icon_youtube {
         background-image: url("../images/icons/socials-youtube-light.svg");
     }
+
+    &_wide {}
+    &_wide &-link {
+        background-color: #213194;
+    }
+    &_wide &-link:hover {
+        background-color: #213194;
+    }
+    &_wide &-link:active {
+        background-color: #0E1E82;
+    }
+
+
+    @media screen
+    and (min-width: $tablet){
+        &_wide &-link {
+            min-width: 40px;
+            width: 40px;
+            height: 40px;
+        }
+        &_wide &-icon_tg {
+            width: 18px;
+            height: 16px;
+            margin-left: -2px;
+        }
+        &_wide &-icon_youtube {
+            width: 19px;
+            height: 12px;
+            margin-top: 0;
+        }
+    }
 }
 
 /* IE 11 */
