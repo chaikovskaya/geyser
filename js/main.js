@@ -243,6 +243,11 @@ function initSliderMainBanner() {
             slidesPerView: 'auto',
             threshold: 10,
             spaceBetween: 0,
+            preloadImages: false,
+            lazy: {
+                loadPrevNext: true,
+                loadPrevNextAmount: 3,
+            },
             breakpoints: {
                 0: {
                     simulateTouch: false,
@@ -284,6 +289,11 @@ function initSliderProduction() {
                 disabledClass: "slider-button_disabled",
             },
             threshold: 10,
+            preloadImages: false,
+            lazy: {
+                loadPrevNext: true,
+                loadPrevNextAmount: 10,
+            },
             breakpoints: {
                 0: {
                     simulateTouch: false,
@@ -329,6 +339,11 @@ function initSliderStories() {
                 disabledClass: "slider-button_disabled",
             },
             threshold: 10,
+            preloadImages: false,
+            lazy: {
+                loadPrevNext: true,
+                loadPrevNextAmount: 10,
+            },
             breakpoints: {
                 0: {
                     simulateTouch: false,

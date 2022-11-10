@@ -1795,6 +1795,7 @@
 }
 
 .main-block {
+    overflow: hidden;
     height: 258px;
     margin-bottom: 45px;
     background-color: #213194;
@@ -1809,6 +1810,7 @@
     &-title {
         position: relative;
         z-index: 1;
+        width: 63%;
         margin-top: auto;
         margin-bottom: auto;
         font-size: 50px;
@@ -1829,6 +1831,26 @@
             background: url("../images/catalog-category/catalog-category-bgr-1.png") no-repeat 0 0;
             background-size: cover;
         }
+    }
+
+    &_catalog {}
+    &_catalog &-container {
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin-right: -95px;
+            height: 100%;
+            width: 567px;
+            background: url("../images/catalog/catalog-main-block.png") no-repeat 0 0;
+            background-size: contain;
+        }
+    }
+    &_catalog &-title {
+        font-size: 30px;
+        line-height: 48px;
+        text-transform: none;
     }
 
     @media screen
@@ -1852,6 +1874,18 @@
                 background-image: url("../images/catalog-category/catalog-category-bgr-2.png");
             }
         }
+        &_catalog &-title {
+            font-size: 20px;
+            line-height: 32px;
+        }
+        &_catalog &-container {
+            &:after {
+                height: 148px;
+                width: 346px;
+                margin-right: -62px;
+                background-size: 100% auto;
+            }
+        }
     }
     @media screen
     and (max-width: $mobile) {
@@ -1859,6 +1893,7 @@
         height: 271px;
         &-title {
             top: -17px;
+            width: 100%;
         }
         &_catalog-category &-container {
             &:after {
@@ -1871,6 +1906,21 @@
                 transform: translateX(-50%);
                 background-image: url("../images/catalog-category/catalog-category-bgr-3.png");
             }
+        }
+        &_catalog &-container {
+            &:after {
+                top: auto;
+                left: auto;
+                right: 0;
+                bottom: -73px;
+                height: 304px;
+                width: 267px;
+                margin-right: -15px;
+                background-image: url("../images/catalog/catalog-main-block-1.png");
+            }
+        }
+        &_catalog &-title {
+            top: 0;
         }
     }
 }
