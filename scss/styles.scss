@@ -686,6 +686,9 @@ blockquote {
 
 /* pager */
 .pager {
+	position: absolute;
+	right: 0;
+	top: 0;
 	list-style-type: none;
 	text-align: center;
 	display: flex;
@@ -695,33 +698,30 @@ blockquote {
 	&-item {
 		font-size: 14px;
 		line-height: 19px;
-		margin-left: 2px;
-		margin-right: 2px;
+		margin-right: 22px;
 	}
 	&-item:last-child {
 		margin-right: 0;
 	}
 	&-item_prev {
-		margin-right: 11px;
 	}
 	&-item_next {
-		margin-left: 11px;
 	}
 	&-link {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 33px;
-		height: 33px;
+		width: 40px;
+		height: 40px;
 		padding: 5px;
 		text-decoration: none;
-		font-size: 14px;
+		font-size: 16px;
 		line-height: 16px;
-		color: #000000;
+		color: #213194;
+		font-weight: 500;
 		border-radius: 50%;
+		border: 1px solid #8098B6;
 		&:hover {
-			color: #fff;
-			background-color: $color-red;
 		}
 	}
 	&-icon {
@@ -731,21 +731,24 @@ blockquote {
 		background: no-repeat 0 0;
 	}
 	&-icon_prev {
-		background-image: url(../images/icons/arrow-left-dark.svg);
 	}
 	&-icon_next {
-		background-image: url(../images/icons/arrow-right-dark.svg);
+	}
+	&-item_prev &-link {
+		background-color: #213194;
+		border-color: #213194;
+	}
+	&-item_next &-link {
+		background-color: #213194;
+		border-color: #213194;
 	}
 	&-link:hover &-icon_prev {
-		background-image: url(../images/icons/arrow-left.svg);
 	}
 	&-link:hover &-icon_next {
-		background-image: url(../images/icons/arrow-right.svg);
 	}
 	&-item_active &-link {
-		color: #fff;
-		background-color: $color-red;
-		font-weight: 700;
+		border-color: transparent;
+		box-shadow: 0px 0px 15px rgba(193, 201, 220, 0.5);
 	}
 	&-item_disabled {}
 	&-item_disabled &-link:hover {
@@ -822,11 +825,23 @@ blockquote {
 		height: 15px;
 		background-image: url("../images/main-banner/icons/arrow-right-button.svg");
 	}
+	&_arrow-left-light {
+		min-width: 9px;
+		width: 9px;
+		height: 14px;
+		background-image: url("../images/icons/slider-arrow-left-light.svg");
+	}
 	&_arrow-right-light {
 		min-width: 9px;
 		width: 9px;
 		height: 14px;
 		background-image: url("../images/icons/slider-arrow-right-light.svg");
+	}
+	&_cross {
+		min-width: 8px;
+		width: 8px;
+		height: 8px;
+		background-image: url("../images/catalog/reset-icon.svg");
 	}
 
 	@media screen

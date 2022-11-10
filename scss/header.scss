@@ -282,6 +282,9 @@
         &:hover {
             color: #FFFFFF;
         }
+        &:active {
+            background-color: #0E1E82;
+        }
     }
 
     &-container {
@@ -883,7 +886,7 @@ body.mob-menu-show {
         border-color: #FFFFFF;
     }
     &_light &-link:hover {
-        background-color: transparent;
+        background-color: #0E1E82;
     }
     &_light &-link:active {
         background-color: #0E1E82;
@@ -900,7 +903,7 @@ body.mob-menu-show {
         background-color: #213194;
     }
     &_wide &-link:hover {
-        background-color: #213194;
+        background-color: #0E1E82;
     }
     &_wide &-link:active {
         background-color: #0E1E82;

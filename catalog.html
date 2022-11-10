@@ -467,10 +467,294 @@
                 </div>
             </div>
 
+            <div class="container">
+
+                <form>
+                    <div class="catalog-filter">
+                        <div class="catalog-filter-item catalog-filter-item_category">
+                            <label class="catalog-filter-label">Категория оборудования</label>
+                            <select name="catalog-category-sort" class="js-select">
+                                <option selected value="param-1">Оборудование для очистки поверхности/ Моечное оборудование</option>
+                                <option value="param-2">Испытательное оборудование</option>
+                                <option value="param-3">Вспомогательное оборудование</option>
+                                <option value="param-4">Моющие средства</option>
+                                <option value="param-5">Нестандартные проекты</option>
+                            </select>
+                        </div>
+                        <div class="catalog-filter-item catalog-filter-item_purpose">
+                            <label class="catalog-filter-label">Назначение оборудования</label>
+                            <select name="purpose-sort" class="js-select">
+                                <option selected value="param-1">Туннельные моечные машины</option>
+                                <option value="param-2">Название 1</option>
+                                <option value="param-3">Название 2</option>
+                            </select>
+                        </div>
+                        <div class="catalog-filter-item catalog-filter-item_button">
+                            <button class="catalog-filter-button button button_wide">Показать</button>
+                        </div>
+                        <div class="catalog-filter-item catalog-filter-item_reset">
+                            <!-- 2 ссылки Сбросить, вторая ниже -->
+                            <a class="catalog-filter-reset" href="javascript:;">
+                                Сбросить<i class="catalog-filter-reset-icon icon icon_cross"></i>
+                            </a>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="catalog-panel">
+                    <span class="catalog-panel-name">Товаров <span class="catalog-panel-number">(12)</span></span>
+                    <div class="select-simple">
+                        <select name="catalog-sort" class="js-select">
+                            <option selected value="param-1">По популярности</option>
+                            <option value="param-2">По возрастанию цены</option>
+                            <option value="param-3">По убыванию цены</option>
+                        </select>
+                    </div>
+                    <a class="catalog-filter-reset catalog-filter-reset_mob" href="javascript:;">
+                        Сбросить<i class="catalog-filter-reset-icon icon icon_cross"></i>
+                    </a>
+                </div>
+
+                <div class="JS-AjaxMoreCatalog">
+                    <ul class="catalog-list JS-AjaxMore-Content">
+                        <li class="catalog-list-item">
+                            <a href="#" class="product">
+                                <span class="product-img">
+                                    <img class="product-pic" src="./images/production/product-img-1.png" alt="" />
+                                </span>
+                                <span class="product-price">120 000 <span class="product-currency currency">i</span></span>
+                                <span class="product-name">Автоматическая промывочная установка апу 1800</span>
+                                <span class="product-props">
+                                    <span class="product-props-item">
+                                        <span class="product-props-name">Длина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span>, мм</span>
+                                        <span class="product-props-value">1000</span>
+                                    </span>
+                                    <span class="product-props-item">
+                                        <span class="product-props-name">Ширина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span></span>
+                                        <span class="product-props-value">1000</span>
+                                    </span>
+                                </span>
+                                <span class="product-button button button_light">
+                                    Подробнее<span class="button-icon"><i class="button-icon-pic icon icon_arrow-right-button"></i></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="catalog-list-item">
+                            <a href="#" class="product">
+                                <span class="product-img">
+                                    <img class="product-pic" src="./images/production/product-img-2.png" alt="" />
+                                    <span class="marks">
+                                        <span class="marks-item">
+                                            <span class="marks-label marks-label_hit">Хит</span>
+                                        </span>
+                                    </span>
+                                </span>
+                                <span class="product-price">320 000 <span class="product-currency currency">i</span></span>
+                                <span class="product-name">Автоматическая промывочная установка апу 1800</span>
+                                <span class="product-props">
+                                    <span class="product-props-item">
+                                        <span class="product-props-name">Длина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span>, мм</span>
+                                        <span class="product-props-value">1000</span>
+                                    </span>
+                                    <span class="product-props-item">
+                                        <span class="product-props-name">Ширина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span></span>
+                                        <span class="product-props-value">1000</span>
+                                    </span>
+                                </span>
+                                <span class="product-button button button_light">
+                                    Подробнее<span class="button-icon"><i class="button-icon-pic icon icon_arrow-right-button"></i></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="catalog-list-item">
+                            <a href="#" class="product">
+                                <span class="product-img">
+                                    <img class="product-pic" src="./images/production/product-img-3.png" alt="" />
+                                    <span class="marks">
+                                        <span class="marks-item">
+                                            <span class="marks-label marks-label_new">Новинка</span>
+                                        </span>
+                                    </span>
+                                </span>
+                                <span class="product-price">120 000 <span class="product-currency currency">i</span></span>
+                                <span class="product-name">Автоматическая промывочная установка апу 1800</span>
+                                <span class="product-props">
+                                            <span class="product-props-item">
+                                                <span class="product-props-name">Длина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span>, мм</span>
+                                                <span class="product-props-value">1000</span>
+                                            </span>
+                                            <span class="product-props-item">
+                                                <span class="product-props-name">Ширина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span></span>
+                                                <span class="product-props-value">1000</span>
+                                            </span>
+                                        </span>
+                                <span class="product-button button button_light">
+                                            Подробнее<span class="button-icon"><i class="button-icon-pic icon icon_arrow-right-button"></i></span>
+                                        </span>
+                            </a>
+                        </li>
+                        <li class="catalog-list-item">
+                            <a href="#" class="product">
+                                        <span class="product-img">
+                                            <img class="product-pic" src="./images/production/product-img-4.png" alt="" />
+                                        </span>
+                                <span class="product-price">120 000 <span class="product-currency currency">i</span></span>
+                                <span class="product-name">Автоматическая промывочная установка апу 1800</span>
+                                <span class="product-props">
+                                            <span class="product-props-item">
+                                                <span class="product-props-name">Длина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span>, мм</span>
+                                                <span class="product-props-value">1000</span>
+                                            </span>
+                                            <span class="product-props-item">
+                                                <span class="product-props-name">Ширина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span></span>
+                                                <span class="product-props-value">1000</span>
+                                            </span>
+                                        </span>
+                                <span class="product-button button button_light">
+                                            Подробнее<span class="button-icon"><i class="button-icon-pic icon icon_arrow-right-button"></i></span>
+                                        </span>
+                            </a>
+                        </li>
+                        <li class="catalog-list-item">
+                            <a href="#" class="product">
+                                <span class="product-img">
+                                    <img class="product-pic" src="./images/production/product-img-1.png" alt="" />
+                                </span>
+                                <span class="product-price">120 000 <span class="product-currency currency">i</span></span>
+                                <span class="product-name">Автоматическая промывочная установка апу 1800</span>
+                                <span class="product-props">
+                                    <span class="product-props-item">
+                                        <span class="product-props-name">Длина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span>, мм</span>
+                                        <span class="product-props-value">1000</span>
+                                    </span>
+                                    <span class="product-props-item">
+                                        <span class="product-props-name">Ширина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span></span>
+                                        <span class="product-props-value">1000</span>
+                                    </span>
+                                </span>
+                                <span class="product-button button button_light">
+                                    Подробнее<span class="button-icon"><i class="button-icon-pic icon icon_arrow-right-button"></i></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="catalog-list-item">
+                            <a href="#" class="product">
+                                <span class="product-img">
+                                    <img class="product-pic" src="./images/production/product-img-2.png" alt="" />
+                                    <span class="marks">
+                                        <span class="marks-item">
+                                            <span class="marks-label marks-label_hit">Хит</span>
+                                        </span>
+                                    </span>
+                                </span>
+                                <span class="product-price">320 000 <span class="product-currency currency">i</span></span>
+                                <span class="product-name">Автоматическая промывочная установка апу 1800</span>
+                                <span class="product-props">
+                                    <span class="product-props-item">
+                                        <span class="product-props-name">Длина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span>, мм</span>
+                                        <span class="product-props-value">1000</span>
+                                    </span>
+                                    <span class="product-props-item">
+                                        <span class="product-props-name">Ширина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span></span>
+                                        <span class="product-props-value">1000</span>
+                                    </span>
+                                </span>
+                                <span class="product-button button button_light">
+                                    Подробнее<span class="button-icon"><i class="button-icon-pic icon icon_arrow-right-button"></i></span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="catalog-list-item">
+                            <a href="#" class="product">
+                                <span class="product-img">
+                                    <img class="product-pic" src="./images/production/product-img-3.png" alt="" />
+                                    <span class="marks">
+                                        <span class="marks-item">
+                                            <span class="marks-label marks-label_new">Новинка</span>
+                                        </span>
+                                    </span>
+                                </span>
+                                <span class="product-price">120 000 <span class="product-currency currency">i</span></span>
+                                <span class="product-name">Автоматическая промывочная установка апу 1800</span>
+                                <span class="product-props">
+                                            <span class="product-props-item">
+                                                <span class="product-props-name">Длина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span>, мм</span>
+                                                <span class="product-props-value">1000</span>
+                                            </span>
+                                            <span class="product-props-item">
+                                                <span class="product-props-name">Ширина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span></span>
+                                                <span class="product-props-value">1000</span>
+                                            </span>
+                                        </span>
+                                <span class="product-button button button_light">
+                                            Подробнее<span class="button-icon"><i class="button-icon-pic icon icon_arrow-right-button"></i></span>
+                                        </span>
+                            </a>
+                        </li>
+                        <li class="catalog-list-item">
+                            <a href="#" class="product">
+                                        <span class="product-img">
+                                            <img class="product-pic" src="./images/production/product-img-4.png" alt="" />
+                                        </span>
+                                <span class="product-price">120 000 <span class="product-currency currency">i</span></span>
+                                <span class="product-name">Автоматическая промывочная установка апу 1800</span>
+                                <span class="product-props">
+                                            <span class="product-props-item">
+                                                <span class="product-props-name">Длина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span>, мм</span>
+                                                <span class="product-props-value">1000</span>
+                                            </span>
+                                            <span class="product-props-item">
+                                                <span class="product-props-name">Ширина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span></span>
+                                                <span class="product-props-value">1000</span>
+                                            </span>
+                                        </span>
+                                <span class="product-button button button_light">
+                                            Подробнее<span class="button-icon"><i class="button-icon-pic icon icon_arrow-right-button"></i></span>
+                                        </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="load-more">
+                        <a class="load-more-link button button_modified JS-AjaxMore-Link" href="javascript:;" data-ajaxmore-url="./ajax/catalog.html">
+                            Показать все<i class="load-more-icon"></i>
+                        </a>
+                        <ul class="pager JS-AjaxMore-Pager">
+                            <!-- Если не куда листать, добавляется класс pager-item_disabled -->
+                            <li class="pager-item pager-item_prev">
+                                <a class="pager-link" href="#">
+                                    <span class="pager-icon pager-icon_prev icon icon_arrow-left-light"></span>
+                                </a>
+                            </li>
+                            <li class="pager-item pager-item_active"><span class="pager-link">1</span></li>
+                            <li class="pager-item"><a class="pager-link" href="#">2</a></li>
+                            <li class="pager-item"><a class="pager-link" href="#">3</a></li>
+                            <!-- Если не куда листать, добавляется класс pager-item_disabled -->
+                            <li class="pager-item pager-item_next">
+                                <a class="pager-link" href="#">
+                                    <span class="pager-icon pager-icon_next icon icon_arrow-right-light"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
 
         </main>
 
         <footer class="footer">
+            <div class="feedback">
+                <div class="feedback-box">
+                    <div class="feedback-container container">
+                        <div class="feedback-name"><span class="feedback-name-label">Остались вопросы?</span> Свяжитесь с&nbsp;нами по телефону <a class="feedback-name-link" href="tel:+78005505089">8-800-550-50-89</a></div>
+                        <div class="feedback-content content">Сложно определиться с подходящей под&nbsp;Ваши конкретные задачи моделью оборудования и комплектацией? Мы&nbsp;поможем Вам подобрать оптимальное&nbsp;решение!</div>
+                        <a class="feedback-button button button_dark js-popup-callback" href="javascript:;" data-src="./ajax/callback.html">
+                            ОСТАВИТЬ ЗАЯВКУ<span class="button-icon"><i class="button-icon-pic icon icon_arrow-right-button"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <div class="footer-block">
                 <div class="footer-main-container container">
                     <div class="footer-item footer-item_company">

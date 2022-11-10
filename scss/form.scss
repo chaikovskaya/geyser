@@ -240,6 +240,14 @@ label.form-error {
         color: #000000;
         font-weight: 500;
         background-color: rgba(235, 240, 250, 0.8);
+        &:hover {
+            background-color: #213194;
+            color: #fff;
+        }
+        &:active {
+            background-color: #0E1E82;
+            color: #fff;
+        }
     }
 
     &_simple-light {
@@ -251,6 +259,7 @@ label.form-error {
         border: 1px solid #F2F2F2;
         &:hover {
             color: #FFFFFF;
+            outline: 1px solid #F2F2F2;
         }
         &:active {
             outline: 1px solid #F2F2F2;
@@ -303,7 +312,7 @@ label.form-error {
     &_wide {
         position: relative;
         align-items: center;
-        padding: 13px 43px 11px;
+        padding: 13px 36px 11px;
         font-size: 15px;
         line-height: 1.1em;
         color: #FFFFFF;
@@ -406,6 +415,10 @@ label.form-error {
             width: 25px;
             height: 25px;
         }
+        &_wide {
+            padding: 11px 22px 10px;
+            font-size: 13px;
+        }
     }
     @media screen
     and (max-width: $mobile){
@@ -413,25 +426,23 @@ label.form-error {
 }
 
 /*selectric*/
-.selectric-wrapper {
-}
+.selectric-wrapper {}
 .selectric {
     display: flex;
     align-items: center;
-    height: 33px;
-    border-radius: 22px;
+    height: 40px;
+    border-radius: 50em;
     background-color: transparent;
-    padding: 7px 21px 8px 20px;
-    border: 0;
-    box-shadow: 0 0 15px rgba(171, 171, 171, 0.25);
+    padding: 10px 25px 10px 22px;
+    border: 1px solid rgba(128, 152, 182, 0.7);
 }
 .selectric .label {
     margin: 0;
     height: auto;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0.03em;
-    color: #000000;
+    font-size: 15px;
+    line-height: 22px;
+    color: #111111;
+    font-weight: 500;
 }
 .selectric:hover .label {
 }
@@ -444,29 +455,37 @@ label.form-error {
     padding-bottom: 14px;
     background-color: #fff;
     border-width: 0;
-    border-radius: 0px 15px 15px 15px;
+    border-radius: 0 0 10px 10px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.07);
 }
 .selectric-above .selectric-items {
     box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.07);
 }
 .selectric-items li {
-    padding: 7px 28px;
+    padding: 6px 22px;
     font-size: 14px;
+    line-height: 24px;
     color: $color;
+    @include fix-rows();
+    -ms-line-clamp: 1;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
 }
 .selectric-items li:hover {
     background-color: transparent;
+    color: #213194;
 }
 .selectric-items li.highlighted {
     background-color: transparent;
 }
 .selectric-items li.selected {
-    color: $color-red;
+    color: #213194;
     background-color: transparent;
 }
 .selectric-button {
-    margin-left: 5px;
+    margin-top: 2px;
+    margin-left: auto;
+    padding-left: 8px;
     line-height: 0;
 }
 .selectric-open {
@@ -475,18 +494,20 @@ label.form-error {
 .selectric-icon {
     display: inline-block;
     line-height: 0;
-    width: 9px;
-    height: 5px;
-    background: url("../images/header/header-icons/arrow-bottom.svg") no-repeat 0 0;
+    min-width: 10px;
+    width: 10px;
+    height: 7px;
+    background: url("../images/icons/arrow-bottom.svg") no-repeat 0 0;
+    background-size: 100% auto;
 }
 .selectric-hover .selectric {
-    border-color: #333;
+    border-color: rgba(128, 152, 182, 1);
 }
 .selectric-focus .selectric {
-    border-color: #333;
+    border-color: rgba(128, 152, 182, 1);
 }
 .selectric-open .selectric {
-    border-color: #333;
+    border-color: rgba(128, 152, 182, 1);
 }
 .selectric-open .selectric-icon {
     transform: scaleY(-1);
@@ -500,6 +521,34 @@ label.form-error {
     display: none;
 }
 
+.select-simple {}
+.select-simple .selectric {
+    border-color: #213194;
+}
+.select-simple .selectric .label {
+    color: #213194;
+}
+.select-simple .selectric-icon {
+    background-image: url("../images/icons/arrow-bottom-blue.svg");
+}
+
+@media screen
+and (max-width: $tablet) {
+    .selectric {
+        height: 35px;
+        padding: 9px 19px 9px 17px;
+    }
+    .selectric .label {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .selectric-icon {
+        min-width: 8px;
+        width: 8px;
+        height: 5px;
+    }
+}
+
 @media screen
 and (max-width: $mobile) {
     .selectric-items {
@@ -510,7 +559,7 @@ and (max-width: $mobile) {
         left: 0;
         z-index: 1000;
         width: 100%!important;
-        padding: 25px 23px 15px;
+        padding: 20px 30px;
         border-radius: 15px 15px 0 0;
         transition: bottom 0.3s ease-in-out;
     }
@@ -527,14 +576,13 @@ and (max-width: $mobile) {
         font-size: 16px;
     }
     .selectric-items li {
-        padding: 13px 0 14px;
-        border-bottom: 1px solid #E1E1E4;
-        text-decoration: none;
+        padding-left: 0;
+        padding-right: 0;
         font-size: 15px;
-        line-height: 17px;
-        &:last-child {
-            border-bottom-width: 0;
-        }
+        line-height: 26px;
+    }
+    .selectric-button {
+        padding-left: 5px;
     }
     .selectric-open {
         &:after {
@@ -550,6 +598,10 @@ and (max-width: $mobile) {
     }
     .selectric-open .selectric-items {
         bottom: 0;
+    }
+    .select-simple .selectric {
+        padding-left: 12px;
+        padding-right: 15px;
     }
 }
 /*selectric*/
@@ -656,14 +708,7 @@ and (max-width: $mobile) {
     &-block {
     }
     &-link {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
         display: inline-block;
-        text-decoration: none;
-        padding-left: 17px;
-        padding-right: 17px;
     }
     &-label {
         display: inline-block;

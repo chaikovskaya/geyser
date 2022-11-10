@@ -1537,10 +1537,13 @@
         display: flex;
     }
     &-list-item {
+        height: auto;
+        min-height: 100%;
     }
     &-list-link {
         display: block;
         overflow: hidden;
+        height: 100%;
         border-radius: 5px;
         background-color: #ECF0FA;
         text-decoration: none;
@@ -1555,7 +1558,8 @@
         height: 192px;
     }
     &-list-block {
-        display: block;
+        display: flex;
+        flex-direction: column;
         padding: 19px 20px 30px 26px;
     }
     &-list-title {
