@@ -709,6 +709,8 @@ and (max-width: $mobile) {
     }
     &-link {
         display: inline-block;
+        padding-left: 32px;
+        padding-right: 32px;
     }
     &-label {
         display: inline-block;
@@ -735,5 +737,9 @@ and (max-width: $mobile) {
 
     @media screen
     and (max-width: $tablet){
+        &-link {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
     }
 }

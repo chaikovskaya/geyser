@@ -668,6 +668,9 @@
     &-props-point {
         display: none;
     }
+
+    &_modified {}
+
     @media screen
     and (max-width: $tablet){
         padding: 14px 20px 21px;
@@ -704,6 +707,49 @@
         }
         &-props-point {
             display: inline-block;
+        }
+    }
+    @media screen
+    and (max-width: $mobile){
+        &_modified {}
+        &_modified {
+            padding: 10px 10px 10px;
+        }
+        &_modified &-name {
+            min-height: 51px;
+            font-size: 13px;
+            line-height: 17px;
+        }
+        &_modified &-img {
+            height: 125px;
+        }
+        &_modified &-price {
+            margin-bottom: 5px;
+            font-size: 14px;
+            line-height: 18px;
+        }
+        &_modified &-props {
+            margin-bottom: 14px;
+        }
+        &_modified &-props-item {
+            flex-direction: column;
+            font-size: 11px;
+            line-height: 14px;
+        }
+        &_modified &-props-name {
+            width: 100%;
+            padding-right: 0;
+        }
+        &_modified &-props-value {
+            width: 100%;
+            margin-left: 0;
+            text-align: left;
+        }
+        &_modified .marks-label {
+            padding-left: 6px;
+            padding-right: 6px;
+            font-size: 11px;
+            line-height: 15px;
         }
     }
 }

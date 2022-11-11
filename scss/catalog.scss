@@ -1,5 +1,18 @@
 
 .catalog {
+    position: relative;
+    margin-bottom: 77px;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 117px;
+        right: 100%;
+        margin-right: 50px;
+        width: 308px;
+        height: 608px;
+        background: url(../images/catalog/catalog-decor-1.png) no-repeat 0 0;
+        background-size: 100% auto;
+    }
     &-filter {
         display: flex;
         align-items: flex-end;
@@ -86,6 +99,25 @@
 
     @media screen
     and (max-width: $tablet){
+        margin-bottom: 60px;
+        &:before {
+            top: 102px;
+            right: 100%;
+            margin-right: 9px;
+            width: 142px;
+            height: 300px;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 526px;
+            right: 100%;
+            width: 51px;
+            height: 185px;
+            margin-right: 10px;
+            background: url(../images/catalog/catalog-decor-2.png) no-repeat 0 0;
+            background-size: 100% auto;
+        }
         &-filter {
             padding-bottom: 16px;
             margin-bottom: 16px;
@@ -130,6 +162,17 @@
         &-panel {
             margin-bottom: 17px;
         }
+        &-list {
+            margin-left: -12px;
+            margin-right: -12px;
+            margin-bottom: 5px;
+        }
+        &-list-item {
+            width: 33.3%;
+            margin-bottom: 25px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
     }
 
     @media screen
@@ -164,6 +207,192 @@
         }
         &-filter-button {
             width: 100%;
+        }
+        &-list {
+            margin-left: -5px;
+            margin-right: -5px;
+        }
+        &-list-item {
+            width: 50%;
+            margin-bottom: 15px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+}
+
+.results {
+    &-block {
+        display: flex;
+        height: 490px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    &-img {
+        width: 57.3%;
+    }
+    &-pic {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &-detail {
+        width: 42.7%;
+    }
+    &-detail-item {
+        overflow: hidden;
+        height: 50%;
+        padding: 39px 31px;
+        background-color: #213194;
+    }
+    &-detail-item_before {
+        position: relative;
+        background-color: #FF9016;
+        &:before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 416px;
+            height: 206px;
+            margin-left: -208px;
+            background: url("../images/catalog/result-decor-1.png") no-repeat 0 0;
+        }
+    }
+    &-detail-item_after {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 416px;
+            height: 206px;
+            margin-left: -208px;
+            background: url("../images/catalog/result-decor-1-1.png") no-repeat 0 0;
+        }
+    }
+    &-name {
+        position: relative;
+        display: block;
+        margin-bottom: 27px;
+        padding-left: 13px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 35px;
+        color: #FFFFFF;
+        border-left: 2px solid #FFFFFF;
+    }
+    &-info {
+        position: relative;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        ul {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        ul li {
+            margin-bottom: 13px;
+            &:before {
+                width: 4px;
+                height: 2px;
+                margin-right: 3px;
+                background-color: #fff;
+            }
+        }
+    }
+
+    @media screen
+    and (min-width: $mobile) and (max-width: $tablet){
+        &-detail-item_before {
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: auto;
+                right: 0;
+                width: 119px;
+                height: 233px;
+                margin-left: 0;
+                background-image: url("../images/catalog/result-decor-2.png");
+            }
+        }
+        &-detail-item_after {
+            &:before {
+                top: 0;
+                left: 0;
+                width: 120px;
+                height: 237px;
+                margin-left: 0;
+                background-image: url("../images/catalog/result-decor-2-1.png");
+            }
+        }
+    }
+
+    @media screen
+    and (max-width: $tablet){
+        &-block {
+            height: auto;
+            flex-direction: column;
+        }
+        &-img {
+            width: 100%;
+            height: 229px;
+        }
+        &-detail {
+            width: 100%;
+            height: auto;
+            min-height: 156px;
+            display: flex;
+        }
+        &-detail-item {
+            width: 50%;
+            height: 100%;
+            padding: 20px;
+        }
+        &-name {
+            margin-bottom: 12px;
+            font-size: 20px;
+            line-height: 25px;
+        }
+        &-info {
+            font-size: 14px;
+            line-height: 18px;
+            ul li {
+                &:before {
+                    height: 1px;
+                }
+            }
+        }
+    }
+    @media screen
+    and (max-width: $mobile){
+        &-detail {
+            flex-direction: column;
+            min-height: auto;
+        }
+        &-detail-item {
+            width: 100%;
+        }
+        &-detail-item_before {
+            &:before {
+                left: 100%;
+                width: 237px;
+                height: 115px;
+                margin-left: -143px;
+                background-size: 100% auto;
+            }
+        }
+        &-detail-item_after {
+            &:before {
+                left: 100%;
+                width: 237px;
+                height: 115px;
+                margin-left: -143px;
+                background-size: 100% auto;
+            }
         }
     }
 }

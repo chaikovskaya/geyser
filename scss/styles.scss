@@ -722,6 +722,8 @@ blockquote {
 		border-radius: 50%;
 		border: 1px solid #8098B6;
 		&:hover {
+			border-color: transparent;
+			box-shadow: 0px 0px 15px rgba(193, 201, 220, 0.5);
 		}
 	}
 	&-icon {
@@ -733,18 +735,23 @@ blockquote {
 	&-icon_prev {
 	}
 	&-icon_next {
+		margin-left: 3px;
 	}
 	&-item_prev &-link {
 		background-color: #213194;
 		border-color: #213194;
+		&:hover {
+			background-color: #0E1E82;
+			border-color: #0E1E82;
+		}
 	}
 	&-item_next &-link {
 		background-color: #213194;
 		border-color: #213194;
-	}
-	&-link:hover &-icon_prev {
-	}
-	&-link:hover &-icon_next {
+		&:hover {
+			background-color: #0E1E82;
+			border-color: #0E1E82;
+		}
 	}
 	&-item_active &-link {
 		border-color: transparent;
@@ -758,11 +765,18 @@ blockquote {
 
 	@media screen
 	and (max-width: $tablet){
-		display: none;
+		&-item {
+			margin-right: 15px;
+		}
+		&-link {
+			width: 35px;
+			height: 35px;
+			font-size: 14px;
+		}
 	}
-
 	@media screen
 	and (max-width: $mobile){
+		display: none;
 	}
 }
 /* /pager */
