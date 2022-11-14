@@ -586,6 +586,69 @@ function initAjaxMoreCatalog() {
     });
 }
 
+let galleryThumbs,
+    galleryTop;
+function initGalleryCard() {
+    let $slider = $(".js-gallery-card-thumbs"),
+        $list = $slider.find('.js-slider-list'),
+        sliderLength = $slider.find('.swiper-slide').length,
+        $buttonPrev = $slider.find('.js-gallery-card-prev'),
+        $buttonNext = $slider.find('.js-gallery-card-next');
+
+    let isStart = sliderLength > 1 ? true : false;
+
+    galleryThumbs = new Swiper($list[0], {
+        loop: false,
+        slidesPerView: "auto",
+        autoHeight: true,
+        pagination: false,
+        threshold: 10,
+        watchSlidesProgress: true,
+        direction: "vertical",
+        breakpoints: {
+            0: {
+                spaceBetween: 6,
+            },
+            720: {
+                spaceBetween: 6,
+            },
+            992: {
+                spaceBetween: 25,
+            },
+        }
+    });
+    galleryTop = new Swiper(".js-gallery-card-main", {
+        loop: isStart,
+        direction: "horizontal",
+        spaceBetween: 40,
+        navigation: false,
+        pagination: false,
+        thumbs: {
+            swiper: galleryThumbs
+        },
+        slidesPerView: "auto",
+        threshold: 10,
+        breakpoints: {
+            0: {
+                spaceBetween: 20,
+            },
+            720: {
+                spaceBetween: 15,
+            },
+            992: {
+                spaceBetween: 15,
+            },
+        },
+    });
+    $buttonPrev.on('click', function(e) {
+        galleryTop.slidePrev();
+    });
+    $buttonNext.on('click', function(e) {
+        galleryTop.slideNext();
+    });
+};
+
+
 function initResizeWindow() {
     var width = $(window).outerWidth();
     if (width <= GLOBAL.mobile) {
@@ -639,4 +702,5 @@ $(document).ready(function () {
     initExpand();
     initAfterBefore();
     initAjaxMoreCatalog();
+    initGalleryCard();
 });

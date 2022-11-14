@@ -651,6 +651,20 @@ blockquote {
 		background: url("../images/icons/dots.svg") no-repeat left bottom;
 	}
 
+	&_simple {
+		margin-top: 36px;
+		margin-bottom: 25px;
+	}
+	&_simple &-link {
+		color: #111111;
+	}
+	&_simple &-item {
+		color: #333333;
+	}
+	&_simple &-icon {
+		background-color: #111;
+	}
+
 	@media screen
 	and (max-width: $tablet){
 		&-item {
