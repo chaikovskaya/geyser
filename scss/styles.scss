@@ -908,3 +908,49 @@ and (max-width: $mobile){
 		padding-bottom: 56px;
 	}
 }
+
+/* juxtapose */
+.juxtapose {
+	width: 100%!important;
+}
+div.jx-control {
+	width: 1px;
+	background-color: #fff;
+}
+div.jx-controller {
+	width: 40px;
+	height: 40px;
+	margin-left: -20px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	background-color: transparent;
+}
+a.jx-knightlab {
+	visibility: hidden;
+}
+div.jx-arrow {
+	top: 1px;
+}
+div.jx-arrow.jx-left {
+	left: 5px;
+	min-width: 9px;
+	width: 9px;
+	height: 14px;
+	background-image: url(../images/icons/slider-arrow-left-light.svg);
+	border: 0;
+}
+div.jx-handle:hover div.jx-arrow.jx-left, div.jx-handle:active div.jx-arrow.jx-left {
+	left: 5px;
+}
+div.jx-arrow.jx-right {
+	right: 6px;
+	min-width: 9px;
+	width: 9px;
+	height: 14px;
+	background-image: url(../images/icons/slider-arrow-right-light.svg);
+	border: 0;
+}
+div.jx-handle:hover div.jx-arrow.jx-right, div.jx-handle:active div.jx-arrow.jx-right {
+	right: 6px;
+}
+/* /juxtapose */

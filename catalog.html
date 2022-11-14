@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./libs/Selectric/public/selectric.css" />
     <link rel="stylesheet" href="./libs/simplebar/simplebar.min.css" />
+    <link rel="stylesheet" href="./libs/juxtapose/juxtapose.css" />
     <link rel="stylesheet" href="./css/common.css" />
  </head>
 
@@ -516,7 +517,7 @@
                         </a>
                     </div>
 
-                    <div class="JS-AjaxMoreCatalog">
+                    <div class="catalog-list-wrapper JS-AjaxMoreCatalog">
                         <ul class="catalog-list JS-AjaxMore-Content">
                             <li class="catalog-list-item">
                                 <a href="#" class="product product_modified">
@@ -742,9 +743,14 @@
 
                 <div class="results">
                     <h2 class="h1">Результаты до/после мойки</h2>
-                    <div class="results-block">
+                    <div class="results-block js-after-before" data-after-before-class="results-block_active">
                         <div class="results-img">
-                            <img class="results-pic" src="./images/catalog/catalog-img-1.png" alt="" />
+                            <img class="results-pic" src="./images/catalog/catalog-img-1.jpg" />
+                            <img class="results-pic results-pic_after" src="./images/catalog/catalog-img-1.jpg" />
+                            <div class="juxtapose">
+                                <img src="./images/catalog/catalog-img-1.jpg" />
+                                <img src="./images/catalog/catalog-img-1.jpg" />
+                            </div>
                         </div>
                         <ul class="results-detail">
                             <li class="results-detail-item results-detail-item_before">
@@ -757,7 +763,7 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="results-detail-item results-detail-item_after">
+                            <li class="results-detail-item results-detail-item_after js-after-before-item">
                                 <span class="results-name">После очистки</span>
                                 <div class="results-info content">
                                     <ul>
@@ -962,8 +968,10 @@
     <script src="./libs/Selectric/public/jquery.selectric.min.js"></script>
     <script src="./libs/simplebar/simplebar.min.js"></script>
     <script defer src="./libs/wow/wow.min.js"></script>
+    <script src="./libs/juxtapose/juxtapose.js"></script>
     <script src="./js/JSC.Dropdown.js"></script>
     <script src="./js/JSC.MobileMenu.js"></script>
+    <script src="./js/JSC.AjaxMore.js"></script>
 
     <script src="./js/main.js"></script>
 

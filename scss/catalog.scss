@@ -1,7 +1,6 @@
 
 .catalog {
     position: relative;
-    margin-bottom: 77px;
     &:before {
         content: '';
         position: absolute;
@@ -83,6 +82,9 @@
         font-weight: 500;
     }
 
+    &-list-wrapper {
+        margin-bottom: 77px;
+    }
     &-list {
         display: flex;
         flex-wrap: wrap;
@@ -99,7 +101,6 @@
 
     @media screen
     and (max-width: $tablet){
-        margin-bottom: 60px;
         &:before {
             top: 102px;
             right: 100%;
@@ -161,6 +162,9 @@
         }
         &-panel {
             margin-bottom: 17px;
+        }
+        &-list-wrapper {
+            margin-bottom: 60px;
         }
         &-list {
             margin-left: -12px;
@@ -229,12 +233,22 @@
         overflow: hidden;
     }
     &-img {
+        position: relative;
         width: 57.3%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
     &-pic {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: opacity 0.3s ease-in-out 0s;
+    }
+    &-pic_after {
+        opacity: 0;
     }
     &-detail {
         width: 42.7%;
@@ -244,6 +258,7 @@
         height: 50%;
         padding: 39px 31px;
         background-color: #213194;
+        cursor: pointer;
     }
     &-detail-item_before {
         position: relative;
@@ -256,7 +271,7 @@
             width: 416px;
             height: 206px;
             margin-left: -208px;
-            background: url("../images/catalog/result-decor-1.png") no-repeat 0 0;
+            background: url("../images/catalog/result-decor-1.svg") no-repeat 0 0;
         }
     }
     &-detail-item_after {
@@ -264,12 +279,12 @@
         &:before {
             content: '';
             position: absolute;
-            top: 0;
+            top: -206px;
             left: 50%;
             width: 416px;
-            height: 206px;
+            height: 411px;
             margin-left: -208px;
-            background: url("../images/catalog/result-decor-1-1.png") no-repeat 0 0;
+            background: url("../images/catalog/result-decor-1-1.svg") no-repeat 0 0;
         }
     }
     &-name {
@@ -303,7 +318,36 @@
             }
         }
     }
+    .juxtapose {
+        visibility: hidden;
+    }
 
+
+    @media screen
+    and (min-width: $tablet){
+        &-detail-item {
+            &:hover {
+                background-color: #FF9016;
+            }
+        }
+        &-detail-item_after {
+            &:hover:before {
+                background-image: url("../images/catalog/result-decor-1.svg");
+            }
+        }
+        &-block_active &-detail-item_before {
+            background-color: #213194;
+            &:before {
+                background-image: url("../images/catalog/result-decor-1-1.svg");
+            }
+        }
+        &-block_active &-pic {
+            opacity: 0;
+        }
+        &-block_active &-pic_after {
+            opacity: 1;
+        }
+    }
     @media screen
     and (min-width: $mobile) and (max-width: $tablet){
         &-detail-item_before {
@@ -351,6 +395,7 @@
             width: 50%;
             height: 100%;
             padding: 20px;
+            cursor: auto;
         }
         &-name {
             margin-bottom: 12px;
@@ -366,6 +411,18 @@
                 }
             }
         }
+        .juxtapose {
+            visibility: visible;
+            height: 100%!important;
+        }
+        div.jx-image img {
+            width: 1000px;
+            max-width: none;
+            max-height: none;
+        }
+        &-pic {
+            display: none;
+        }
     }
     @media screen
     and (max-width: $mobile){
@@ -378,21 +435,26 @@
         }
         &-detail-item_before {
             &:before {
+                bottom: -116px;
                 left: 100%;
                 width: 237px;
-                height: 115px;
+                height: 232px;
                 margin-left: -143px;
                 background-size: 100% auto;
             }
         }
         &-detail-item_after {
             &:before {
+                top: -115px;
                 left: 100%;
                 width: 237px;
-                height: 115px;
+                height: 232px;
                 margin-left: -143px;
                 background-size: 100% auto;
             }
+        }
+        div.jx-image img {
+            width: 800px;
         }
     }
 }
