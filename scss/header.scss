@@ -467,6 +467,13 @@
             font-weight: 500;
         }
     }
+
+    @media screen
+    and (max-width: $tablet){
+        left: -17px;
+        padding-left: 17px;
+        padding-right: 17px;
+    }
 }
 .main-menu-item:hover .main-submenu {
     display: block;

@@ -70,9 +70,50 @@ h4,
 }
 
 .table {
-	min-width: 100%;
 	margin-bottom: 13px;
 	border-collapse: collapse;
+	border: 1px solid rgba(128, 152, 182, 0.5);
+	th {
+		padding: 17px 10px;
+		border: 1px solid rgba(128, 152, 182, 0.5);
+		font-weight: normal;
+		font-size: 13px;
+		line-height: 16px;
+	}
+	td {
+		padding: 17px 10px;
+		border: 1px solid rgba(128, 152, 182, 0.5);
+		font-size: 13px;
+		line-height: 16px;
+		text-align: center;
+	}
+	&-row td {
+		font-size: 10px;
+		line-height: 13px;
+	}
+	&_wide {
+		width: 100%;
+	}
+
+	@media screen
+	and (max-width: $tablet){
+		th {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			font-size: 12px;
+			line-height: 15px;
+		}
+		td {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			font-size: 12px;
+			line-height: 15px;
+		}
+		&-row td {
+			font-size: 10px;
+			line-height: 13px;
+		}
+	}
 }
 
 a {
@@ -625,7 +666,7 @@ blockquote {
 		z-index: 1;
 		margin-right: 0;
 		padding-right: 5px;
-		padding-left: 5px;
+		padding-left: 10px;
 		background-color: #213194;
 	}
 	&-link {
@@ -664,9 +705,19 @@ blockquote {
 	&_simple &-icon {
 		background-color: #111;
 	}
+	&_simple &-item_more {
+		background-color: #fff;
+	}
+	&_simple &-item_more &-link {
+		background-image: url("../images/icons/dots-dark.svg");
+	}
 
 	@media screen
 	and (max-width: $tablet){
+		&_simple {
+			margin-top: 21px;
+			margin-bottom: 26px;
+		}
 		&-item {
 			font-size: 13px;
 			line-height: 15px;
@@ -688,6 +739,10 @@ blockquote {
 		}
 		&_show &-item_more {
 			display: none;
+		}
+		&_simple {
+			margin-top: 17px;
+			margin-bottom: 16px;
 		}
 	}
 }
@@ -805,6 +860,12 @@ blockquote {
 		height: 6px;
 		background-image: url("../images/icons/arrow-bottom.svg");
 	}
+	&_buttom-blue {
+		min-width: 10px;
+		width: 10px;
+		height: 6px;
+		background-image: url("../images/icons/arrow-bottom-blue.svg");
+	}
 	&_burger {
 		min-width: 17px;
 		width: 17px;
@@ -871,6 +932,13 @@ blockquote {
 		height: 8px;
 		background-image: url("../images/catalog/reset-icon.svg");
 	}
+	&_download {
+		min-width: 15px;
+		width: 15px;
+		height: 20px;
+		background-image: url("../images/card/card-icons/download.svg");
+	}
+
 
 	@media screen
 	and (max-width: $tablet){
@@ -888,6 +956,11 @@ blockquote {
 			min-width: 8px;
 			width: 8px;
 			height: 13px;
+		}
+		&_download {
+			min-width: 12px;
+			width: 12px;
+			height: 16px;
 		}
 	}
 }
