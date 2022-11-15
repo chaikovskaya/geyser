@@ -47,7 +47,6 @@
         height: 564px;
         width: 100%;
         overflow: hidden;
-        margin-bottom: 14px;
     }
     &-gallery-main-list {}
     &-gallery-main-item {
@@ -176,14 +175,12 @@
     }
     &-buttons {
         display: flex;
-        align-items: baseline;
+        align-items: flex-start;
         margin-bottom: 27px;
     }
     &-button {
         flex-grow: 1;
         margin-right: 25px;
-        padding-left: 28px;
-        padding-right: 28px;
         &:last-child {
             margin-right: 0;
         }
@@ -191,6 +188,7 @@
     &-button_review {
         font-weight: 500;
     }
+    &-button_callback {}
     &-link {
         display: flex;
         align-items: center;
@@ -292,7 +290,58 @@
         text-align: center;
     }
     &-advantages-detail {}
+    &-connection {
+        display: flex;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: 78px;
+    }
+    &-connection-item {
+        width: 50%;
+        height: 298px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
+    @media screen
+    and (min-width: $desktop){
+        &-button {
+            padding-left: 28px;
+            padding-right: 28px;
+        }
+    }
+    @media screen
+    and (max-width: $desktop){
+        &-gallery {
+            width: 49%;
+            padding-right: 22px;
+        }
+        &-gallery-main {
+            height: 470px;
+        }
+        &-gallery-thumbs-inner {
+            height: 345px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        &-detail {
+            width: 51%;
+        }
+        &-link {
+            margin-right: 10px;
+        }
+        &-button_callback:hover {
+            padding-right: 42px;
+        }
+    }
+    @media screen
+    and (min-width: $tablet){
+        &-button {
+            margin-right: 10px;
+            padding-left: 11px;
+            padding-right: 11px;
+        }
+    }
     @media screen
     and (max-width: $tablet){
         &-container {
@@ -300,7 +349,6 @@
         }
         &-gallery {
             width: 51%;
-            padding-right: 22px;
         }
         &-gallery-thumbs-wrapper {
             min-width: 45px;
@@ -365,16 +413,17 @@
             flex-wrap: wrap;
         }
         &-button {
-            margin-bottom: 17px;
             margin-right: 15px;
-            padding-left: 12px;
-            padding-right: 12px;
+            margin-bottom: 17px;
             &:last-child {
                 margin-bottom: 0;
             }
         }
         &-button_review {
             order: -1;
+        }
+        &-button_callback {
+            width: 100%;
         }
         &-content {
             margin-bottom: 17px;

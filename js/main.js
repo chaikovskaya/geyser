@@ -611,6 +611,9 @@ function initGalleryCard() {
                 spaceBetween: 12,
             },
             992: {
+                spaceBetween: 15,
+            },
+            1250: {
                 spaceBetween: 25,
             },
         }
