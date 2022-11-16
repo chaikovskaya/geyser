@@ -1988,23 +1988,25 @@ label.form-error {
       width: 17px;
       height: 17px; } }
   @media screen and (max-width: 768px) {
-    .header-top-container {
-      height: 61px;
-      padding-top: 14px; }
-    .header-top-item_logo {
-      width: 50%; }
-    .header-top-item_phone {
-      display: none; }
-    .header-top-item_presentation {
-      display: none; }
-    .header-top-item_socials {
-      display: none; }
-    .header-menu {
-      display: none; }
-    .header-callback-link {
-      min-width: 35px;
-      width: 35px;
-      height: 35px; } }
+    .header {
+      box-shadow: none; }
+      .header-top-container {
+        height: 61px;
+        padding-top: 14px; }
+      .header-top-item_logo {
+        width: 50%; }
+      .header-top-item_phone {
+        display: none; }
+      .header-top-item_presentation {
+        display: none; }
+      .header-top-item_socials {
+        display: none; }
+      .header-menu {
+        display: none; }
+      .header-callback-link {
+        min-width: 35px;
+        width: 35px;
+        height: 35px; } }
 
 .menu-catalog {
   margin-right: 37px; }

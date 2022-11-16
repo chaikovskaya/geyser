@@ -240,6 +240,7 @@
     }
     @media screen
     and (max-width: $mobile){
+        box-shadow: none;
         &-top-container {
             height: 61px;
             padding-top: 14px;
