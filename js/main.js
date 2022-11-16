@@ -629,7 +629,7 @@ function initGalleryCard() {
         },
         pagination: false,
         thumbs: {
-            swiper: galleryThumbs
+            swiper: isStart ? galleryThumbs : false,
         },
         slidesPerView: "auto",
         threshold: 10,
@@ -709,6 +709,47 @@ function initTabCharacteristics() {
     });
 }
 
+function initPopupGallery() {
+    $(".js-popup-gallery").fancybox({
+        loop: true,
+        infobar: false,
+        toolbar  : false,
+        smallBtn : true,
+        arrows : false,
+        animationEffect: "fade",
+        hash : false,
+        backFocus: false,
+        btnTpl: {
+            smallBtn:
+                '<button type="button" data-fancybox-close class="fancybox-close" title="{{CLOSE}}">' +
+                '<i class="fancybox-close-icon"></i>' +
+                '</button>'
+        },
+        beforeClose: function (instance) {
+        },
+        afterShow: function(instance, current) {
+            if ( instance.group.length > 1 && current.$content ) {
+                current.$content.append('' +
+                    '<div class="fancybox-nav-block">' +
+                    '<button class="fancybox-button fancybox-button--arrow_left prev" data-fancybox-prev>' +
+                    '<span class="fancybox-button-icon fancybox-button-icon_left"><span class="fancybox-button-arrow"></span></span>\n' +
+                    '</button>' +
+                    '<button class="fancybox-button fancybox-button--arrow_right next" data-fancybox-next>' +
+                    '<span class="fancybox-button-icon fancybox-button-icon_right"><span class="fancybox-button-arrow"></span></span>\n' +
+                    '</button>' +
+                    '</div>'
+                );
+            }
+        },
+        lang: "ru",
+        i18n: {
+            ru: {
+                CLOSE: "Закрыть",
+            },
+        },
+    });
+}
+
 function initResizeWindow() {
     var width = $(window).outerWidth();
     if (width <= GLOBAL.mobile) {
@@ -773,4 +814,5 @@ $(document).ready(function () {
     initAjaxMoreCatalog();
     initGalleryCard();
     initTabCharacteristics();
+    initPopupGallery();
 });

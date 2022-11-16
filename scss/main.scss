@@ -544,6 +544,13 @@
         height: auto;
     }
 
+    &_simple {
+        &:after {
+            top: -30px;
+            left: -269px;
+        }
+    }
+
     @media screen
     and (max-width: $tablet){
         margin-bottom: 65px;
@@ -558,6 +565,11 @@
         }
         &-inner {
             overflow: visible;
+        }
+        &_simple {
+            &:after {
+                top: -1px;
+            }
         }
     }
     @media screen

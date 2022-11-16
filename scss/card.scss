@@ -64,6 +64,8 @@
     }
     &-gallery-thumbs-list {
         z-index: auto;
+        display: flex;
+        flex-direction: column;
     }
     &-thumbs-item {
         display: flex;
@@ -149,8 +151,8 @@
     &-name {
         margin-right: auto;
         margin-bottom: 0;
-        font-family: 'Raleway', sans-serif;
-        font-weight: 600;
+        font-family: 'Gotham Pro', sans-serif;
+        font-weight: 500;
         font-size: 23px;
         line-height: 33px;
         color: #111111;
@@ -185,9 +187,7 @@
             margin-right: 0;
         }
     }
-    &-button_review {
-        font-weight: 500;
-    }
+    &-button_review {}
     &-button_callback {}
     &-link {
         display: flex;
@@ -302,6 +302,44 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+    &-callback {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 100%;
+        padding: 32px 30px 42px;
+        background-color: #213194;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+    &-callback-name {
+        position: relative;
+        z-index: 1;
+        width: 90%;
+        color: #fff;
+    }
+    &-callback-info {
+        position: relative;
+        z-index: 1;
+        width: 80%;
+        margin-bottom: 19px;
+        color: #fff;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    &-callback-link {
+        position: relative;
+        z-index: 1;
+        margin-top: auto;
+        margin-right: auto;
+    }
+    &-callback-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    &-callback-label {}
 
     @media screen
     and (min-width: $desktop){
@@ -332,6 +370,12 @@
         }
         &-button_callback:hover {
             padding-right: 42px;
+        }
+        &-callback {
+            padding-top: 25px;
+        }
+        &-callback-name {
+            margin-bottom: 15px;
         }
     }
     @media screen
@@ -464,7 +508,37 @@
             line-height: 18px;
             letter-spacing: normal;
         }
-    }
+
+        &-connection {
+            margin-bottom: 56px;
+            margin-left: -12px;
+            margin-right: -12px;
+        }
+        &-connection-item {
+            height: 206px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+        &-callback {
+            padding: 18px 23px 22px;
+        }
+        &-callback-name {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &-callback-info {
+            margin-bottom: 10px;
+            font-size: 14px;
+            line-height: 22px;
+        }
+        &-callback-label {
+            display: none;
+        }
+        &-callback-img {
+            max-height: 180px;
+        }
+     }
 
     @media screen
     and (max-width: $mobile){
@@ -487,6 +561,23 @@
         }
         &-buttons {
             margin-bottom: 31px;
+        }
+        &-connection {
+            flex-direction: column;
+            margin-bottom: 60px;
+        }
+        &-connection-item {
+            width: 100%;
+            margin-bottom: 24px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &-callback-name {
+            margin-bottom: 8px;
+        }
+        &-callback-info {
+            width: 90%;
         }
     }
 }
@@ -577,6 +668,148 @@
     and (max-width: $mobile){
         &-menu-wrapper {
             margin-bottom: 21px;
+        }
+    }
+}
+
+.card-feedback {
+    &-list {
+        display: flex;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    &-item {
+        width: 26%;
+        height: 280px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    &-item_wide {
+        width: 48%;
+    }
+
+    @media screen
+    and (max-width: $tablet){
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            top: -87px;
+            left: 0;
+            width: 54px;
+            height: 199px;
+            margin-left: -29px;
+            background: url(../images/connection/connection-decor-1.png) no-repeat 0 0;
+        }
+        &-list {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        &-item {
+            width: 28%;
+            height: 180px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        &-item_wide {
+            width: 44%;
+        }
+    }
+    @media screen
+    and (max-width: $mobile){
+        &:after {
+            display: none;
+        }
+        &-list {
+            flex-direction: column;
+        }
+        &-item {
+            width: 100%;
+            height: 143px;
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &-item_wide {
+            height: 180px;
+        }
+    }
+}
+
+.questions {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 34px 30px;
+    box-shadow: 0px 0px 30px rgba(206, 206, 206, 0.4);
+    border-radius: 5px;
+    &-name {
+        width: 58%;
+        position: relative;
+        z-index: 1;
+    }
+    &-phone {
+        width: 58%;
+        margin-top: auto;
+        position: relative;
+        z-index: 1;
+    }
+    &-phone-number {
+        margin-bottom: 14px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 23px;
+        color: #213194;
+        a {
+            text-decoration: none;
+        }
+    }
+    &-department {
+        font-size: 14px;
+        line-height: 13px;
+        color: #1B1B1B;
+    }
+    &-img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    @media screen
+    and (max-width: $desktop){
+        padding: 25px 22px;
+        &-name {
+            margin-bottom: 15px;
+            font-size: 20px;
+            line-height: 26px;
+        }
+        &-img {
+            max-height: 250px;
+        }
+        &-phone-number {
+            font-size: 22px;
+        }
+    }
+    @media screen
+    and (max-width: $tablet){
+        padding: 16px 18px 30px;
+        &-name {
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &-phone-number {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 15px;
+        }
+        &-department {
+            font-size: 13px;
+            line-height: 12px;
+        }
+        &-img {
+            max-height: 140px;
         }
     }
 }

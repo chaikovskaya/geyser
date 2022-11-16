@@ -275,6 +275,7 @@ label.form-error {
         font-size: 15px;
         line-height: 1.1em;
         color: #FFFFFF;
+        font-weight: 500;
         background-color: #213194;
         transition: padding-right 0.2s linear;
         &:hover {
@@ -370,6 +371,22 @@ label.form-error {
         }
     }
 
+    &_white {
+        padding: 12px 35px 11px;
+        border: 1px solid #fff;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 1em;
+        &:hover {
+            color: #fff;
+        }
+        &:active {
+            outline: 1px solid #fff;
+            color: #fff;
+        }
+    }
+
     @media screen
     and (max-width: $desktop){
     }
@@ -418,6 +435,10 @@ label.form-error {
         }
         &_wide {
             padding: 11px 22px 10px;
+            font-size: 13px;
+        }
+        &_white {
+            padding: 10px 20px 10px;
             font-size: 13px;
         }
     }

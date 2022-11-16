@@ -64,50 +64,57 @@
 }
 
 .fancybox-button--arrow_left {
-    width: 33px;
+    width: 40px;
     height: 100%;
     background-color: transparent;
-    margin-left: -43px;
+    margin-left: -60px;
 }
 .fancybox-button--arrow_right {
-    width: 33px;
+    width: 40px;
     height: 100%;
     background-color: transparent;
-    margin-right: -43px;
+    margin-right: -60px;
 }
 
 .fancybox-button-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 33px;
-    height: 33px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     background-color: #fff;
     &_left { }
-    &_right {
-    }
+    &_right { }
 }
 .fancybox-button .fancybox-button-arrow {
-    width: 21px;
-    height: 12px;
-    background: url(../images/icons/arrow-left-dark.svg) no-repeat 0 0;
+    width: 9px;
+    height: 14px;
+    margin-left: -1px;
+    background: url("../images/icons/slider-arrow-left.svg") no-repeat 0 0;
+    background-size: 100% auto;
 }
 .fancybox-button--arrow_right .fancybox-button-arrow {
-    background-image: url("../images/icons/arrow-right-dark.svg");
+    margin-left: 1px;
+    background-image: url("../images/icons/slider-arrow-right.svg");
 }
 .fancybox-button[disabled] .fancybox-button-icon {
 }
 .fancybox-button[disabled] .fancybox-button-icon {
 }
 .fancybox-button:hover .fancybox-button-icon {
-    background-color: $color-red;
+    background-color: #213194;
 }
-.fancybox-button:hover .fancybox-button-arrow {
-    background-image: url("../images/icons/arrow-left.svg");
+.fancybox-button:active .fancybox-button-icon {
+    background-color: #0E1E82;
 }
-.fancybox-button--arrow_right:hover .fancybox-button-arrow {
-    background-image: url("../images/icons/arrow-right.svg");
+.fancybox-button:hover .fancybox-button-arrow,
+.fancybox-button:active .fancybox-button-arrow {
+    background-image: url("../images/icons/slider-arrow-left-light.svg");
+}
+.fancybox-button--arrow_right:hover .fancybox-button-arrow,
+.fancybox-button--arrow_right:active .fancybox-button-arrow {
+    background-image: url("../images/icons/slider-arrow-right-light.svg");
 }
 
 .fancybox-slide--image {
@@ -127,6 +134,20 @@
 
 @media screen
 and (max-width: $tablet) {
+    .fancybox-button--arrow_left {
+        width: 30px;
+    }
+    .fancybox-button--arrow_right {
+        width: 30px;
+    }
+    .fancybox-button-icon {
+        width: 30px;
+        height: 30px;
+    }
+    .fancybox-button .fancybox-button-arrow {
+        width: 7px;
+        height: 10px;
+    }
 }
 @media screen
 and (max-width: $mobile) {
@@ -136,6 +157,9 @@ and (max-width: $mobile) {
     .fancybox-close {
         top: -32px;
         margin-left: -24px;
+    }
+    .fancybox-button-icon {
+        box-shadow: 0px 0px 15px rgba(193, 201, 220, 0.5);
     }
     .fancybox-button--arrow_left {
         margin-left: 10px;

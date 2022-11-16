@@ -271,6 +271,7 @@
     &-callback-name {
         color: #fff;
     }
+    &-socials-label-2 {}
     &-callback-info {
         margin-bottom: 16px;
         color: #fff;
@@ -292,6 +293,25 @@
         text-decoration: none;
     }
 
+    @media screen
+    and (max-width: $desktop){
+        &-socials {
+            padding: 25px 22px;
+        }
+        &-socials-name {
+            margin-bottom: 15px;
+            font-size: 20px;
+            line-height: 26px;
+        }
+        &-callback {
+            padding: 25px 22px;
+        }
+        &-callback-name {
+            margin-bottom: 15px;
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
     @media screen
     and (max-width: $tablet){
         &:after {
@@ -316,7 +336,7 @@
             width: 42%;
         }
         &-socials {
-            padding: 17px 18px 22px;
+            padding: 17px 16px 22px;
         }
         &-socials-name {
             margin-bottom: 10px;
@@ -372,6 +392,14 @@
         }
         &-item_video {
             width: 100%;
+        }
+        &-socials-label-1 {
+            &:after {
+                content: '.';
+            }
+        }
+        &-socials-label-2 {
+            display: none;
         }
     }
 }
