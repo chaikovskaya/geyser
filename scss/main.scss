@@ -1915,6 +1915,28 @@
         text-transform: none;
     }
 
+    &_review {
+        height: 200px;
+    }
+    &_review &-container {
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 100%;
+            margin-left: -574px;
+            height: 100%;
+            width: 1026px;
+            max-width: none;
+            background: url("../images/review/review-main-decor.png") no-repeat 0 0;
+            background-size: cover;
+        }
+    }
+    &_review &-title {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
     @media screen
     and (max-width: $tablet) {
         height: 193px;
@@ -1947,6 +1969,20 @@
                 margin-right: -62px;
                 background-size: 100% auto;
             }
+        }
+        &_review {
+            height: 184px;
+        }
+        &_review &-container {
+            &:after {
+                margin-left: -427px;
+                width: 399px;
+                background-image: url("../images/review/review-main-decor-1.png");
+            }
+        }
+        &_review &-title {
+            font-size: 32px;
+            line-height: 45px;
         }
     }
     @media screen
@@ -1983,6 +2019,18 @@
         }
         &_catalog &-title {
             top: 0;
+        }
+        &_review &-container {
+            &:after {
+                top: auto;
+                bottom: 0;
+                left: auto;
+                right: 0;
+                width: 333px;
+                height: 234px;
+                margin-left: 0;
+                background-image: url("../images/review/review-main-decor-2.png");
+            }
         }
     }
 }

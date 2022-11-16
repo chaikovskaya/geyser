@@ -4313,6 +4313,22 @@ body.mob-menu-show {
     font-size: 30px;
     line-height: 48px;
     text-transform: none; }
+  .main-block_review {
+    height: 200px; }
+  .main-block_review .main-block-container:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-left: -574px;
+    height: 100%;
+    width: 1026px;
+    max-width: none;
+    background: url("../images/review/review-main-decor.png") no-repeat 0 0;
+    background-size: cover; }
+  .main-block_review .main-block-title {
+    font-size: 36px;
+    line-height: 46px; }
   @media screen and (max-width: 992px) {
     .main-block {
       height: 193px;
@@ -4336,7 +4352,16 @@ body.mob-menu-show {
         height: 148px;
         width: 346px;
         margin-right: -62px;
-        background-size: 100% auto; } }
+        background-size: 100% auto; }
+      .main-block_review {
+        height: 184px; }
+      .main-block_review .main-block-container:after {
+        margin-left: -427px;
+        width: 399px;
+        background-image: url("../images/review/review-main-decor-1.png"); }
+      .main-block_review .main-block-title {
+        font-size: 32px;
+        line-height: 45px; } }
   @media screen and (max-width: 768px) {
     .main-block {
       margin-bottom: 34px;
@@ -4363,7 +4388,16 @@ body.mob-menu-show {
         margin-right: -15px;
         background-image: url("../images/catalog/catalog-main-block-1.png"); }
       .main-block_catalog .main-block-title {
-        top: 0; } }
+        top: 0; }
+      .main-block_review .main-block-container:after {
+        top: auto;
+        bottom: 0;
+        left: auto;
+        right: 0;
+        width: 333px;
+        height: 234px;
+        margin-left: 0;
+        background-image: url("../images/review/review-main-decor-2.png"); } }
 
 .catalog-category-wrapper {
   overflow: hidden;
