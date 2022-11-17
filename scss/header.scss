@@ -918,6 +918,28 @@ body.mob-menu-show {
         background-color: #0E1E82;
     }
 
+    &_simple {}
+    &_simple &-link {
+        min-width: 40px;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-width: 0;
+        &:hover {
+            background-color: #213194;
+        }
+        &:active {
+            background-color: #0E1E82;
+        }
+    }
+    &_simple &-icon_tg {
+        width: 18px;
+        height: 16px;
+    }
+    &_simple &-icon_youtube {
+        width: 19px;
+        height: 12px;
+    }
 
     @media screen
     and (min-width: $tablet){
@@ -935,6 +957,26 @@ body.mob-menu-show {
             width: 19px;
             height: 12px;
             margin-top: 0;
+        }
+    }
+    @media screen
+    and (max-width: $tablet){
+        &_simple &-link {
+            min-width: 35px;
+            width: 35px;
+            height: 35px;
+        }
+        &_simple &-icon_tg {
+            width: 17px;
+            height: 15px;
+        }
+        &_simple &-icon_youtube {
+            margin-top: 0;
+            width: 18px;
+        }
+        &_simple {}
+        &_simple &-item {
+            margin-right: 11px;
         }
     }
 }

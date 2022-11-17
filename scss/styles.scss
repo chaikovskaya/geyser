@@ -614,6 +614,33 @@ blockquote {
 		background-image: url("../images/icons/slider-arrow-right-light.svg");
 	}
 
+	&-nav_dark {}
+	&-nav_dark &-count {
+		color: #213194;
+	}
+	&-nav_dark &-count-current {
+		color: #213194;
+	}
+	&-nav_dark &-count-decor {
+		background-color: #213194;
+	}
+	&-nav_dark &-button-icon  {
+		background-image: url("../images/icons/slider-arrow-left.svg");
+	}
+	&-nav_dark &-button-icon_right  {
+		background-image: url("../images/icons/slider-arrow-right.svg");
+	}
+	&-nav_dark &-button:hover:not(&-button_disabled) &-button-icon,
+	&-nav_dark &-button:active:not(&-button_disabled) &-button-icon {
+		background-image: url("../images/icons/slider-arrow-left.svg");
+		opacity: 0.8;
+	}
+	&-nav_dark &-button_next:hover:not(&-button_disabled) &-button-icon_right,
+	&-nav_dark &-button_next:active:not(&-button_disabled) &-button-icon_right {
+		background-image: url("../images/icons/slider-arrow-right.svg");
+		opacity: 0.8;
+	}
+
 	@media screen
 	and (max-width: $tablet) {
 		&-count {

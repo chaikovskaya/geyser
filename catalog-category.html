@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Отзывы. Гейзер</title>
+    <title>Каталог. Гейзер</title>
 
     <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
@@ -442,7 +442,7 @@
         </header>
 
         <main class="main-content">
-            <div class="main-block main-block_review">
+            <div class="main-block main-block_catalog-category">
                 <div class="main-block-container container">
                     <div class="breadcrumbs js-expand" data-expand="{
                         'classActive': 'breadcrumbs_active',
@@ -454,237 +454,332 @@
                                 <span class="breadcrumbs-icon"></span>
                             </li>
                             <li class="breadcrumbs-item">
-                                <a class="breadcrumbs-link" href="#">Покупателям</a>
+                                <a class="breadcrumbs-link" href="#">Каталог</a>
                                 <span class="breadcrumbs-icon"></span>
                             </li>
-                            <li class="breadcrumbs-item">Отзывы</li>
+                            <li class="breadcrumbs-item">Оборудование для очистки поверхности/ Моечное оборудование</li>
                             <li class="breadcrumbs-item breadcrumbs-item_more">
                                 <a class="breadcrumbs-link js-expand-link" href="javascript:;"></a>
                             </li>
                         </ul>
                     </div>
-                    <h1 class="main-block-title">Отзывы</h1>
+                    <h1 class="main-block-title">КАТАЛОГ</h1>
                 </div>
             </div>
 
-            <div class="container">
-                <div class="review JS-AjaxMoreReview">
-                    <ul class="review-list JS-AjaxMore-Content">
-                        <li class="review-list-item">
-                            <div class="review-block">
-                                <div class="review-img">
-                                    <img class="review-pic" alt="" src="./images/review/review-img-1.png" />
-                                </div>
-                                <div class="review-detail">
-                                    <div class="review-panel">
-                                        <div class="review-photo">
-                                            <img class="review-photo-pic" alt="" src="./images/review/review-photo-img-1.png" />
-                                        </div>
-                                        <div class="review-main">
-                                            <span class="review-name">Иван Петровский</span>
-                                            <span class="review-company">ООО “Автосервис”</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-date">02.12.2020, Ярославль</div>
-                                    <div class="review-info content">Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate sed turpis augue ac ultrices</div>
-                                    <a class="review-more" href="#">Показать полностью</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="review-list-item">
-                            <div class="review-block">
-                                <div class="review-img">
-                                    <img class="review-pic" alt="" src="./images/review/review-img-2.png" />
-                                </div>
-                                <div class="review-detail">
-                                    <div class="review-panel">
-                                        <div class="review-photo">
-                                            <img class="review-photo-pic" alt="" src="./images/review/review-photo-img-2.jpg" />
-                                        </div>
-                                        <div class="review-main">
-                                            <span class="review-name">Иван Петровский</span>
-                                            <span class="review-company">ООО “Автосервис”</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-date">02.12.2020, Ярославль</div>
-                                    <div class="review-info content">Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate sed turpis augue ac ultrices</div>
-                                    <a class="review-more" href="#">Показать полностью</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="review-list-item">
-                            <div class="review-block">
-                                <div class="review-img">
-                                    <img class="review-pic" alt="" src="./images/review/review-img-3.png" />
-                                </div>
-                                <div class="review-detail">
-                                    <div class="review-panel">
-                                        <div class="review-photo">
-                                            <img class="review-photo-pic" alt="" src="./images/review/review-photo-img-3.jpg" />
-                                        </div>
-                                        <div class="review-main">
-                                            <span class="review-name">Иван Петровский</span>
-                                            <span class="review-company">ООО “Автосервис”</span>
+            <div class="catalog-category-wrapper">
+                <div class="catalog-category-container container js-slider-catalog-category">
+                    <div class="js-slider-list">
+                        <div class="catalog-category-element swiper-wrapper">
+                            <div class="catalog-category-element-item swiper-slide">
+                                <ul class="catalog-category-list">
+                                <li class="catalog-category-list-item catalog-category-list-item_long">
+                                    <div class="catalog-category-block">
+                                        <div class="catalog-category-inner">
+                                            <a class="catalog-category-name" href="#">Оборудование для очистки поверхности/Моечное оборудование</a>
+                                            <ul class="catalog-category-menu">
+                                                <!-- Не более 5 пунктов! -->
+                                                <li class="catalog-category-menu-item">
+                                                    <a class="catalog-category-menu-link" href="#">Моечные машины вертикальной загрузкой</a>
+                                                </li>
+                                                <li class="catalog-category-menu-item">
+                                                    <a class="catalog-category-menu-link" href="#">Моечные машины с ручной доработкой</a>
+                                                </li>
+                                                <li class="catalog-category-menu-item">
+                                                    <a class="catalog-category-menu-link" href="#">Фронтальные моечные машины</a>
+                                                </li>
+                                                <li class="catalog-category-menu-item">
+                                                    <a class="catalog-category-menu-link" href="#">Портальные моечные машины</a>
+                                                </li>
+                                                <li class="catalog-category-menu-item">
+                                                    <a class="catalog-category-menu-link" href="#">Туннельные моечные машины</a>
+                                                </li>
+                                            </ul>
+                                            <a class="catalog-category-link" href="#">
+                                                <span class="catalog-category-pic">
+                                                    <img class="catalog-category-img" src="./images/catalog-category/catalog-category-img-1.png" alt="" />
+                                                </span>
+                                                <span class="catalog-category-more">Смотреть</span>
+                                                <span class="catalog-category-button">
+                                                    <i class="catalog-category-icon icon icon_arrow-right-light"></i>
+                                                </span>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="review-date">02.12.2020, Ярославль</div>
-                                    <div class="review-info content">Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate sed turpis augue ac ultrices</div>
-                                    <a class="review-more" href="#">Показать полностью</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="review-list-item">
-                            <div class="review-block">
-                                <div class="review-img">
-                                    <img class="review-pic" alt="" src="./images/review/review-img-4.png" />
-                                </div>
-                                <div class="review-detail">
-                                    <div class="review-panel">
-                                        <div class="review-photo">
-                                            <img class="review-photo-pic" alt="" src="./images/review/review-photo-img-1.png" />
-                                        </div>
-                                        <div class="review-main">
-                                            <span class="review-name">Иван Петровский</span>
-                                            <span class="review-company">ООО “Автосервис”</span>
+                                </li>
+                                <li class="catalog-category-list-item">
+                                    <div class="catalog-category-block">
+                                        <div class="catalog-category-inner">
+                                            <a class="catalog-category-name" href="#">ИСПЫТАТЕЛЬНОЕ ОБОРУДОВАНИЕ</a>
+                                            <a class="catalog-category-link" href="#">
+                                                <span class="catalog-category-pic">
+                                                    <img class="catalog-category-img" src="./images/catalog-category/catalog-category-img-1.png" alt="" />
+                                                </span>
+                                                <span class="catalog-category-more">Смотреть</span>
+                                                <span class="catalog-category-button">
+                                                    <i class="catalog-category-icon icon icon_arrow-right-light"></i>
+                                                </span>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="review-date">02.12.2020, Ярославль</div>
-                                    <div class="review-info content">Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate sed turpis augue ac ultrices</div>
-                                    <a class="review-more" href="#">Показать полностью</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="review-list-item">
-                            <div class="review-block">
-                                <div class="review-img">
-                                    <img class="review-pic" alt="" src="./images/review/review-img-5.png" />
-                                </div>
-                                <div class="review-detail">
-                                    <div class="review-panel">
-                                        <div class="review-photo">
-                                            <img class="review-photo-pic" alt="" src="./images/review/review-photo-img-2.jpg" />
-                                        </div>
-                                        <div class="review-main">
-                                            <span class="review-name">Иван Петровский</span>
-                                            <span class="review-company">ООО “Автосервис”</span>
+                                </li>
+                                <li class="catalog-category-list-item">
+                                    <div class="catalog-category-block">
+                                        <div class="catalog-category-inner">
+                                            <a class="catalog-category-name" href="#">НЕСТАНДАРТНЫЕ ПРОЕКТЫ</a>
+                                            <a class="catalog-category-link" href="#">
+                                                <span class="catalog-category-pic">
+                                                    <img class="catalog-category-img" src="./images/catalog-category/catalog-category-img-2.png" alt="" />
+                                                </span>
+                                                <span class="catalog-category-more">Смотреть</span>
+                                                <span class="catalog-category-button">
+                                                    <i class="catalog-category-icon icon icon_arrow-right-light"></i>
+                                                </span>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="review-date">02.12.2020, Ярославль</div>
-                                    <div class="review-info content">Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate sed turpis augue ac ultrices</div>
-                                    <a class="review-more" href="#">Показать полностью</a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="review-list-item">
-                            <div class="review-block">
-                                <div class="review-img">
-                                    <img class="review-pic" alt="" src="./images/review/review-img-6.png" />
-                                </div>
-                                <div class="review-detail">
-                                    <div class="review-panel">
-                                        <div class="review-photo">
-                                            <img class="review-photo-pic" alt="" src="./images/review/review-photo-img-3.jpg" />
-                                        </div>
-                                        <div class="review-main">
-                                            <span class="review-name">Иван Петровский</span>
-                                            <span class="review-company">ООО “Автосервис”</span>
+                                </li>
+                                <li class="catalog-category-list-item">
+                                    <div class="catalog-category-block">
+                                        <div class="catalog-category-inner">
+                                            <a class="catalog-category-name" href="#">МОЮЩИЕ СРЕДСТВА</a>
+                                            <a class="catalog-category-link" href="#">
+                                                <span class="catalog-category-pic">
+                                                    <img class="catalog-category-img" src="./images/catalog-category/catalog-category-img-3.png" alt="" />
+                                                </span>
+                                                <span class="catalog-category-more">Смотреть</span>
+                                                <span class="catalog-category-button">
+                                                    <i class="catalog-category-icon icon icon_arrow-right-light"></i>
+                                                </span>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div class="review-date">02.12.2020, Ярославль</div>
-                                    <div class="review-info content">Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate sed turpis augue ac ultrices</div>
-                                    <a class="review-more" href="#">Показать полностью</a>
-                                </div>
+                                </li>
+                                <li class="catalog-category-list-item">
+                                    <div class="catalog-category-block">
+                                        <div class="catalog-category-inner">
+                                            <a class="catalog-category-name" href="#">ВСПОМОГАТЕЛЬНОЕ ОБОРУДОВАНИЕ</a>
+                                            <a class="catalog-category-link" href="#">
+                                                <span class="catalog-category-pic">
+                                                    <img class="catalog-category-img" src="./images/catalog-category/catalog-category-img-4.png" alt="" />
+                                                </span>
+                                                <span class="catalog-category-more">Смотреть</span>
+                                                <span class="catalog-category-button">
+                                                    <i class="catalog-category-icon icon icon_arrow-right-light"></i>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                             </div>
-                        </li>
-                    </ul>
-                    <div class="load-more">
-                        <a class="load-more-link button button_modified JS-AjaxMore-Link" href="javascript:;" data-ajaxmore-url="./ajax/review.html">
-                            ПОКАЗАТЬ ЕЩЁ<i class="load-more-icon"></i>
-                        </a>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <section class="certificates js-slider-certificates">
-                    <h2 class="certificates-title h1">Сертификаты соответствия</h2>
-                    <div class="certificates-slider-nav slider-nav slider-nav_dark">
-                        <div class="slider-count">
-                            <span class="slider-count-current js-slider-count">1</span> / <span class="slider-count-common">2</span>
-                        </div>
-                        <div class="slider-count-decor"></div>
-                        <div class="slider-button slider-button_prev js-slider-prev">
-                            <span class="slider-button-icon"></span>
-                        </div>
-                        <div class="slider-button slider-button_next js-slider-next">
-                            <span class="slider-button-icon slider-button-icon_right"></span>
-                        </div>
+            <section class="advantages advantages_simple">
+                <div class="advantages-container container">
+                    <div class="advantages-detail">
+                        <h2 class="advantages-name h1">ПРЕИМУЩЕСТВА ИСПОЛЬЗОВАНИЯ</h2>
+                        <div class="advantages-info content">Простота обслуживания и&nbsp;высокий уровень ремонтопригодности.</div>
+                        <a class="main-banner-button button button_dark" href="#">
+                            ОСТАВИТЬ ЗАЯВКУ<span class="button-icon"><i class="button-icon-pic icon icon_arrow-right-button"></i></span>
+                        </a>
                     </div>
-                    <div class="certificates-inner js-slider-list">
-                        <ul class="certificates-list swiper-wrapper">
-                            <li class="certificates-list-item swiper-slide" data-slider-index="1">
-                                <a class="certificates-block" href="#" download>
-                                    <span class="certificates-panel">
-                                        <span class="certificates-name h2">Декларация о соответствии</span>
-                                        <span class="certificates-button">
-                                            <i class="certificates-icon icon icon_download"></i>
+                    <div class="advantages-block">
+                        <!-- Выводить Не более 4 шт. -->
+                        <ul class="advantages-list">
+                            <li class="advantages-list-item">
+                                <div class="advantages-list-block">
+                                    <div class="advantages-list-name">МОЙКИ СТО</div>
+                                    <div class="advantages-list-info content">24 месяца – гарантия бесперебойной работы оборудования;</div>
+                                </div>
+                            </li>
+                            <li class="advantages-list-item">
+                                <div class="advantages-list-block">
+                                    <div class="advantages-list-name">ОПРЕССОВКИ</div>
+                                    <div class="advantages-list-info content">24 часа на решение вопросов работоспособ<span class="advantages-label">ности</span><span class="advantages-point">.</span> оборудования</div>
+                                </div>
+                            </li>
+                            <li class="advantages-list-item">
+                                <div class="advantages-list-block">
+                                    <div class="advantages-list-name">ВРЕМЯ</div>
+                                    <div class="advantages-list-info content">Автоматическая очистка поверхностей в 5 раз быстрее ручной</div>
+                                </div>
+                            </li>
+                            <li class="advantages-list-item">
+                                <div class="advantages-list-block">
+                                    <div class="advantages-list-name">НАДЁЖНОСТЬ</div>
+                                    <div class="advantages-list-info content">Испытание каждой единицы оборудования перед отгрузкой</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="advantages-decor">
+                    <img class="advantages-img" src="./images/advantages/advantages-img-1.jpg" alt="" />
+                    <div class="advantages-layer"></div>
+                </div>
+            </section>
+
+            <section class="production container">
+                <h2 class="production-title h1">Продукция</h2>
+                <a class="section-button button button_modified" href="#">В каталог</a>
+                <div class="production-wrapper js-slider-production">
+                    <div class="production-inner js-slider-list">
+                        <ul class="production-list swiper-wrapper">
+                            <li class="production-list-item swiper-slide">
+                                <a href="#" class="product">
+                                    <span class="product-img">
+                                        <img class="product-pic swiper-lazy" data-src="./images/production/product-img-1.png" alt="" />
+                                    </span>
+                                    <span class="product-price">120 000 <span class="product-currency currency">i</span></span>
+                                    <span class="product-name">Автоматическая промывочная установка апу 1800</span>
+                                    <span class="product-props">
+                                        <span class="product-props-item">
+                                            <span class="product-props-name">Длина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span>, мм</span>
+                                            <span class="product-props-value">1000</span>
+                                        </span>
+                                        <span class="product-props-item">
+                                            <span class="product-props-name">Ширина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span></span>
+                                            <span class="product-props-value">1000</span>
                                         </span>
                                     </span>
-                                    <span class="certificates-info content">Сертификат соответствия эксперта-аудитора требования ISO 9001:2015, выданный ООО «ТЭС»</span>
+                                    <span class="product-button button button_light">
+                                        Подробнее<span class="button-icon"><i class="button-icon-pic icon icon_arrow-right-button"></i></span>
+                                    </span>
                                 </a>
                             </li>
-                            <li class="certificates-list-item swiper-slide" data-slider-index="2">
-                                <a class="certificates-block" href="#" download>
-                                    <span class="certificates-panel">
-                                        <span class="certificates-name h2">Сертификат соответствия</span>
-                                        <span class="certificates-button">
-                                            <i class="certificates-icon icon icon_download"></i>
+                            <li class="production-list-item swiper-slide">
+                                <a href="#" class="product">
+                                    <span class="product-img">
+                                        <img class="product-pic swiper-lazy" data-src="./images/production/product-img-2.png" alt="" />
+                                        <span class="marks">
+                                            <span class="marks-item">
+                                                <span class="marks-label marks-label_hit">Хит</span>
+                                            </span>
                                         </span>
                                     </span>
-                                    <span class="certificates-info content">Сертификат соответствия эксперта-аудитора требования ISO 9001:2015, выданный ООО «ТЭС»</span>
+                                    <span class="product-price">320 000 <span class="product-currency currency">i</span></span>
+                                    <span class="product-name">Автоматическая промывочная установка апу 1800</span>
+                                    <span class="product-props">
+                                        <span class="product-props-item">
+                                            <span class="product-props-name">Длина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span>, мм</span>
+                                            <span class="product-props-value">1000</span>
+                                        </span>
+                                        <span class="product-props-item">
+                                            <span class="product-props-name">Ширина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span></span>
+                                            <span class="product-props-value">1000</span>
+                                        </span>
+                                    </span>
+                                    <span class="product-button button button_light">
+                                        Подробнее<span class="button-icon"><i class="button-icon-pic icon icon_arrow-right-button"></i></span>
+                                    </span>
                                 </a>
                             </li>
-                            <li class="certificates-list-item swiper-slide" data-slider-index="3">
-                                <a class="certificates-block" href="#" download>
-                                    <span class="certificates-panel">
-                                        <span class="certificates-name h2">Декларация о соответствии</span>
-                                        <span class="certificates-button">
-                                            <i class="certificates-icon icon icon_download"></i>
+                            <li class="production-list-item swiper-slide">
+                                <a href="#" class="product">
+                                    <span class="product-img">
+                                        <img class="product-pic swiper-lazy" data-src="./images/production/product-img-3.png" alt="" />
+                                        <span class="marks">
+                                            <span class="marks-item">
+                                                <span class="marks-label marks-label_new">Новинка</span>
+                                            </span>
                                         </span>
                                     </span>
-                                    <span class="certificates-info content">Сертификат соответствия эксперта-аудитора требования ISO 9001:2015, выданный ООО «ТЭС»</span>
+                                    <span class="product-price">120 000 <span class="product-currency currency">i</span></span>
+                                    <span class="product-name">Автоматическая промывочная установка апу 1800</span>
+                                    <span class="product-props">
+                                        <span class="product-props-item">
+                                            <span class="product-props-name">Длина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span>, мм</span>
+                                            <span class="product-props-value">1000</span>
+                                        </span>
+                                        <span class="product-props-item">
+                                            <span class="product-props-name">Ширина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span></span>
+                                            <span class="product-props-value">1000</span>
+                                        </span>
+                                    </span>
+                                    <span class="product-button button button_light">
+                                        Подробнее<span class="button-icon"><i class="button-icon-pic icon icon_arrow-right-button"></i></span>
+                                    </span>
                                 </a>
                             </li>
-                            <li class="certificates-list-item swiper-slide" data-slider-index="4">
-                                <a class="certificates-block" href="#" download>
-                                    <span class="certificates-panel">
-                                        <span class="certificates-name h2">Сертификат соответствия</span>
-                                        <span class="certificates-button">
-                                            <i class="certificates-icon icon icon_download"></i>
+                            <li class="production-list-item swiper-slide">
+                                <a href="#" class="product">
+                                    <span class="product-img">
+                                        <img class="product-pic swiper-lazy" data-src="./images/production/product-img-4.png" alt="" />
+                                    </span>
+                                    <span class="product-price">120 000 <span class="product-currency currency">i</span></span>
+                                    <span class="product-name">Автоматическая промывочная установка апу 1800</span>
+                                    <span class="product-props">
+                                        <span class="product-props-item">
+                                            <span class="product-props-name">Длина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span>, мм</span>
+                                            <span class="product-props-value">1000</span>
+                                        </span>
+                                        <span class="product-props-item">
+                                            <span class="product-props-name">Ширина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span></span>
+                                            <span class="product-props-value">1000</span>
                                         </span>
                                     </span>
-                                    <span class="certificates-info content">Сертификат соответствия эксперта-аудитора требования ISO 9001:2015, выданный ООО «ТЭС»</span>
+                                    <span class="product-button button button_light">
+                                        Подробнее<span class="button-icon"><i class="button-icon-pic icon icon_arrow-right-button"></i></span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="production-list-item swiper-slide">
+                                <a href="#" class="product">
+                                    <span class="product-img">
+                                        <img class="product-pic swiper-lazy" data-src="./images/production/product-img-5.png" alt="" />
+                                        <span class="marks">
+                                            <span class="marks-item">
+                                                <span class="marks-label marks-label_hit">Хит</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="product-price">120 000 <span class="product-currency currency">i</span></span>
+                                    <span class="product-name">Автоматическая промывочная установка апу 1800</span>
+                                    <span class="product-props">
+                                        <span class="product-props-item">
+                                            <span class="product-props-name">Длина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span>, мм</span>
+                                            <span class="product-props-value">1000</span>
+                                        </span>
+                                        <span class="product-props-item">
+                                            <span class="product-props-name">Ширина обрабат. дет<span class="product-props-label">али</span><span class="product-props-point">.</span></span>
+                                            <span class="product-props-value">1000</span>
+                                        </span>
+                                    </span>
+                                    <span class="product-button button button_light">
+                                        Подробнее<span class="button-icon"><i class="button-icon-pic icon icon_arrow-right-button"></i></span>
+                                    </span>
                                 </a>
                             </li>
                         </ul>
                     </div>
-                </section>
+                    <div class="slider-simple-button slider-simple-button_prev js-slider-prev">
+                        <span class="slider-simple-icon slider-simple-icon_prev"></span>
+                    </div>
+                    <div class="slider-simple-button slider-simple-button_next js-slider-next">
+                        <span class="slider-simple-icon slider-simple-icon_next"></span>
+                    </div>
+                </div>
+            </section>
 
-                <div class="subscribe">
-                    <div class="subscribe-video">
-                        <a class="subscribe-video-block js-popup" href="https://youtu.be/srepKrsWsbg">
-                            <img class="subscribe-video-preview" src="./images/connection/connection-img-1.png" alt="" />
+            <div class="connection container">
+                <div class="connection-list">
+                    <div class="connection-item connection-item_video">
+                        <a class="connection-video js-popup" href="https://youtu.be/srepKrsWsbg">
+                            <img class="connection-video-preview" src="./images/connection/connection-img-1.png" alt="" />
                             <span class="play play_simple">
                                 <span class="play-icon"></span>
                             </span>
                         </a>
                     </div>
-                    <div class="subscribe-detail">
-                        <div class="subscribe-name">Следите за нами в социальных сетях!</div>
-                        <div class="subscribe-info content">Идея создания собственной моечной установки зародилась в 2007 году. В то время на рынке</div>
-                        <div class="subscribe-links">
-                            <a class="subscribe-button button button_dark" href="#">
-                                Подписаться<span class="button-icon"><i class="button-icon-pic icon icon_arrow-right-button"></i></span>
-                            </a>
-                            <ul class="socials socials_simple">
+                    <div class="connection-item">
+                        <div class="connection-socials">
+                            <div class="connection-socials-name h2">Следите за нами в <span class="connection-socials-label-1">соц</span><span class="connection-socials-label-2">иальных</span> сетях</div>
+                            <div class="connection-socials-info content">Enim blandit rhoncus purus aliquam varius ultrices neque consequat,</div>
+                            <ul class="socials socials_light socials_wide">
                                 <li class="socials-item">
                                     <a class="socials-link" href="#">
                                         <i class="socials-icon socials-icon_tg"></i>
@@ -698,8 +793,14 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="connection-item">
+                        <a class="connection-callback js-popup-callback" href="javascript:;" data-src="./ajax/callback.html">
+                            <span class="connection-callback-name h2">Закажите обратный звонок</span>
+                            <span class="connection-callback-info content">Профессиональный монтаж и&nbsp;установка нашего оборудования</span>
+                            <span class="connection-callback-link">Заказать</span>
+                        </a>
+                    </div>
                 </div>
-
             </div>
 
         </main>
@@ -881,7 +982,6 @@
     <script defer src="./libs/wow/wow.min.js"></script>
     <script src="./js/JSC.Dropdown.js"></script>
     <script src="./js/JSC.MobileMenu.js"></script>
-    <script src="./js/JSC.AjaxMore.js"></script>
 
     <script src="./js/main.js"></script>
 
