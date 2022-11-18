@@ -283,3 +283,12 @@ and (max-width: $mobile) {
         }
     }
 }
+
+.map-popup {
+    max-width: 220px;
+    &-body {
+        font-size: 14px;
+        line-height: 21px;
+        font-family: 'Gotham Pro', sans-serif;
+    }
+}

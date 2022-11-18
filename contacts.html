@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Отзывы. Гейзер</title>
+    <title>Контакты. Гейзер</title>
 
     <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
@@ -442,7 +442,7 @@
         </header>
 
         <main class="main-content">
-            <div class="main-block main-block_review">
+            <div class="main-block main-block_contacts">
                 <div class="main-block-container container">
                     <div class="breadcrumbs js-expand" data-expand="{
                         'classActive': 'breadcrumbs_active',
@@ -453,289 +453,169 @@
                                 <a class="breadcrumbs-link" href="/">Главная</a>
                                 <span class="breadcrumbs-icon"></span>
                             </li>
-                            <li class="breadcrumbs-item">
-                                <a class="breadcrumbs-link" href="#">Покупателям</a>
-                                <span class="breadcrumbs-icon"></span>
-                            </li>
-                            <li class="breadcrumbs-item">Отзывы</li>
+                            <li class="breadcrumbs-item">Контакты</li>
                             <li class="breadcrumbs-item breadcrumbs-item_more">
                                 <a class="breadcrumbs-link js-expand-link" href="javascript:;"></a>
                             </li>
                         </ul>
                     </div>
-                    <h1 class="main-block-title">Отзывы</h1>
+                    <h1 class="main-block-title">КОНТАКТЫ</h1>
                 </div>
             </div>
 
-            <div class="container">
-                <div class="review JS-AjaxMoreReview">
-                    <ul class="review-list JS-AjaxMore-Content">
-                        <li class="review-list-item">
-                            <div class="review-block">
-                                <div class="review-img">
-                                    <img class="review-pic" alt="" src="./images/review/review-img-1.png" />
-                                </div>
-                                <div class="review-detail js-view-text" data-view-start="review-detail_start" data-view-active="review-detail_active">
-                                    <div class="review-panel">
-                                        <div class="review-photo">
-                                            <img class="review-photo-pic" alt="" src="./images/review/review-photo-img-1.png" />
+            <div class="contacts-wrapper">
+                <div class="contacts js-map"
+                    data-objectcoord="[53.197340, 45.206208]"
+                    data-map-id="map"
+                    data-map-icon="./images/contacts/mark-icon.png"
+                    data-icon-size="[70, 70]"
+                    data-class-active="addresses-list-item_active"
+                >
+                    <div class="contacts-container container">
+                        <div class="contacts-detail">
+                            <ul class="contacts-list">
+                                <li class="contacts-list-item">
+                                    <div class="contacts-list-panel">
+                                        <div class="contacts-list-img">
+                                            <span class="contacts-list-icon">
+                                                <img class="contacts-list-pic" src="./images/contacts/contacts-phone-icon.svg" alt="" />
+                                            </span>
                                         </div>
-                                        <div class="review-main">
-                                            <span class="review-name">Иван Петровский</span>
-                                            <span class="review-company">ООО “Автосервис”</span>
-                                        </div>
+                                        <div class="contacts-list-name">Телефон</div>
                                     </div>
-                                    <!-- Этот review-date блок не убирать, даже если он пустой будет -->
-                                    <div class="review-date">02.12.2020, Ярославль</div>
-                                    <div class="review-info content js-view-text-parent">
-                                        <div class="review-info-inner js-view-text-child">Enim blandit rhoncus purus aliqua varius ultrices neque consequat, vulputate sed turpis augue ac ultrices Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate sed turpis augue ac ultrices</div>
-                                    </div>
-                                    <a class="review-more js-view-text-switcher" href="javascript:;">
-                                        <span class="review-more-show">Показать полностью</span>
-                                        <span class="review-more-hide">Свернуть</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="review-list-item">
-                            <div class="review-block">
-                                <div class="review-img">
-                                    <img class="review-pic" alt="" src="./images/review/review-img-2.png" />
-                                </div>
-                                <div class="review-detail js-view-text" data-view-start="review-detail_start" data-view-active="review-detail_active">
-                                    <div class="review-panel">
-                                        <div class="review-photo">
-                                            <img class="review-photo-pic" alt="" src="./images/review/review-photo-img-2.jpg" />
-                                        </div>
-                                        <div class="review-main">
-                                            <span class="review-name">Иван Петровский</span>
-                                            <span class="review-company">ООО “Автосервис”</span>
+                                    <div class="contacts-list-content content">
+                                        <div class="contacts-list-box">
+                                            <div class="contacts-list-block">
+                                                <div class="contacts-list-department">Отдел продаж</div>
+                                                <div class="contacts-list-phone"><a href="tel:+78005505089">8 800 550-50-89</a></div>
+                                            </div>
+                                            <div class="contacts-list-block">
+                                                <div class="contacts-list-department">Сервис</div>
+                                                <div class="contacts-list-phone"><a href="tel:+78005505089">8 800 550-50-89</a></div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="review-date">02.12.2020, Ярославль</div>
-                                    <div class="review-info content js-view-text-parent">
-                                        <div class="review-info-inner js-view-text-child">Enim blandit rhoncus purus aliqua varius ultrices neque consequat, vulputate sed turpis augue ac ultrices Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate sed turpis augue ac ultrices</div>
-                                    </div>
-                                    <a class="review-more js-view-text-switcher" href="javascript:;">
-                                        <span class="review-more-show">Показать полностью</span>
-                                        <span class="review-more-hide">Свернуть</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="review-list-item">
-                            <div class="review-block">
-                                <div class="review-img">
-                                    <img class="review-pic" alt="" src="./images/review/review-img-3.png" />
-                                </div>
-                                <div class="review-detail js-view-text" data-view-start="review-detail_start" data-view-active="review-detail_active">
-                                    <div class="review-panel">
-                                        <div class="review-photo">
-                                            <img class="review-photo-pic" alt="" src="./images/review/review-photo-img-3.jpg" />
-                                        </div>
-                                        <div class="review-main">
-                                            <span class="review-name">Иван Петровский</span>
-                                            <span class="review-company">ООО “Автосервис”</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-date">02.12.2020, Ярославль</div>
-                                    <div class="review-info content js-view-text-parent">
-                                        <div class="review-info-inner js-view-text-child">Enim blandit rhoncus purus aliqua varius ultrices neque consequat, vulputate sed turpis augue ac ultrices Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate sed turpis augue ac ultrices</div>
-                                    </div>
-                                    <a class="review-more js-view-text-switcher" href="javascript:;">
-                                        <span class="review-more-show">Показать полностью</span>
-                                        <span class="review-more-hide">Свернуть</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="review-list-item">
-                            <div class="review-block">
-                                <div class="review-img">
-                                    <img class="review-pic" alt="" src="./images/review/review-img-4.png" />
-                                </div>
-                                <div class="review-detail js-view-text" data-view-start="review-detail_start" data-view-active="review-detail_active">
-                                    <div class="review-panel">
-                                        <div class="review-photo">
-                                            <img class="review-photo-pic" alt="" src="./images/review/review-photo-img-1.png" />
-                                        </div>
-                                        <div class="review-main">
-                                            <span class="review-name">Иван Петровский</span>
-                                            <span class="review-company">ООО “Автосервис”</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-date">02.12.2020, Ярославль</div>
-                                    <div class="review-info content js-view-text-parent">
-                                        <div class="review-info-inner js-view-text-child">Enim blandit rhoncus purus aliqua varius ultrices neque consequat, vulputate sed turpis augue ac ultrices Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate sed turpis augue ac ultrices</div>
-                                    </div>
-                                    <a class="review-more js-view-text-switcher" href="javascript:;">
-                                        <span class="review-more-show">Показать полностью</span>
-                                        <span class="review-more-hide">Свернуть</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="review-list-item">
-                            <div class="review-block">
-                                <div class="review-img">
-                                    <img class="review-pic" alt="" src="./images/review/review-img-5.png" />
-                                </div>
-                                <div class="review-detail js-view-text" data-view-start="review-detail_start" data-view-active="review-detail_active">
-                                    <div class="review-panel">
-                                        <div class="review-photo">
-                                            <img class="review-photo-pic" alt="" src="./images/review/review-photo-img-2.jpg" />
-                                        </div>
-                                        <div class="review-main">
-                                            <span class="review-name">Иван Петровский</span>
-                                            <span class="review-company">ООО “Автосервис”</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-date">02.12.2020, Ярославль</div>
-                                    <div class="review-info content js-view-text-parent">
-                                        <div class="review-info-inner js-view-text-child">Enim blandit rhoncus purus aliqua varius ultrices neque consequat, vulputate sed turpis augue ac ultrices Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate sed turpis augue ac ultrices</div>
-                                    </div>
-                                    <a class="review-more js-view-text-switcher" href="javascript:;">
-                                        <span class="review-more-show">Показать полностью</span>
-                                        <span class="review-more-hide">Свернуть</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="review-list-item">
-                            <div class="review-block">
-                                <div class="review-img">
-                                    <img class="review-pic" alt="" src="./images/review/review-img-6.png" />
-                                </div>
-                                <div class="review-detail js-view-text" data-view-start="review-detail_start" data-view-active="review-detail_active">
-                                    <div class="review-panel">
-                                        <div class="review-photo">
-                                            <img class="review-photo-pic" alt="" src="./images/review/review-photo-img-3.jpg" />
-                                        </div>
-                                        <div class="review-main">
-                                            <span class="review-name">Иван Петровский</span>
-                                            <span class="review-company">ООО “Автосервис”</span>
-                                        </div>
-                                    </div>
-                                    <div class="review-date">02.12.2020, Ярославль</div>
-                                    <div class="review-info content js-view-text-parent">
-                                        <div class="review-info-inner js-view-text-child">Enim blandit rhoncus purus aliqua varius ultrices neque consequat, vulputate sed turpis augue ac ultrices Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate sed turpis augue ac ultrices</div>
-                                    </div>
-                                    <a class="review-more js-view-text-switcher" href="javascript:;">
-                                        <span class="review-more-show">Показать полностью</span>
-                                        <span class="review-more-hide">Свернуть</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="load-more">
-                        <a class="load-more-link button button_modified JS-AjaxMore-Link" href="javascript:;" data-ajaxmore-url="./ajax/review.html">
-                            ПОКАЗАТЬ ЕЩЁ<i class="load-more-icon"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <section class="certificates js-slider-certificates">
-                    <h2 class="certificates-title h1">Сертификаты соответствия</h2>
-                    <div class="certificates-slider-nav slider-nav slider-nav_dark">
-                        <div class="slider-count">
-                            <span class="slider-count-current js-slider-count">1</span> / <span class="slider-count-common">2</span>
-                        </div>
-                        <div class="slider-count-decor"></div>
-                        <div class="slider-button slider-button_prev js-slider-prev">
-                            <span class="slider-button-icon"></span>
-                        </div>
-                        <div class="slider-button slider-button_next js-slider-next">
-                            <span class="slider-button-icon slider-button-icon_right"></span>
-                        </div>
-                    </div>
-                    <div class="certificates-inner js-slider-list">
-                        <ul class="certificates-list swiper-wrapper">
-                            <li class="certificates-list-item swiper-slide" data-slider-index="1">
-                                <a class="certificates-block" href="#">
-                                    <span class="certificates-panel">
-                                        <span class="certificates-name h2">Декларация о соответствии</span>
-                                        <span class="certificates-button">
-                                            <i class="certificates-icon icon icon_download"></i>
-                                        </span>
-                                    </span>
-                                    <span class="certificates-info content">Сертификат соответствия эксперта-аудитора требования ISO 9001:2015, выданный ООО «ТЭС»</span>
-                                </a>
-                            </li>
-                            <li class="certificates-list-item swiper-slide" data-slider-index="2">
-                                <a class="certificates-block" href="#">
-                                    <span class="certificates-panel">
-                                        <span class="certificates-name h2">Сертификат соответствия</span>
-                                        <span class="certificates-button">
-                                            <i class="certificates-icon icon icon_download"></i>
-                                        </span>
-                                    </span>
-                                    <span class="certificates-info content">Сертификат соответствия эксперта-аудитора требования ISO 9001:2015, выданный ООО «ТЭС»</span>
-                                </a>
-                            </li>
-                            <li class="certificates-list-item swiper-slide" data-slider-index="3">
-                                <a class="certificates-block" href="#">
-                                    <span class="certificates-panel">
-                                        <span class="certificates-name h2">Декларация о соответствии</span>
-                                        <span class="certificates-button">
-                                            <i class="certificates-icon icon icon_download"></i>
-                                        </span>
-                                    </span>
-                                    <span class="certificates-info content">Сертификат соответствия эксперта-аудитора требования ISO 9001:2015, выданный ООО «ТЭС»</span>
-                                </a>
-                            </li>
-                            <li class="certificates-list-item swiper-slide" data-slider-index="4">
-                                <a class="certificates-block" href="#">
-                                    <span class="certificates-panel">
-                                        <span class="certificates-name h2">Сертификат соответствия</span>
-                                        <span class="certificates-button">
-                                            <i class="certificates-icon icon icon_download"></i>
-                                        </span>
-                                    </span>
-                                    <span class="certificates-info content">Сертификат соответствия эксперта-аудитора требования ISO 9001:2015, выданный ООО «ТЭС»</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-
-                <div class="subscribe">
-                    <div class="subscribe-video">
-                        <a class="subscribe-video-block js-popup" href="https://youtu.be/srepKrsWsbg">
-                            <img class="subscribe-video-preview" src="./images/connection/connection-img-1.png" alt="" />
-                            <span class="play play_simple">
-                                <span class="play-icon"></span>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="subscribe-detail">
-                        <div class="subscribe-name">Следите за нами в социальных сетях!</div>
-                        <div class="subscribe-info content">Идея создания собственной моечной установки зародилась в 2007 году. В то время на рынке</div>
-                        <div class="subscribe-links">
-                            <a class="subscribe-button button button_dark" href="#">
-                                Подписаться<span class="button-icon"><i class="button-icon-pic icon icon_arrow-right-button"></i></span>
-                            </a>
-                            <ul class="socials socials_simple">
-                                <li class="socials-item">
-                                    <a class="socials-link" href="#">
-                                        <i class="socials-icon socials-icon_tg"></i>
-                                    </a>
                                 </li>
-                                <li class="socials-item">
-                                    <a class="socials-link" href="#">
-                                        <i class="socials-icon socials-icon_youtube"></i>
-                                    </a>
+                                <!-- Добавлен класс contacts-list-item_time -->
+                                <li class="contacts-list-item contacts-list-item_time">
+                                    <div class="contacts-list-panel">
+                                        <div class="contacts-list-img">
+                                            <span class="contacts-list-icon">
+                                                <img class="contacts-list-pic" src="./images/contacts/contacts-clock-icon.svg" alt="" />
+                                            </span>
+                                        </div>
+                                        <div class="contacts-list-name">ЧАСЫ РАБОТЫ</div>
+                                    </div>
+                                    <div class="contacts-list-content content">
+                                        <div class="contacts-list-box">
+                                            <div class="contacts-list-block">
+                                                <div class="contacts-list-time-item">Пн-Пт: <b>с 9:00 до 18:00</b></div>
+                                                <div class="contacts-list-time-item">Сб-Вс: <b>с 9:00 до 18:00</b></div>
+                                            </div>
+                                            <div class="contacts-list-block">
+                                                Почта: <b>geyser@.ru</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="contacts-list-item contacts-list-item_address js-map-item" data-objectid="1" data-objectcoord="[53.197340, 45.206208]">
+                                    <div class="contacts-list-panel">
+                                        <div class="contacts-list-img">
+                                            <span class="contacts-list-icon">
+                                                <img class="contacts-list-pic" src="./images/contacts/contacts-location-icon.svg" alt="" />
+                                            </span>
+                                        </div>
+                                        <div class="contacts-list-name">Адрес</div>
+                                    </div>
+                                    <div class="contacts-list-content content">
+                                        <div class="js-map-item-value">
+                                            442961, Пензенская область, г.&nbsp;Заречный, ул.Восточная 7А
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="contacts-list-item contacts-list-item_socials">
+                                    <div class="contacts-list-panel">
+                                        <div class="contacts-list-img"></div>
+                                        <div class="contacts-list-name">СОЦИАЛЬНЫЕ СЕТИ</div>
+                                    </div>
+                                    <div class="contacts-list-content">
+                                        <ul class="socials socials_simple socials_simple_modified">
+                                            <li class="socials-item">
+                                                <a class="socials-link" href="#">
+                                                    <i class="socials-icon socials-icon_tg"></i>
+                                                </a>
+                                            </li>
+                                            <li class="socials-item">
+                                                <a class="socials-link" href="#">
+                                                    <i class="socials-icon socials-icon_youtube"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
+                    <div class="contacts-map">
+                        <div class="contacts-map-block" id="map"></div>
+                    </div>
                 </div>
 
+                <div class="contacts-feedback container">
+                    <div class="contacts-feedback-img">
+                        <img class="contacts-feedback-pic" src="./images/contacts/contacts-form-img.jpg" alt="" />
+                    </div>
+                    <div class="contacts-feedback-form">
+                        <div class="contacts-feedback-name h1">ОБРАТНАЯ СВЯЗЬ</div>
+                        <div class="contacts-feedback-content content">Хотите задать вопрос, нужна дополнительная информация или есть предложение? Отправьте нам сообщение и мы обязательно ответим!</div>
+                        <form class="js-form-validate js-form">
+                            <div class="field-row">
+                                <div class="field-col-2 field js-form-validate-field">
+                                    <span class="field-input">
+                                        <input class="input input_simple" type="text" placeholder="Ваше имя" id="name-4" name="name-4" required />
+                                    </span>
+                                </div>
+                                <div class="field-col-2 field js-form-validate-field">
+                                    <span class="field-input">
+                                        <input class="input input_simple js-mask-email" type="text" placeholder="Ваш e-mail" id="phone-4" name="phone-4" required />
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field js-form-validate-field">
+                                <span class="field-input">
+                                    <textarea class="input input_textarea input_textarea_simple" placeholder="Ваше сообщение" id="message-4" name="message-4"></textarea>
+                                </span>
+                            </div>
+                            <div class="switch-field">
+                                <label class="switch">
+                                    <input class="switch-checkbox js-form-checkbox" type="checkbox" name="agreement" checked="checked" />
+                                    <span class="switch-decor">
+                                        <span class="switch-icon"></span>
+                                    </span>
+                                    <span class="switch-label">Я согласен на обработку персональных данных</span>
+                                </label>
+                            </div>
+                            <button class="button button_wide button_long js-form-button">Отправить</button>
+                        </form>
+                    </div>
+                </div>
             </div>
 
         </main>
 
         <footer class="footer">
+            <div class="feedback">
+                <div class="feedback-box">
+                    <div class="feedback-container container">
+                        <div class="feedback-name"><span class="feedback-name-label">Остались вопросы?</span> Свяжитесь с&nbsp;нами по телефону <a class="feedback-name-link" href="tel:+78005505089">8-800-550-50-89</a></div>
+                        <div class="feedback-content content">Сложно определиться с подходящей под&nbsp;Ваши конкретные задачи моделью оборудования и комплектацией? Мы&nbsp;поможем Вам подобрать оптимальное&nbsp;решение!</div>
+                        <a class="feedback-button button button_dark js-popup-callback" href="javascript:;" data-src="./ajax/callback.html">
+                            ОСТАВИТЬ ЗАЯВКУ<span class="button-icon"><i class="button-icon-pic icon icon_arrow-right-button"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <div class="footer-block">
                 <div class="footer-main-container container">
                     <div class="footer-item footer-item_company">
@@ -913,6 +793,8 @@
     <script src="./js/JSC.Dropdown.js"></script>
     <script src="./js/JSC.MobileMenu.js"></script>
     <script src="./js/JSC.AjaxMore.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="./js/map.js"></script>
 
     <script src="./js/main.js"></script>
 

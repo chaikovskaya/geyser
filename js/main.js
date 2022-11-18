@@ -750,24 +750,6 @@ function initPopupGallery() {
     });
 }
 
-function initAjaxMoreReview() {
-    if (typeof(AjaxMore) === 'undefined' || !jQuery.isFunction(AjaxMore)) {
-        return false;
-    }
-
-    var common = {
-        beforeSend: function () {
-        },
-        success: function () {
-        }
-    };
-
-    $('.JS-AjaxMoreReview').each(function(){
-        var local = GLOBAL.parseData(jQuery(this).data('ajaxmore'));
-        new AjaxMore(this, jQuery.extend({}, common, local));
-    });
-}
-
 var sliderCertificates;
 function initSliderCertificates() {
     jQuery('.js-slider-certificates').each(function() {
@@ -815,6 +797,51 @@ function initSliderCertificates() {
                 },
             },
         });
+    });
+}
+
+function initViewText() {
+    jQuery('.js-view-text').each(function() {
+        var $element = $(this),
+            $parent = $element.find('.js-view-text-parent'),
+            $child = $element.find('.js-view-text-child'),
+            $switcher = $element.find('.js-view-text-switcher'),
+            classStart = $element.data('view-start'),
+            classActive = $element.data('view-active');
+
+        $switcher.on('click.js-view-text', function(e) {
+            if (!$element.hasClass(classActive)) {
+                $element.addClass(classActive);
+            } else {
+                $element.removeClass(classActive);
+            }
+        });
+
+        var heightParent = $parent.height(),
+            heightChild = $child.height();
+
+        if (heightChild > heightParent) {
+            $element.addClass(classStart);
+        }
+    });
+}
+
+function initAjaxMoreReview() {
+    if (typeof(AjaxMore) === 'undefined' || !jQuery.isFunction(AjaxMore)) {
+        return false;
+    }
+
+    var common = {
+        beforeSend: function () {
+        },
+        success: function () {
+            initViewText();
+        }
+    };
+
+    $('.JS-AjaxMoreReview').each(function(){
+        var local = GLOBAL.parseData(jQuery(this).data('ajaxmore'));
+        new AjaxMore(this, jQuery.extend({}, common, local));
     });
 }
 
@@ -883,6 +910,8 @@ $(document).ready(function () {
     initGalleryCard();
     initTabCharacteristics();
     initPopupGallery();
-    initAjaxMoreReview();
     initSliderCertificates();
+    initViewText();
+    initAjaxMoreReview();
+    ymaps.ready(initMap);
 });

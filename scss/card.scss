@@ -680,7 +680,7 @@
     }
     &-item {
         width: 26%;
-        height: 280px;
+        min-height: 280px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -707,7 +707,7 @@
         }
         &-item {
             width: 28%;
-            height: 180px;
+            min-height: 180px;
             padding-left: 10px;
             padding-right: 10px;
         }
@@ -725,14 +725,11 @@
         }
         &-item {
             width: 100%;
-            height: 143px;
+            min-height: auto;
             margin-bottom: 25px;
             &:last-child {
                 margin-bottom: 0;
             }
-        }
-        &-item_wide {
-            height: 180px;
         }
     }
 }
@@ -811,5 +808,9 @@
         &-img {
             max-height: 140px;
         }
+    }
+    @media screen
+    and (max-width: $mobile){
+        min-height: 180px;
     }
 }

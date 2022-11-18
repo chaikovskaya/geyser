@@ -941,6 +941,10 @@ body.mob-menu-show {
         height: 12px;
     }
 
+    &_simple_modified &-link {
+        border-width: 1px;
+    }
+
     @media screen
     and (min-width: $tablet){
         &_wide &-link {

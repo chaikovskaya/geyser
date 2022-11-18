@@ -1937,6 +1937,24 @@
         line-height: 46px;
     }
 
+    &_contacts {
+        height: 222px;
+    }
+    &_contacts &-container {
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 100%;
+            margin-left: -574px;
+            height: 100%;
+            width: 931px;
+            max-width: none;
+            background: url("../images/contacts/contacts-main-decor.png") no-repeat 0 0;
+            background-size: cover;
+        }
+    }
+
     @media screen
     and (max-width: $tablet) {
         height: 193px;
@@ -1984,6 +2002,13 @@
             font-size: 32px;
             line-height: 45px;
         }
+        &_contacts &-container {
+            &:after {
+                width: 541px;
+                margin-left: -502px;
+                background: url("../images/contacts/contacts-main-decor-1.png") no-repeat 0 0;
+            }
+        }
     }
     @media screen
     and (max-width: $mobile) {
@@ -2030,6 +2055,17 @@
                 height: 234px;
                 margin-left: 0;
                 background-image: url("../images/review/review-main-decor-2.png");
+            }
+        }
+        &_contacts &-container {
+            &:after {
+                top: auto;
+                bottom: -5px;
+                left: 0;
+                width: 366px;
+                height: 267px;
+                margin-left: -14px;
+                background: url("../images/contacts/contacts-main-decor-2.png") no-repeat 0 0;
             }
         }
     }

@@ -2,11 +2,28 @@
 $colorPlaceholder: #4F4F4F;
 
 .field {
+    display: block;
     margin-bottom: 27px;
+    &-row {
+        display: flex;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    &-col-2 {
+        width: 50%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 
     @media screen
     and (max-width: $tablet){
         margin-bottom: 23px;
+        &-row {
+            flex-direction: column;
+        }
+        &-col-2 {
+            width: 100%;
+        }
     }
     @media screen
     and (max-width: $mobile){
@@ -41,9 +58,11 @@ $colorPlaceholder: #4F4F4F;
     &_textarea {
         display: block;
         width: 100%;
+        min-height: 80px;
         overflow: hidden;
         background-color: #fff;
         resize: none;
+        border-radius: 10px;
         transition: height 0.3s ease-in-out 0s;
         &:-webkit-autofill,
         &:-webkit-autofill:hover,
@@ -57,6 +76,22 @@ $colorPlaceholder: #4F4F4F;
         &::-webkit-outer-spin-button,
         &::-webkit-inner-spin-button {
             -webkit-appearance: none;
+        }
+    }
+
+    &_simple {
+        height: 40px;
+        &::placeholder {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #333;
+        }
+    }
+    &_textarea_simple {
+        &::placeholder {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #333;
         }
     }
 
@@ -385,6 +420,10 @@ label.form-error {
             outline: 1px solid #fff;
             color: #fff;
         }
+    }
+
+    &_long {
+        width: 100%;
     }
 
     @media screen

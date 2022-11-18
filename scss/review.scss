@@ -39,6 +39,7 @@
     }
     &-block {
         overflow: hidden;
+        height: 100%;
         background-color: #EBF0FA;
         border-radius: 5px;
         &:hover {
@@ -92,6 +93,7 @@
         border-radius: 50%;
     }
     &-date {
+        min-height: 22px;
         margin-bottom: 27px;
         font-size: 17px;
         line-height: 22px;
@@ -99,13 +101,17 @@
         color: #111111;
     }
     &-info {
+        height: 78px;
+        overflow: hidden;
         margin-bottom: 24px;
         font-size: 16px;
         line-height: 26px;
         letter-spacing: 0.01em;
     }
     &-more {
+        visibility: hidden;
         margin-top: auto;
+        margin-right: auto;
         font-size: 17px;
         line-height: 22px;
         letter-spacing: 0.01em;
@@ -115,6 +121,22 @@
         &:hover {
             text-decoration: none;
         }
+    }
+    &-more-show {}
+    &-more-hide {
+        display: none;
+    }
+    &-detail_start &-more {
+        visibility: visible;
+    }
+    &-detail_active &-info {
+        height: auto;
+    }
+    &-detail_active &-more-show {
+        display: none;
+    }
+    &-detail_active &-more-hide {
+        display: block;
     }
 
     @media screen
@@ -184,11 +206,13 @@
             line-height: 15px;
         }
         &-date {
+            min-height: 15px;
             margin-bottom: 16px;
             font-size: 12px;
             line-height: 15px;
         }
         &-info {
+            height: 66px;
             margin-bottom: 13px;
             font-size: 14px;
             line-height: 22px;
@@ -381,7 +405,7 @@
     display: flex;
     border-radius: 5px;
     overflow: hidden;
-    height: 292px;
+    min-height: 292px;
     &-video {
         width: 51.5%;
     }
@@ -396,7 +420,9 @@
         display: block;
     }
     &-video-preview {
-        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -425,7 +451,7 @@
 
     @media screen
     and (max-width: $tablet) {
-        height: 203px;
+        min-height: 203px;
         &-video {
             width: 43%;
         }
@@ -447,7 +473,7 @@
     @media screen
     and (max-width: $mobile) {
         flex-direction: column;
-        height: auto;
+        min-height: auto;
         &-video {
             width: 100%;
             height: 180px;
