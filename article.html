@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Контакты. Гейзер</title>
+    <title>Типовая текстовая. Гейзер</title>
 
     <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
@@ -442,163 +442,73 @@
         </header>
 
         <main class="main-content">
-            <div class="main-block main-block_contacts">
-                <div class="main-block-container container">
-                    <div class="breadcrumbs js-expand" data-expand="{
-                        'classActive': 'breadcrumbs_active',
-                        'classShow': 'breadcrumbs_show'
-                    }">
-                        <ul class="breadcrumbs-list js-expand-block">
-                            <li class="breadcrumbs-item">
-                                <a class="breadcrumbs-link" href="/">Главная</a>
-                                <span class="breadcrumbs-icon"></span>
-                            </li>
-                            <li class="breadcrumbs-item">Контакты</li>
-                            <li class="breadcrumbs-item breadcrumbs-item_more">
-                                <a class="breadcrumbs-link js-expand-link" href="javascript:;"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <h1 class="main-block-title">КОНТАКТЫ</h1>
+
+            <div class="container">
+                <div class="breadcrumbs breadcrumbs_simple js-expand" data-expand="{
+                            'classActive': 'breadcrumbs_active',
+                            'classShow': 'breadcrumbs_show'
+                        }">
+                    <ul class="breadcrumbs-list js-expand-block">
+                        <li class="breadcrumbs-item">
+                            <a class="breadcrumbs-link" href="/">Главная</a>
+                            <span class="breadcrumbs-icon"></span>
+                        </li>
+                        <li class="breadcrumbs-item">
+                            <a class="breadcrumbs-link" href="#">Каталог</a>
+                            <span class="breadcrumbs-icon"></span>
+                        </li>
+                        <li class="breadcrumbs-item">Оборудование для очистки поверхности/ Моечное оборудование</li>
+                        <li class="breadcrumbs-item breadcrumbs-item_more">
+                            <a class="breadcrumbs-link js-expand-link" href="javascript:;"></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="contacts-wrapper">
-                <div class="contacts js-map"
-                    data-objectcoord="[53.197340, 45.206208]"
-                    data-map-id="map"
-                    data-map-icon="./images/contacts/mark-icon.png"
-                    data-icon-size="[70, 70]"
-                    data-class-active="addresses-list-item_active"
-                >
-                    <div class="contacts-container container">
-                        <div class="contacts-detail">
-                            <ul class="contacts-list">
-                                <li class="contacts-list-item">
-                                    <div class="contacts-list-panel">
-                                        <div class="contacts-list-img">
-                                            <span class="contacts-list-icon">
-                                                <img class="contacts-list-pic" src="./images/contacts/contacts-phone-icon.svg" alt="" />
-                                            </span>
-                                        </div>
-                                        <div class="contacts-list-name">Телефон</div>
-                                    </div>
-                                    <div class="contacts-list-content content">
-                                        <div class="contacts-list-box">
-                                            <div class="contacts-list-block">
-                                                <div class="contacts-list-department">Отдел продаж</div>
-                                                <div class="contacts-list-phone"><a href="tel:+78005505089">8 800 550-50-89</a></div>
-                                            </div>
-                                            <div class="contacts-list-block">
-                                                <div class="contacts-list-department">Сервис</div>
-                                                <div class="contacts-list-phone"><a href="tel:+78005505089">8 800 550-50-89</a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <!-- Добавлен класс contacts-list-item_time -->
-                                <li class="contacts-list-item contacts-list-item_time">
-                                    <div class="contacts-list-panel">
-                                        <div class="contacts-list-img">
-                                            <span class="contacts-list-icon">
-                                                <img class="contacts-list-pic" src="./images/contacts/contacts-clock-icon.svg" alt="" />
-                                            </span>
-                                        </div>
-                                        <div class="contacts-list-name">ЧАСЫ РАБОТЫ</div>
-                                    </div>
-                                    <div class="contacts-list-content content">
-                                        <div class="contacts-list-box">
-                                            <div class="contacts-list-block">
-                                                <div class="contacts-list-time-item">Пн-Пт: <b>с 9:00 до 18:00</b></div>
-                                                <div class="contacts-list-time-item">Сб-Вс: <b>с 9:00 до 18:00</b></div>
-                                            </div>
-                                            <div class="contacts-list-block">
-                                                Почта: <b>geyser@.ru</b>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="contacts-list-item js-map-item" data-objectid="1" data-objectcoord="[53.197340, 45.206208]">
-                                    <div class="contacts-list-panel">
-                                        <div class="contacts-list-img">
-                                            <span class="contacts-list-icon">
-                                                <img class="contacts-list-pic" src="./images/contacts/contacts-location-icon.svg" alt="" />
-                                            </span>
-                                        </div>
-                                        <div class="contacts-list-name">Адрес</div>
-                                    </div>
-                                    <div class="contacts-list-content content">
-                                        <div class="js-map-item-value">
-                                            442961, Пензенская область, г.&nbsp;Заречный, ул.Восточная 7А
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="contacts-list-item contacts-list-item_socials">
-                                    <div class="contacts-list-panel">
-                                        <div class="contacts-list-img"></div>
-                                        <div class="contacts-list-name">СОЦИАЛЬНЫЕ СЕТИ</div>
-                                    </div>
-                                    <div class="contacts-list-content">
-                                        <ul class="socials socials_simple socials_simple_modified">
-                                            <li class="socials-item">
-                                                <a class="socials-link" href="#">
-                                                    <i class="socials-icon socials-icon_tg"></i>
-                                                </a>
-                                            </li>
-                                            <li class="socials-item">
-                                                <a class="socials-link" href="#">
-                                                    <i class="socials-icon socials-icon_youtube"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+            <div class="article container content">
+                <h1 class="title">Оборудование для очистки поверхности/Моечное оборудование</h1>
+                <h2>Следите за нами в социальных сетях</h2>
+                <img align="right" src="./images/article/article-img-1.jpg" alt="" />
+                <p>Integer sed potenti habitant justo in aliquet venenatis sem laoreet tempus vitae magna orci, turpis pulvinar lectus nunc aliquam lobortis vitae volutpat sit sodales leo morbi id lectus mi pulvinar in nec elit, etiam volutpat leo, enim elit auctor vitae, egestas leo viverra placerat id ac morbi amet, tincidunt iaculis hac vitae sit id vitae praesent blandit morbi scelerisque rhoncus molestie bibendum mauris nunc ut arcu nunc amet pellentesque diam mi augue pretium at nisi feugiat pellentesque cursus ac magna sed ultrices cum pretium, sem pellentesque et malesuada euismod et vel fringilla malesuada odio tellus nec nibh hendrerit nullam faucibus</p>
+                <p>Vel hendrerit sed elit amet, commodo, tincidunt tellus rutrum adipiscing consequat urna, faucibus arcu magna iaculis velit vestibulum, at ut eleifend magna bibendum turpis sit aenean tempor purus scelerisque suscipit facilisi vulputate convallis eu arcu mattis cras magna ante lectus nec, arcu lorem rhoncus diam viverra dolor, tempor, fermentum etiam mattis tristique nunc mauris, neque, lorem dignissim est sollicitudin varius diam condimentum cras dignissim sagittis neque bibendum lacus sed turpis turpis aenean est ultricies cursus in felis nec vestibulum, leo in augue eget duis ipsum felis eget pretium amet, ridiculus augue elementum suspendisse morbi elit, tortor, dignissim malesuada malesuada at</p>
+                <div class="article-block">
+                    <div class="article-block-detail">
+                        <h2>Приминение моечного оборудования</h2>
+                        <p>Vel hendrerit sed elit amet, commodo, tincidunt tellus rutrum adipiscing consequat urna, faucibus arcu magna iaculis velit vestibulum, at ut eleifend magna bibendum turpis sit aenean tempor purus scelerisque suscipit facilisi vulputate convallis eu arcu mattis cras magna ante lectus nec, arcu lorem rhoncus diam viverra dolor, tempor, fermentum etiam mattis tristique nunc mauris, neque, lorem dignissim est sollicitudin varius diam condimentum</p>
+                        <ul>
+                            <li>Congue pellentesque nunc, praesent fermentum lacinia et condimentum a ut a at tortor venenatis, non duis scelerisque velit diam ac vivamus amet ut nunc aliquet netus</li>
+                            <li>Congue pellentesque nunc, praesent fermentum lacinia et condimentum a ut a at tortor</li>
+                        </ul>
                     </div>
-                    <div class="contacts-map">
-                        <div class="contacts-map-block" id="map"></div>
-                    </div>
+                    <img class="img-left" src="./images/article/article-img-2.jpg" alt="" />
                 </div>
 
-                <div class="contacts-feedback container">
-                    <div class="contacts-feedback-img">
-                        <img class="contacts-feedback-pic" src="./images/contacts/contacts-form-img.jpg" alt="" />
+                <p>Integer sed potenti habitant justo in aliquet venenatis sem laoreet tempus vitae magna orci, turpis pulvinar lectus nunc aliquam lobortis vitae volutpat sit sodales leo morbi id lectus mi pulvinar in nec elit, etiam volutpat leo, enim elit auctor vitae, egestas leo viverra placerat id ac morbi amet, tincidunt iaculis hac vitae sit id vitae praesent blandit morbi scelerisque rhoncus molestie bibendum mauris nunc ut arcu nunc amet pellentesque diam mi augue pretium at nisi feugiat pellentesque cursus ac magna sed ultrices cum pretium, sem pellentesque et malesuada euismod et vel fringilla malesuada odio tellus nec nibh hendrerit nullam faucibus</p>
+                <p>Integer sed potenti habitant justo in aliquet venenatis sem laoreet tempus vitae magna orci, turpis pulvinar lectus nunc aliquam lobortis vitae volutpat sit sodales leo morbi id lectus mi pulvinar in nec elit, etiam volutpat leo, enim elit auctor vitae, egestas leo viverra placerat id ac morbi amet, tincidunt iaculis hac vitae sit id vitae praesent blandit morbi scelerisque rhoncus molestie bibendum mauris nunc ut arcu nunc amet pellentesque diam mi augue pretium at nisi feugiat pellentesque cursus ac magna sed ultrices cum pretium, sem pellentesque et malesuada euismod et vel fringilla malesuada odio tellus nec nibh hendrerit nullam faucibus</p>
+                <div class="card-connection card-connection_simple">
+                    <div class="card-connection-item connection-item_video">
+                        <a class="connection-video js-popup" href="https://youtu.be/srepKrsWsbg">
+                            <img class="connection-video-preview" src="./images/card/card-video.png" alt="" />
+                            <span class="play play_simple">
+                                <span class="play-icon"></span>
+                            </span>
+                        </a>
                     </div>
-                    <div class="contacts-feedback-form">
-                        <div class="contacts-feedback-name h1">ОБРАТНАЯ СВЯЗЬ</div>
-                        <div class="contacts-feedback-content content">Хотите задать вопрос, нужна дополнительная информация или есть предложение? Отправьте нам сообщение и мы обязательно ответим!</div>
-                        <form class="js-form-validate js-form">
-                            <div class="field-row">
-                                <div class="field-col-2 field js-form-validate-field">
-                                    <span class="field-input">
-                                        <input class="input input_simple" type="text" placeholder="Ваше имя" id="name-4" name="name-4" required />
-                                    </span>
-                                </div>
-                                <div class="field-col-2 field js-form-validate-field">
-                                    <span class="field-input">
-                                        <input class="input input_simple js-mask-email" type="text" placeholder="Ваш e-mail" id="phone-4" name="phone-4" required />
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="field js-form-validate-field">
-                                <span class="field-input">
-                                    <textarea class="input input_textarea input_textarea_simple" placeholder="Ваше сообщение" id="message-4" name="message-4"></textarea>
-                                </span>
-                            </div>
-                            <div class="switch-field">
-                                <label class="switch">
-                                    <input class="switch-checkbox js-form-checkbox" type="checkbox" name="agreement" checked="checked" />
-                                    <span class="switch-decor">
-                                        <span class="switch-icon"></span>
-                                    </span>
-                                    <span class="switch-label">Я согласен на обработку персональных данных</span>
-                                </label>
-                            </div>
-                            <button class="button button_wide button_long js-form-button">Отправить</button>
-                        </form>
+                    <div class="card-connection-item">
+                        <a class="card-callback js-popup-callback" href="javascript:;" data-src="./ajax/callback.html">
+                            <span class="card-callback-name h2">Мы поможем подобрать подходящее оборудование. Закажите звонок!</span>
+                            <span class="card-callback-info content">Tortor, quis porttitor fusce iaculis blandit rhoncus in mattis <span class="card-callback-label">feugiat turpis quis venenatis</span></span>
+                            <span class="card-callback-link button button_white">Заказать</span>
+                            <img class="card-callback-img" src="./images/card/card-callback-img.png" alt="" />
+                        </a>
                     </div>
                 </div>
+                <h2>Приминение моечного оборудования</h2>
+                <p>Vel hendrerit sed elit amet, commodo, tincidunt tellus rutrum adipiscing consequat urna, faucibus arcu magna iaculis velit vestibulum, at ut eleifend magna bibendum turpis sit aenean tempor purus scelerisque suscipit facilisi vulputate convallis eu arcu mattis cras magna ante lectus nec, arcu lorem rhoncus diam viverra dolor, tempor, fermentum etiam mattis tristique nunc mauris, neque, lorem dignissim est sollicitudin varius diam condimentum</p>
+                <ol>
+                    <li>Congue pellentesque nunc, praesent fermentum lacinia et condimentum a ut a at tortor venenatis, non duis scelerisque velit diam ac vivamus amet ut nunc aliquet netus</li>
+                    <li>Congue pellentesque nunc, praesent fermentum lacinia et condimentum a ut a at tortor Integer sed potenti habitant justo in aliquet venenatis sem laoreet tempus vitae magna orci, turpis pulvinar lectus nunc aliquam lobortis vitae volutpat sit sodales leo morbi id lectus mi pulvinar in nec elit, etiam volutpat leo, enim elit auctor vitae, egestas leo viverra placerat id ac morbi amet, tincidunt iaculis hac vitae sit id vitae praesent blandit morbi scelerisque rhoncus molestie bibendum mauris nunc ut arcu nunc amet pellentesque diam mi augue pretium at nisi feugiat pellentesque cursus ac magna sed ultrices</li>
+                </ol>
             </div>
 
         </main>

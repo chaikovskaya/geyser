@@ -148,6 +148,14 @@
         z-index: 1;
     }
 
+    &-breadcrumbs {
+        position: absolute;
+        top: 38px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
     &_simple {}
     &_simple &-list {
         height: 537px;
@@ -159,12 +167,45 @@
         width: 1700px;
     }
 
+    &_modified {
+        margin-bottom: 0;
+    }
+    &_modified &-img {
+        width: max-content;
+    }
+    &_modified &-detail {
+        width: 63%;
+    }
+    &_modified &-info-inner {
+        max-width: none;
+    }
+    &-info-decor {
+        min-width: 100px;
+        width: 100px;
+        height: 1px;
+        margin-top: 17px;
+        margin-right: 28px;
+        background-color: #fff;
+    }
+    &-breadcrumbs {
+        top: 31px;
+    }
+
     @media screen
     and (max-width: $desktop){
         &-detail {
             width: 60%;
             padding-top: 46px;
             padding-bottom: 46px;
+        }
+    }
+
+    @media screen
+    and (min-width: $tablet){
+        &_modified &-img {
+            &:before {
+                width: 670px;
+            }
         }
     }
 
@@ -232,6 +273,12 @@
         &_simple &-img {
             width: max-content;
         }
+        &_modified {
+            margin-bottom: 0;
+        }
+        &-info-decor {
+            display: none;
+        }
     }
     @media screen
     and (max-width: $mobile){
@@ -266,6 +313,20 @@
         &-company {
             font-size: 15px;
             line-height: 24px;
+        }
+        &-breadcrumbs {
+            left: 0;
+            transform: none;
+        }
+        &_modified {
+            margin-bottom: 0;
+        }
+        &_modified &-list {
+            height: 697px;
+        }
+        &_modified &-detail {
+            width: 100%;
+            padding-top: 91px;
         }
     }
 }
@@ -1322,6 +1383,7 @@
     }
     &-content {
         margin-bottom: 34px;
+        color: #333333;
     }
     &-link {
         display: block;
@@ -1438,6 +1500,7 @@
         width: 55%;
     }
     &-content {
+        color: #333333;
         ul {
             margin-bottom: 0;
         }
@@ -1644,7 +1707,6 @@
         font-size: 15px;
         line-height: 24px;
         letter-spacing: 0.01em;
-        color: #4F4F4F;
     }
     &-list-more {
         font-size: 15px;
@@ -1780,6 +1842,7 @@
     &-content {
         margin-bottom: 30px;
         max-width: 810px;
+        color: #333333;
     }
 
     @media screen

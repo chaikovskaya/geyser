@@ -73,6 +73,7 @@ h4,
 	margin-bottom: 13px;
 	border-collapse: collapse;
 	border: 1px solid rgba(128, 152, 182, 0.5);
+	color: #333333;
 	th {
 		padding: 17px 10px;
 		border: 1px solid rgba(128, 152, 182, 0.5);
@@ -129,7 +130,7 @@ a img {
 }
 
 p {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 }
 
 ul {
@@ -350,10 +351,12 @@ blockquote {
 }
 
 .content {
+	color: #4F4F4F;
     ul {
+		overflow: hidden;
         margin-left: 0;
-		margin-top: 7px;
-        margin-bottom: 20px;
+		margin-top: 22px;
+        margin-bottom: 27px;
     }
     ul li {
 		margin-left: 16px;
@@ -365,28 +368,31 @@ blockquote {
             content: '';
             display: inline-block;
             vertical-align: middle;
-            width: 6px;
-            height: 6px;
+            width: 3px;
+            height: 3px;
 			border-radius: 50%;
             margin-top: -2px;
 			margin-left: -16px;
 			margin-right: 10px;
-            background-color: #2D2A1E;
+            background-color: #4F4F4F;
         }
     }
 
     ol {
-		margin-top: 7px;
-		margin-bottom: 47px;
+		margin-top: 22px;
+		margin-bottom: 27px;
 		margin-left: 19px;
 	}
 	ol li {
 		margin-bottom: 21px;
 	}
+	ol li::marker {
+		font-weight: 700;
+	}
 
     img {
         height: auto;
-		border-radius: 10px;
+		border-radius: 5px;
     }
 	figcaption {
 		position: relative;
@@ -410,11 +416,11 @@ blockquote {
 		overflow: hidden;
 	}
 	img[align="left"]{
-		margin-right: 24px;
+		margin-right: 29px;
 		margin-bottom: 15px;
 	}
 	img[align="right"]{
-		margin-left: 24px;
+		margin-left: 29px;
 		margin-bottom: 15px;
 	}
 	.paragraph {
@@ -430,21 +436,41 @@ blockquote {
 	and (max-width: $tablet) {
 		font-size: 14px;
 		line-height: 21px;
+		img[align="left"]{
+			margin-right: 20px;
+		}
+		img[align="right"]{
+			margin-left: 20px;
+		}
 	}
 	@media screen
 	and (max-width: $mobile) {
+		img[align="left"]{
+			float: none;
+			margin-right: 0;
+		}
+		img[align="right"]{
+			margin-left: 0;
+			float: none;
+		}
 	}
+}
+
+.title {
+	text-transform: none;
+	font-size: 28px;
+	line-height: 36px;
 }
 
 .img-right {
 	float: right;
-	margin-left: 24px;
-	margin-bottom: 10px;
+	margin-left: 29px;
+	margin-bottom: 15px;
 }
 .img-left {
 	float: left;
-	margin-right: 24px;
-	margin-bottom: 10px;
+	margin-right: 29px;
+	margin-bottom: 15px;
 }
 
 .clearfix:after {
@@ -967,6 +993,7 @@ blockquote {
 	}
 
 
+
 	@media screen
 	and (max-width: $tablet){
 		&_check {
@@ -1011,13 +1038,37 @@ and (max-width: $tablet){
 		font-size: 24px;
 		line-height: 34px;
 	}
+	h2,
+	.h2 {
+		margin-bottom: 18px;
+		font-size: 22px;
+		line-height: 28px;
+	}
 	.main-content {
 		padding-bottom: 65px;
+	}
+	.title {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	.img-right {
+		margin-left: 20px;
+	}
+	.img-left {
+		margin-right: 20px;
 	}
 }
 
 @media screen
 and (max-width: $mobile){
+	.img-right {
+		float: none;
+		margin-left: 0;
+	}
+	.img-left {
+		float: none;
+		margin-right: 0;
+	}
 }
 
 /* juxtapose */

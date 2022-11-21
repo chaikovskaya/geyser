@@ -1,0 +1,52 @@
+
+.article {
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 198px;
+        left: -100%;
+        margin-left: -37px;
+        width: 1274px;
+        height: 1740px;
+        background: url(../images/catalog-category/catalog-category-decor-3.png) no-repeat 0 0;
+        background-size: 100% auto;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: -80px;
+        left: 100%;
+        margin-left: -50px;
+        width: 188px;
+        height: 156px;
+        background: url(../images/article/article-decor-1.png) no-repeat 0 0;
+        background-size: 100% auto;
+    }
+    &-block {
+        display: flex;
+        align-items: flex-start;
+    }
+    &-block-detail {
+        order: 1;
+    }
+
+    @media screen
+    and (max-width: $desktop){
+    }
+    @media screen
+    and (max-width: $tablet){
+        &:before {
+            display: none;
+        }
+        &:after {
+            display: none;
+        }
+    }
+    @media screen
+    and (max-width: $mobile) {
+        &-block {
+            display: block;
+        }
+    }
+}

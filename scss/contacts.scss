@@ -54,7 +54,6 @@
     }
     &-list-item_time {}
     &-list-item_socials {}
-    &-list-item_address {}
     &-list-panel {
         display: flex;
         margin-bottom: 12px;
@@ -102,6 +101,7 @@
     &-list-department {
         margin-bottom: 3px;
         font-size: 15px;
+        color: #333333;
     }
     &-list-phone {
         font-weight: 500;
@@ -150,6 +150,7 @@
     }
     &-feedback-content {
         margin-bottom: 27px;
+        color: #333333;
     }
     &-feedback-name {}
 
@@ -185,15 +186,16 @@
             margin-bottom: 15px;
         }
         &-list-item:nth-child(2n) {
+            order: 1;
+            width: 38%;
+            padding-right: 0;
+        }
+        &-list-item:nth-child(3) {
             width: 38%;
             padding-right: 0;
         }
         &-list-item_time:nth-child(2n) {
             width: 62%;
-        }
-        &-list-item_address {
-            width: 38%;
-            padding-right: 0;
         }
         &-list-box {
             display: flex;
@@ -214,18 +216,15 @@
                 padding-right: 0;
             }
         }
+        &-list-item:nth-child(3) &-list-content {
+            max-width: 270px;
+        }
         &-map-block {
             flex-grow: 1;
             height: 157px;
             margin-left: 0;
             overflow: hidden;
             border-radius: 5px 0 0 5px;
-        }
-        &-list-item_time {
-            order: 1;
-        }
-        &-list-item_socials {
-            order: 2;
         }
         &-list-panel {
             margin-bottom: 16px;
@@ -283,6 +282,9 @@
         &-feedback-name {
             margin-bottom: 15px;
         }
+        &-feedback-pic {
+            border-radius: 0 5px 5px 0;
+        }
     }
     @media screen
     and (max-width: $mobile) {
@@ -309,6 +311,9 @@
             }
         }
         &-list-item:nth-child(2n) {
+            width: 100%;
+        }
+        &-list-item:nth-child(3) {
             width: 100%;
         }
         &-list-item_time &-list-block {
@@ -344,6 +349,13 @@
         }
         &-feedback-pic {
             height: 186px;
+            border-radius: 5px;
         }
     }
+}
+
+ymaps[class*="-image"] {
+    width: 65px!important;
+    height: 65px!important;
+    background-size: 100% auto!important;
 }
