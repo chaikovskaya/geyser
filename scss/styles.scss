@@ -577,19 +577,21 @@ blockquote {
 	&-count {
 		font-size: 16px;
 		line-height: 19px;
-		color: rgba(255, 255, 255, 0.5);
+		color: rgba(255, 255, 255, 1);
 	}
 	&-count-current {
 		font-weight: 600;
 		color: rgba(255, 255, 255, 1);
 	}
-	&-count-common {}
+	&-count-common {
+		color: rgba(255, 255, 255, 0.5);
+	}
 	&-count-decor {
 		width: 19px;
 		height: 1px;
 		margin-left: 9px;
 		margin-right: 11px;
-		background-color: #fff;
+		background-color: rgba(255, 255, 255, 0.7);
 	}
 
 	&-simple-button {
