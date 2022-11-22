@@ -580,6 +580,8 @@ blockquote {
 		color: rgba(255, 255, 255, 1);
 	}
 	&-count-current {
+		display: inline-block;
+		min-width: 10px;
 		font-weight: 600;
 		color: rgba(255, 255, 255, 1);
 	}
@@ -674,6 +676,9 @@ blockquote {
 		&-count {
 			font-size: 14px;
 			line-height: 17px;
+		}
+		&-count-current {
+			min-width: 9px;
 		}
 		&-count-decor {
 			width: 15px;

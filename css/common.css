@@ -626,6 +626,8 @@ blockquote {
   color: white; }
 
 .slider-count-current {
+  display: inline-block;
+  min-width: 10px;
   font-weight: 600;
   color: white; }
 
@@ -712,6 +714,8 @@ blockquote {
   .slider-count {
     font-size: 14px;
     line-height: 17px; }
+  .slider-count-current {
+    min-width: 9px; }
   .slider-count-decor {
     width: 15px; }
   .slider-button-icon {
@@ -6964,3 +6968,216 @@ ymaps[class*="-image"] {
 
 .structure {
   margin-bottom: 86px; }
+  .structure-container {
+    position: relative;
+    background-color: #213194; }
+    .structure-container:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 100%;
+      z-index: -1;
+      width: 100vw;
+      max-width: none;
+      height: 100%;
+      background-color: #213194; }
+    .structure-container:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 100%;
+      z-index: -1;
+      width: 100vw;
+      max-width: none;
+      height: 100%;
+      background-color: #213194; }
+  .structure-block {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 69px;
+    height: 592px; }
+  .structure-info {
+    display: flex;
+    flex-direction: column;
+    width: 26%;
+    padding-right: 30px; }
+  .structure-nav {
+    margin-top: auto;
+    margin-right: auto;
+    margin-bottom: 45px; }
+  .structure-content {
+    width: 66%;
+    overflow: hidden;
+    margin-left: auto; }
+  .structure-label {
+    color: #FFFFFF;
+    font-size: 28px;
+    line-height: 42px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700; }
+  .structure-decor {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1700px;
+    max-width: none;
+    height: 100%;
+    transform: translateX(-50%); }
+    .structure-decor:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 706px;
+      max-width: none;
+      height: 100%;
+      background: linear-gradient(104.09deg, rgba(33, 49, 148, 0.56) 28.27%, rgba(33, 49, 148, 0) 74.63%); }
+    .structure-decor:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 200px;
+      max-width: none;
+      height: 100%;
+      background: linear-gradient(90deg, transparent 0%, #213194 100%); }
+  .structure-decor-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    max-width: none;
+    height: 100%;
+    background: linear-gradient(90deg, #213194 0%, transparent 100%); }
+  .structure-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("../images/structure/structure-img-1.jpg") no-repeat center top;
+    background-size: cover; }
+  .structure-layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 49, 148, 0.85); }
+  .structure-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 145px;
+    margin-top: 3px;
+    background: url("../images/structure/structure-text.svg") no-repeat left center;
+    background-size: 100% auto; }
+  .structure-group {
+    display: flex; }
+  .structure-group-item {
+    padding-right: 30px; }
+  .structure-list {
+    list-style-type: none; }
+  .structure-list-item {
+    margin-bottom: 29px; }
+    .structure-list-item:last-child {
+      margin-bottom: 0; }
+  .structure-group-item[data-slider-index="2"] .structure-list-item:nth-child(2) .structure-list-name {
+    max-width: none; }
+  .structure-count {
+    display: block;
+    min-height: 44px;
+    text-align: right;
+    margin-bottom: 17px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 25px;
+    color: #FFFFFF;
+    writing-mode: vertical-rl;
+    transform: scale(-1); }
+  .structure-list-item:hover .structure-count {
+    color: #FF9016; }
+  .structure-list-name {
+    position: relative;
+    min-height: 67px;
+    max-width: 325px;
+    padding-left: 35px;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+    font-weight: 500; }
+    .structure-list-name:after {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 1px;
+      width: 1px;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.5); }
+  @media screen and (max-width: 992px) {
+    .structure {
+      margin-bottom: 65px; }
+      .structure-block {
+        padding-top: 34px;
+        padding-bottom: 44px;
+        height: 497px; }
+      .structure-info {
+        width: 30%; }
+      .structure-content {
+        width: 69%; }
+      .structure-label {
+        font-size: 20px;
+        line-height: 30px; }
+      .structure-group-item {
+        padding-right: 10px; }
+      .structure-list-name {
+        min-height: 57px;
+        font-size: 16px;
+        line-height: 24px; }
+      .structure-count {
+        margin-bottom: 9px;
+        font-size: 28px; }
+      .structure-list-name {
+        min-height: 67px;
+        max-width: 325px;
+        padding-left: 25px; }
+      .structure-nav {
+        margin-bottom: 41px; }
+      .structure-decor {
+        width: calc(100% + 60px); }
+        .structure-decor:before {
+          width: 426px;
+          background: linear-gradient(104.09deg, rgba(33, 49, 148, 0.56) 28.27%, rgba(33, 49, 148, 0) 74.63%); }
+        .structure-decor:after {
+          display: none; }
+      .structure-img {
+        background-image: url("../images/structure/structure-img-2.jpg"); }
+      .structure-decor-1 {
+        display: none; } }
+  @media screen and (max-width: 992px) {
+    .structure-block {
+      flex-direction: column;
+      height: auto;
+      min-height: 550px; }
+    .structure-info {
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 11px; }
+    .structure-content {
+      width: 100%;
+      margin-bottom: 55px; }
+    .structure-nav {
+      position: absolute;
+      bottom: 44px;
+      left: 0;
+      margin-bottom: 0; }
+    .structure-name {
+      top: 38%;
+      left: 100%;
+      transform: rotate(-90deg);
+      width: 498px;
+      height: 115px;
+      margin-left: -300px; } }
