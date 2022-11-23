@@ -7117,6 +7117,9 @@ ymaps[class*="-image"] {
       width: 1px;
       height: 100%;
       background-color: rgba(255, 255, 255, 0.5); }
+  @media screen and (max-width: 1250px) {
+    .structure-content {
+      width: 74%; } }
   @media screen and (max-width: 992px) {
     .structure {
       margin-bottom: 65px; }
@@ -7138,7 +7141,8 @@ ymaps[class*="-image"] {
         font-size: 16px;
         line-height: 24px; }
       .structure-count {
-        margin-bottom: 9px;
+        min-height: 35px;
+        margin-bottom: 12px;
         font-size: 28px; }
       .structure-list-name {
         min-height: 67px;
@@ -7157,27 +7161,321 @@ ymaps[class*="-image"] {
         background-image: url("../images/structure/structure-img-2.jpg"); }
       .structure-decor-1 {
         display: none; } }
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 768px) {
     .structure-block {
       flex-direction: column;
       height: auto;
-      min-height: 550px; }
+      min-height: 543px;
+      padding-bottom: 47px; }
     .structure-info {
       width: 100%;
       padding-right: 0;
-      margin-bottom: 11px; }
+      margin-bottom: 19px; }
     .structure-content {
       width: 100%;
-      margin-bottom: 55px; }
+      margin-bottom: 35px; }
     .structure-nav {
       position: absolute;
       bottom: 44px;
       left: 0;
       margin-bottom: 0; }
+    .structure-list-item {
+      margin-bottom: 31px; }
+    .structure-list-name {
+      min-height: 50px;
+      max-width: 255px; }
     .structure-name {
-      top: 38%;
+      top: 220px;
       left: 100%;
       transform: rotate(-90deg);
-      width: 498px;
+      width: 493px;
       height: 115px;
       margin-left: -300px; } }
+
+.stages {
+  position: relative;
+  display: flex;
+  margin-bottom: 73px; }
+  .stages:before {
+    content: '';
+    position: absolute;
+    top: -303px;
+    left: 100%;
+    z-index: -1;
+    width: 1045px;
+    max-width: none;
+    height: 1145px;
+    margin-left: -84px;
+    background: url(../images/stages/stages-bgr-2.png) no-repeat 0 0;
+    background-size: 100% auto; }
+  .stages-slider {
+    position: relative;
+    width: 51%;
+    height: 586px; }
+  .stages-detail {
+    width: 47%;
+    padding-top: 36px;
+    padding-left: 61px; }
+  .stages-slider-inner {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 902px;
+    height: 100%;
+    background: url("../images/stages/stages-bgr-1.jpg") no-repeat 0 0;
+    background-size: cover;
+    border-radius: 5px; }
+    .stages-slider-inner:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 287px;
+      height: 100%;
+      background: linear-gradient(99.03deg, rgba(9, 19, 35, 0.22) 15.81%, rgba(9, 19, 35, 0) 62.7%);
+      border-radius: 5px 0 0 5px; }
+  .stages-title {
+    line-height: 48px;
+    margin-bottom: 17px; }
+  .stages-info {
+    margin-bottom: 38px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #333333; }
+  .stages-list {
+    margin-left: 40px; }
+  .stages-list-item {
+    display: none; }
+  .stages-list-item_active {
+    display: block; }
+  .stages-subtitle {
+    margin-bottom: 24px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    color: #111111; }
+  .stages-content {
+    max-width: 420px; }
+  .stages-years-wrapper {
+    position: relative;
+    height: 100%; }
+    .stages-years-wrapper:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: -1px;
+      margin-right: -62px;
+      width: 136px;
+      height: 1px;
+      background-color: #000000;
+      opacity: 0.7; }
+  .stages-years {
+    overflow: hidden;
+    width: 360px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: 135px;
+    position: relative;
+    padding-top: 49px;
+    padding-bottom: 49px; }
+    .stages-years:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.5); }
+  .stages-years-block {
+    overflow: hidden;
+    position: relative;
+    height: 339px;
+    margin-top: 43px;
+    margin-bottom: 0; }
+  .stages-years-item {
+    width: auto;
+    height: 70px;
+    padding-left: 85px;
+    position: relative; }
+    .stages-years-item:before {
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 50%;
+      width: 7px;
+      height: 7px;
+      margin-left: -3px;
+      background-color: #fff;
+      border-radius: 50%; }
+  .stages-years-name {
+    width: 90px;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF; }
+  .stages-button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer; }
+    .stages-button:hover {
+      background-color: #213194;
+      border-color: #213194; }
+    .stages-button:active {
+      background-color: #0E1E82;
+      border-color: #0E1E82; }
+  .stages-button-icon {
+    display: block;
+    width: 14px;
+    height: 9px;
+    background: no-repeat 0 0;
+    background-size: 100% auto; }
+  .stages-button_prev .stages-button-icon {
+    margin-left: 1px;
+    background-image: url(../images/card/card-icons/arrow-top-light.svg); }
+  .stages-button_next .stages-button-icon {
+    margin-top: 2px;
+    background-image: url(../images/card/card-icons/arrow-bottom-light.svg); }
+  .stages-years-item.swiper-slide-active .stages-years-name {
+    width: 155px;
+    text-align: right;
+    margin-top: -12px;
+    margin-left: auto;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 43px; }
+  .stages-years-item.swiper-slide-active:after {
+    content: '';
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 46px;
+    height: 46px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%; }
+  @media screen and (max-width: 992px) {
+    .stages {
+      margin-bottom: 60px; }
+      .stages:before {
+        top: -65px;
+        width: 500px;
+        height: 400px;
+        margin-left: -52px; }
+      .stages-slider {
+        width: 49%;
+        height: 419px; }
+      .stages-detail {
+        width: 51%;
+        padding-top: 10px;
+        padding-left: 25px; }
+      .stages-slider-inner {
+        width: 471px; }
+        .stages-slider-inner:before {
+          width: 381px;
+          background: linear-gradient(127.52deg, rgba(9, 19, 35, 0.57) 18.64%, rgba(9, 19, 35, 0) 68.94%); }
+      .stages-title {
+        margin-bottom: 22px;
+        line-height: 34px; }
+      .stages-info {
+        margin-bottom: 21px;
+        font-size: 14px;
+        line-height: 21px; }
+      .stages-list {
+        margin-left: 0; }
+      .stages-subtitle {
+        margin-bottom: 14px;
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: -0.02em; }
+      .stages-content {
+        line-height: 22px; }
+      .stages-years-wrapper:after {
+        margin-top: -1px;
+        margin-right: -14px;
+        width: 30px; }
+      .stages-years {
+        width: 200px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        margin-right: 41px; }
+      .stages-years-block {
+        margin-top: 40px;
+        height: 270px;
+        margin-bottom: 15px; }
+      .stages-years-item {
+        height: 55px;
+        padding-left: 23px; }
+        .stages-years-item:before {
+          width: 6px;
+          height: 6px; }
+      .stages-button {
+        width: 32px;
+        height: 32px; }
+      .stages-years-name {
+        font-size: 14px;
+        line-height: 21px; }
+      .stages-years-item.swiper-slide-active:after {
+        top: -9px;
+        width: 35px;
+        height: 35px; }
+      .stages-years-item.swiper-slide-active .stages-years-name {
+        width: 79px;
+        margin-top: -8px;
+        font-size: 24px;
+        line-height: 36px; } }
+  @media screen and (max-width: 768px) {
+    .stages {
+      flex-direction: column; }
+      .stages:before {
+        display: none; }
+      .stages-slider {
+        width: 100%;
+        height: 0;
+        order: 1; }
+      .stages-years-wrapper {
+        height: auto;
+        margin-top: -50px; }
+      .stages-years-block {
+        overflow: hidden;
+        width: 100px;
+        height: 50px;
+        margin-top: 0;
+        margin-bottom: 0; }
+      .stages-detail {
+        width: auto;
+        height: 584px;
+        padding-top: 28px;
+        padding-bottom: 35px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: -30px;
+        margin-right: -30px;
+        background: url("../images/stages/stages-bgr-1.jpg") no-repeat 0 0;
+        background-size: cover; }
+      .stages-years {
+        overflow: visible;
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+        display: flex; }
+      .stages-slider-inner {
+        width: 100%; }
+        .stages-slider-inner:before {
+          width: 100%; }
+      .stages-title {
+        color: #FFFFFF; }
+      .stages-info {
+        color: #FFFFFF; }
+      .stages-subtitle {
+        color: #FFFFFF; }
+      .stages-content {
+        color: #FFFFFF; } }

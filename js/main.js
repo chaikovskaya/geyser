@@ -941,6 +941,57 @@ function initSliderStructure() {
     });
 }
 
+var sliderStages;
+function initSliderStages() {
+    jQuery('.js-slider-stages').each(function() {
+        var $slider = $(this),
+            $list = $(this).find('.js-slider-list'),
+            sliderLength = $slider.find('.swiper-slide').length,
+            $description = $slider.find('.js-slider-description');
+
+        var isStart = sliderLength > 1 ? true : false;
+
+        sliderStages = new Swiper($list[0], {
+            loop: false,
+            pagination: false,
+            navigation: {
+                nextEl: $slider.find('.js-slider-next')[0],
+                prevEl: $slider.find('.js-slider-prev')[0],
+                disabledClass: "slider-button_disabled",
+            },
+            slidesPerView: 'auto',
+            threshold: 10,
+            spaceBetween: 0,
+            centeredSlides: true,
+            breakpoints: {
+                0: {
+                    simulateTouch: false,
+                    direction: 'horizontal',
+                },
+                768: {
+                    direction: "vertical",
+                },
+                992: {
+                    direction: "vertical",
+                },
+            },
+            on: {
+                beforeInit: function () {
+                },
+                init: function () {
+                },
+                slideChangeTransitionEnd: function () {
+                    var index = $slider.find('.swiper-slide-active').data('slider-index');
+
+                    $description.removeClass('stages-list-item_active');
+                    var item = $description.filter('[data-slider-index="' + index + '"]');
+                    item.addClass('stages-list-item_active');
+                },
+            },
+        });
+    });
+}
+
 function initResizeWindow() {
     var width = $(window).outerWidth();
     if (width <= GLOBAL.mobile) {
@@ -1012,4 +1063,5 @@ $(document).ready(function () {
     ymaps.ready(initMap);
     initSliderPartners();
     initSliderStructure();
+    initSliderStages();
 });
