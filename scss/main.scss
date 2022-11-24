@@ -1716,6 +1716,9 @@
         text-decoration-line: underline;
         color: #111111;
         font-weight: 500;
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     @media screen

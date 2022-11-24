@@ -1,0 +1,866 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Проекты. Гейзер</title>
+
+    <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./libs/Selectric/public/selectric.css" />
+    <link rel="stylesheet" href="./libs/simplebar/simplebar.min.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+ </head>
+
+<body class="main-page">
+    <div class="svg-box">
+    </div>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-top">
+                <div class="header-top-container container">
+                    <div class="header-top-item header-top-item_logo">
+                        <a class="header-logo" href="/">
+                            <img src="./images/geyser-logo.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="header-top-item header-top-item_phone">
+                        <div class="header-phone JS-Dropdown" data-dropdown="{'classActive': 'header-phone_active'}">
+                            <div class="header-phone-block">
+                                <div class="header-phone-number"><a href="tel:+78005505089">8 800 550-50-89</a></div>
+                                <a class="header-phone-switcher JS-Dropdown-Switcher" href="javascript:;">
+                                    <span class="header-phone-icon icon icon_buttom"></span>
+                                </a>
+                            </div>
+                            <div class="header-phone-department">Отдел продаж</div>
+                            <div class="header-phone-dropdown JS-Dropdown-Menu">
+                                <ul class="header-phone-list">
+                                    <li class="header-phone-list-item">
+                                        <div class="header-phone-list-number"><a href="tel:+79273683645">8 927 368-36-45</a></div>
+                                        <div class="header-phone-list-department">Сервис</div>
+                                    </li>
+                                    <li class="header-phone-list-item">
+                                        <div class="header-phone-list-number"><a href="tel:+79273683645">8 927 368-36-45</a></div>
+                                        <div class="header-phone-list-department">Сервис</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-top-item header-top-item_phone-simple">
+                        <div class="header-phone-block">
+                            <div class="header-phone-number"><a href="tel:+79273683645">8 927 368-36-45</a></div>
+                        </div>
+                        <div class="header-phone-department">Сервис</div>
+                    </div>
+                    <div class="header-top-item header-top-item_presentation">
+                        <a class="button button_simple" href="#">Скачать презентацию</a>
+                    </div>
+                    <div class="header-top-item header-top-item_callback">
+                        <div class="header-callback">
+                            <div class="header-callback-label">Связаться с&nbsp;нами</div>
+                            <a class="header-callback-link js-popup-callback" href="javascript:;" data-src="./ajax/callback.html">
+                                <i class="header-callback-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-top-item header-top-item_socials">
+                        <ul class="socials">
+                            <li class="socials-item">
+                                <a class="socials-link" href="#">
+                                    <i class="socials-icon socials-icon_tg"></i>
+                                </a>
+                            </li>
+                            <li class="socials-item">
+                                <a class="socials-link" href="#">
+                                    <i class="socials-icon socials-icon_youtube"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mob-menu JS-MobileMenu" data-mobilemenu="{
+                        'classActive': 'open',
+                        'classShow': 'mob-menu-show',
+                        'classElementActive': 'mob-menu_active',
+                        'backgroundDisabled': 'true'
+                    }">
+                        <a class="mob-menu-switcher JS-MobileMenu-Burger" href="javascript:;">
+                            <i class="mob-menu-switcher-icon icon icon_burger"></i>
+                        </a>
+                        <div class="mob-block JS-MobileMenu-Dropdown">
+                            <div class="mob-close-panel">
+                                <a class="mob-menu-switcher-close JS-MobileMenu-Close" href="javascript:;">
+                                    <span class="mob-menu-close-icon icon icon_close"></span>
+                                </a>
+                            </div>
+                            <div class="mob-nav">
+                                <ul class="mob-list">
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link JS-MobileMenu-Parent" href="javascript:;">
+                                            Каталог<i class="mob-list-icon icon icon_arrow-right"></i>
+                                        </a>
+                                        <div class="mob-child JS-MobileMenu-Child">
+                                            <div class="mob-back">
+                                                <a class="mob-back-link JS-MobileMenu-Back" href="javascript:;">
+                                                    <i class="mob-back-icon icon icon_arrow-left"></i>Назад
+                                                </a>
+                                                <a class="mob-menu-switcher-close JS-MobileMenu-Close" href="javascript:;">
+                                                    <i class="mob-menu-close-icon icon icon_close"></i>
+                                                </a>
+                                            </div>
+                                            <a class="mob-list-current" href="#">Каталог</a>
+                                            <ul class="mob-list mob-list-child">
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-link" href="#">Оборудование для очистки поверхности/ Моечное оборудование</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-link" href="#">Испытательное оборудование</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-link" href="#">Вспомогательное оборудование</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-link" href="#">Моющие средства</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-link" href="#">Нестандартные проекты</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link JS-MobileMenu-Parent" href="#">
+                                            Сферы применения<i class="mob-list-icon icon icon_arrow-right"></i>
+                                        </a>
+                                        <div class="mob-child JS-MobileMenu-Child">
+                                            <div class="mob-back">
+                                                <a class="mob-back-link JS-MobileMenu-Back" href="javascript:;">
+                                                    <i class="mob-back-icon icon icon_arrow-left"></i>Назад
+                                                </a>
+                                                <a class="mob-menu-switcher-close JS-MobileMenu-Close" href="javascript:;">
+                                                    <i class="mob-menu-close-icon icon icon_close"></i>
+                                                </a>
+                                            </div>
+                                            <a class="mob-list-current" href="#">Сферы применения</a>
+                                            <ul class="mob-list mob-list-child">
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-link" href="#">Наши Проекты</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-link" href="#">Отзывы</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-link" href="#">Акции</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link JS-MobileMenu-Parent" href="javascript:;">
+                                            Проекты<i class="mob-list-icon icon icon_arrow-right"></i>
+                                        </a>
+                                        <div class="mob-child JS-MobileMenu-Child">
+                                            <div class="mob-back">
+                                                <a class="mob-back-link JS-MobileMenu-Back" href="javascript:;">
+                                                    <i class="mob-back-icon icon icon_arrow-left"></i>Назад
+                                                </a>
+                                                <a class="mob-menu-switcher-close JS-MobileMenu-Close" href="javascript:;">
+                                                    <i class="mob-menu-close-icon icon icon_close"></i>
+                                                </a>
+                                            </div>
+                                            <a class="mob-list-current" href="#">Проекты</a>
+                                            <ul class="mob-list mob-list-child">
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-link" href="#">Наши Проекты</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-link" href="#">Отзывы</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-link" href="#">Акции</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link" href="#">Истории успеха</a>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link" href="#">О нас</a>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link JS-MobileMenu-Parent" href="#">
+                                            Покупателям<i class="mob-list-icon icon icon_arrow-right"></i>
+                                        </a>
+                                        <div class="mob-child JS-MobileMenu-Child">
+                                            <div class="mob-back">
+                                                <a class="mob-back-link JS-MobileMenu-Back" href="javascript:;">
+                                                    <i class="mob-back-icon icon icon_arrow-left"></i>Назад
+                                                </a>
+                                                <a class="mob-menu-switcher-close JS-MobileMenu-Close" href="javascript:;">
+                                                    <i class="mob-menu-close-icon icon icon_close"></i>
+                                                </a>
+                                            </div>
+                                            <a class="mob-list-current" href="#">Покупателям</a>
+                                            <ul class="mob-list mob-list-child">
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-link" href="#">Доставка и оплата</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-link" href="#">Отзывы</a>
+                                                </li>
+                                                <li class="mob-list-item">
+                                                    <a class="mob-list-link" href="#">Акции</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="mob-list-item">
+                                        <a class="mob-list-link" href="#">Контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mob-info">
+                                <div class="mob-info-name">Отдел продаж</div>
+                                <div class="mob-phone-value">
+                                    <a href="tel:+78005505089">8 800 550-50-89</a>
+                                </div>
+                            </div>
+                            <div class="mob-info">
+                                <div class="mob-info-name">Сервис</div>
+                                <div class="mob-phone-value">
+                                    <a href="tel:+79273683645">8 927 368-36-45</a>
+                                </div>
+                            </div>
+                            <div class="mob-info">
+                                <div class="mob-callback">
+                                    <div class="mob-callback-label">Связаться с нами</div>
+                                    <div class="socials-item">
+                                        <a class="mob-callback-link socials-link" href="#">
+                                            <i class="mob-callback-icon"></i>
+                                        </a>
+                                    </div>
+                                    <ul class="socials">
+                                        <li class="socials-item">
+                                            <a class="socials-link" href="#">
+                                                <i class="socials-icon socials-icon_tg"></i>
+                                            </a>
+                                        </li>
+                                        <li class="socials-item">
+                                            <a class="socials-link" href="#">
+                                                <i class="socials-icon socials-icon_youtube"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mob-menu-decor JS-MobileMenu-Close"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu container">
+                <div class="menu-catalog js-main-menu-switcher JS-Dropdown" data-mainmenu-class="menu-catalog_active" data-dropdown="{
+                    'classActive': 'menu-catalog_active',
+                    'classShow': 'catalog-menu-show'
+                }">
+                    <a class="menu-catalog-switcher JS-Dropdown-Switcher" href="javascript:;">Каталог</a>
+                    <div class="menu-catalog-container container JS-Dropdown-Menu">
+                        <div class="menu-catalog-block js-custom-scroll">
+                            <ul class="menu-catalog-list">
+                                <li class="menu-catalog-item">
+                                    <a class="menu-catalog-link" href="#">Оборудование для очистки поверхности/ Моечное оборудование</a>
+                                    <ul class="submenu-catalog-list">
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Моечные машины вертикальной загрузкой</a>
+                                        </li>
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Моечные машины с ручной доработкой</a>
+                                        </li>
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Фронтальные моечные машины</a>
+                                        </li>
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Портальные моечные машины</a>
+                                        </li>
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Туннельные моечные машины</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-catalog-item">
+                                    <a class="menu-catalog-link" href="#">Испытательное оборудование</a>
+                                    <ul class="submenu-catalog-list">
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Моечные машины вертикальной загрузкой</a>
+                                        </li>
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Моечные машины с ручной доработкой</a>
+                                        </li>
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Фронтальные моечные машины</a>
+                                        </li>
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Портальные моечные машины</a>
+                                        </li>
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Туннельные моечные машины</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-catalog-item">
+                                    <a class="menu-catalog-link" href="#">Вспомогательное оборудование</a>
+                                    <ul class="submenu-catalog-list">
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Моечные машины вертикальной загрузкой</a>
+                                        </li>
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Моечные машины с ручной доработкой</a>
+                                        </li>
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Фронтальные моечные машины</a>
+                                        </li>
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Портальные моечные машины</a>
+                                        </li>
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Туннельные моечные машины</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-catalog-item">
+                                    <a class="menu-catalog-link" href="#">Моющие средства</a>
+                                    <ul class="submenu-catalog-list">
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Моечные машины вертикальной загрузкой</a>
+                                        </li>
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Моечные машины с ручной доработкой</a>
+                                        </li>
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Фронтальные моечные машины</a>
+                                        </li>
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Портальные моечные машины</a>
+                                        </li>
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Туннельные моечные машины</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-catalog-item">
+                                    <a class="menu-catalog-link" href="#">Нестандартные проекты</a>
+                                    <ul class="submenu-catalog-list">
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Моечные машины вертикальной загрузкой</a>
+                                        </li>
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Моечные машины с ручной доработкой</a>
+                                        </li>
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Фронтальные моечные машины</a>
+                                        </li>
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Портальные моечные машины</a>
+                                        </li>
+                                        <li class="submenu-catalog-item">
+                                            <a class="submenu-catalog-link" href="#">Туннельные моечные машины</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu-catalog-decor-left JS-Dropdown-Close"></div>
+                        <div class="menu-catalog-decor-right JS-Dropdown-Close"></div>
+                    </div>
+                </div>
+                <ul class="main-menu">
+                    <li class="main-menu-item js-main-menu-item">
+                        <a class="main-menu-link" href="#">
+                            Сферы применения<i class="main-menu-icon icon icon_buttom"></i>
+                        </a>
+                        <ul class="main-submenu">
+                            <li class="main-submenu-item">
+                                <a class="main-submenu-link" href="#">Наши Проекты</a>
+                            </li>
+                            <li class="main-submenu-item">
+                                <a class="main-submenu-link" href="#">Отзывы</a>
+                            </li>
+                            <li class="main-submenu-item">
+                                <a class="main-submenu-link" href="#">Акции</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu-item js-main-menu-item">
+                        <a class="main-menu-link" href="#">
+                            Проекты<i class="main-menu-icon icon icon_buttom"></i>
+                        </a>
+                        <ul class="main-submenu">
+                            <li class="main-submenu-item">
+                                <a class="main-submenu-link" href="#">Наши Проекты</a>
+                            </li>
+                            <li class="main-submenu-item">
+                                <a class="main-submenu-link" href="#">Отзывы</a>
+                            </li>
+                            <li class="main-submenu-item">
+                                <a class="main-submenu-link" href="#">Акции</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu-item">
+                        <a class="main-menu-link" href="#">Истории успеха</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a class="main-menu-link" href="#">О нас</a>
+                    </li>
+                    <li class="main-menu-item js-main-menu-item">
+                        <a class="main-menu-link" href="#">
+                            Покупателям<i class="main-menu-icon icon icon_buttom"></i>
+                        </a>
+                        <ul class="main-submenu">
+                            <li class="main-submenu-item">
+                                <a class="main-submenu-link" href="#">Доставка и оплата</a>
+                            </li>
+                            <li class="main-submenu-item">
+                                <a class="main-submenu-link" href="#">Отзывы</a>
+                            </li>
+                            <li class="main-submenu-item">
+                                <a class="main-submenu-link" href="#">Акции</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="main-menu-item">
+                        <a class="main-menu-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <main class="main-content">
+
+            <div class="container">
+                <div class="breadcrumbs breadcrumbs_simple js-expand" data-expand="{
+                    'classActive': 'breadcrumbs_active',
+                    'classShow': 'breadcrumbs_show'
+                }">
+                    <ul class="breadcrumbs-list js-expand-block">
+                        <li class="breadcrumbs-item">
+                            <a class="breadcrumbs-link" href="/">Главная</a>
+                            <span class="breadcrumbs-icon"></span>
+                        </li>
+                        <li class="breadcrumbs-item">
+                            <a class="breadcrumbs-link" href="#">Каталог</a>
+                            <span class="breadcrumbs-icon"></span>
+                        </li>
+                        <li class="breadcrumbs-item">Оборудование для очистки поверхности/ Моечное оборудование</li>
+                        <li class="breadcrumbs-item breadcrumbs-item_more">
+                            <a class="breadcrumbs-link js-expand-link" href="javascript:;"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="projects JS-AjaxMore">
+                    <h1>Опыт нестандартных решений</h1>
+                    <ul class="projects-list JS-AjaxMore-Content">
+                        <li class="projects-list-item">
+                            <div class="projects-list-main projects-list-col">
+                                <span class="projects-list-title">Кейс 1</span>
+                                <div class="projects-list-author">
+                                    Технический директор<br />
+                                    Ярослав Мордашов
+                                </div>
+                                <div class="projects-list-company">
+                                    АО "Уральское конструкторское бюро транспортного машиностроения"
+                                </div>
+                            </div>
+                            <div class="projects-list-img projects-list-col">
+                                <img class="projects-list-pic" src="./images/projects/projects-img-1.jpg" alt="" />
+                            </div>
+                            <div class="projects-list-detail projects-list-col">
+                                <div class="projects-list-name">Попробовали, и оснастили несколько участков опытного производства АО "УКБТМ"!</div>
+                                <div class="projects-list-content content">Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate sed Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate sed Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate  varius ultrices neque consequat, vulputate sed Enim blandit onsequat, vulputate sed Enim blandit</div>
+                                <a class="projects-list-more" href="#">Показать полностью</a>
+                            </div>
+                        </li>
+                        <li class="projects-list-item">
+                            <div class="projects-list-main projects-list-col">
+                                <span class="projects-list-title">Кейс 2</span>
+                                <div class="projects-list-author">
+                                    Технический директор<br />
+                                    Ярослав Мордашов
+                                </div>
+                                <div class="projects-list-company">
+                                    АО "Уральское конструкторское бюро транспортного машиностроения"
+                                </div>
+                            </div>
+                            <div class="projects-list-img projects-list-col">
+                                <img class="projects-list-pic" src="./images/projects/projects-img-2.jpg" alt="" />
+                            </div>
+                            <div class="projects-list-detail projects-list-col">
+                                <div class="projects-list-name">Попробовали, и оснастили несколько участков опытного производства АО "УКБТМ"!</div>
+                                <div class="projects-list-content content">Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate sed Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate sed Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate  varius ultrices neque consequat, vulputate sed Enim blandit onsequat, vulputate sed Enim blandit</div>
+                                <a class="projects-list-more" href="#">Показать полностью</a>
+                            </div>
+                        </li>
+                        <li class="projects-list-item">
+                            <div class="projects-list-main projects-list-col">
+                                <span class="projects-list-title">Кейс 3</span>
+                                <div class="projects-list-author">
+                                    Технический директор<br />
+                                    Ярослав Мордашов
+                                </div>
+                                <div class="projects-list-company">
+                                    АО "Уральское конструкторское бюро транспортного машиностроения"
+                                </div>
+                            </div>
+                            <div class="projects-list-img projects-list-col">
+                                <img class="projects-list-pic" src="./images/projects/projects-img-3.jpg" alt="" />
+                            </div>
+                            <div class="projects-list-detail projects-list-col">
+                                <div class="projects-list-name">Попробовали, и оснастили несколько участков опытного производства АО "УКБТМ"!</div>
+                                <div class="projects-list-content content">Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate sed Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate sed Enim blandit rhoncus purus aliquam varius ultrices neque consequat, vulputate  varius ultrices neque consequat, vulputate sed Enim blandit onsequat, vulputate sed Enim blandit</div>
+                                <a class="projects-list-more" href="#">Показать полностью</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="load-more">
+                        <a class="load-more-link button button_modified JS-AjaxMore-Link" href="javascript:;" data-ajaxmore-url="./ajax/projects.html">
+                            ПОКАЗАТЬ ВСЕ<i class="load-more-icon"></i>
+                        </a>
+                        <ul class="pager JS-AjaxMore-Pager">
+                            <!-- Если не куда листать, добавляется класс pager-item_disabled -->
+                            <li class="pager-item pager-item_prev">
+                                <a class="pager-link" href="#">
+                                    <span class="pager-icon pager-icon_prev icon icon_arrow-left-light"></span>
+                                </a>
+                            </li>
+                            <li class="pager-item pager-item_active"><span class="pager-link">1</span></li>
+                            <li class="pager-item"><a class="pager-link" href="#">2</a></li>
+                            <li class="pager-item"><a class="pager-link" href="#">3</a></li>
+                            <!-- Если не куда листать, добавляется класс pager-item_disabled -->
+                            <li class="pager-item pager-item_next">
+                                <a class="pager-link" href="#">
+                                    <span class="pager-icon pager-icon_next icon icon_arrow-right-light"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <section class="partners">
+                    <h2 class="h1">Наши партнёры</h2>
+                    <div class="partners-container js-slider-partners">
+                        <div class="partners-block">
+                            <div class="partners-block-label">4700</div>
+                            <div class="partners-block-inner content">Довольных покупателей</div>
+                            <div class="partners-nav slider-nav">
+                                <div class="slider-count">
+                                    <span class="slider-count-current js-slider-count">1</span> / <span class="slider-count-common">2</span>
+                                </div>
+                                <div class="slider-count-decor"></div>
+                                <div class="slider-button slider-button_prev js-slider-prev">
+                                    <span class="slider-button-icon"></span>
+                                </div>
+                                <div class="slider-button slider-button_next js-slider-next">
+                                    <span class="slider-button-icon slider-button-icon_right"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="partners-content js-slider-list">
+                            <div class="partners-group swiper-wrapper">
+                                <div class="partners-group-item swiper-slide" data-slider-index="1">
+                                    <ul class="partners-list">
+                                        <li class="partners-list-item">
+                                            <img class="partners-list-img" src="./images/partners/partners-img-1.png" alt="" />
+                                        </li>
+                                        <li class="partners-list-item">
+                                            <img class="partners-list-img" src="./images/partners/partners-img-2.png" alt="" />
+                                        </li>
+                                        <li class="partners-list-item">
+                                            <img class="partners-list-img" src="./images/partners/partners-img-3.png" alt="" />
+                                        </li>
+                                        <li class="partners-list-item">
+                                            <img class="partners-list-img" src="./images/partners/partners-img-4.png" alt="" />
+                                        </li>
+                                        <li class="partners-list-item">
+                                            <img class="partners-list-img" src="./images/partners/partners-img-5.png" alt="" />
+                                        </li>
+                                        <li class="partners-list-item">
+                                            <img class="partners-list-img" src="./images/partners/partners-img-6.png" alt="" />
+                                        </li>
+                                        <li class="partners-list-item">
+                                            <img class="partners-list-img" src="./images/partners/partners-img-7.png" alt="" />
+                                        </li>
+                                        <li class="partners-list-item">
+                                            <img class="partners-list-img" src="./images/partners/partners-img-8.png" alt="" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="partners-group-item swiper-slide" data-slider-index="2">
+                                    <ul class="partners-list">
+                                        <li class="partners-list-item">
+                                            <img class="partners-list-img" src="./images/partners/partners-img-1.png" alt="" />
+                                        </li>
+                                        <li class="partners-list-item">
+                                            <img class="partners-list-img" src="./images/partners/partners-img-2.png" alt="" />
+                                        </li>
+                                        <li class="partners-list-item">
+                                            <img class="partners-list-img" src="./images/partners/partners-img-3.png" alt="" />
+                                        </li>
+                                        <li class="partners-list-item">
+                                            <img class="partners-list-img" src="./images/partners/partners-img-4.png" alt="" />
+                                        </li>
+                                        <li class="partners-list-item">
+                                            <img class="partners-list-img" src="./images/partners/partners-img-5.png" alt="" />
+                                        </li>
+                                        <li class="partners-list-item">
+                                            <img class="partners-list-img" src="./images/partners/partners-img-6.png" alt="" />
+                                        </li>
+                                        <li class="partners-list-item">
+                                            <img class="partners-list-img" src="./images/partners/partners-img-7.png" alt="" />
+                                        </li>
+                                        <li class="partners-list-item">
+                                            <img class="partners-list-img" src="./images/partners/partners-img-8.png" alt="" />
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="order-test">
+                    <div class="order-test-img">
+                        <img class="order-test-pic" src="./images/projects/projects-order-form.jpg" alt="" />
+                    </div>
+                    <div class="order-test-form">
+                        <div class="order-test-name h2">Закажите бесплатную тестовую мойку</div>
+                        <div class="order-test-content content">* Бесплатная тестовая мойка достпуна в городе Пенза</div>
+                        <form class="js-form-validate js-form">
+                            <div class="order-test-row">
+                                <div class="order-test-col field js-form-validate-field">
+                                    <span class="field-input">
+                                        <input class="order-test-input input input_simple" type="text" placeholder="Ваше имя" id="name-5" name="name-5" required />
+                                    </span>
+                                </div>
+                                <div class="order-test-col field js-form-validate-field">
+                                    <span class="field-input">
+                                        <input class="order-test-input input input_simple js-mask-email" type="text" placeholder="Ваш e-mail" id="phone-5" name="phone-5" required />
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="field js-form-validate-field">
+                                <span class="field-input">
+                                    <input class="input input_simple" type="text" placeholder="ИНН" id="inn" name="inn" required />
+                                </span>
+                            </div>
+                            <div class="switch-field">
+                                <label class="switch">
+                                    <input class="switch-checkbox js-form-checkbox" type="checkbox" name="agreement" checked="checked" />
+                                    <span class="switch-decor">
+                                        <span class="switch-icon"></span>
+                                    </span>
+                                    <span class="switch-label">Я согласен на обработку персональных данных</span>
+                                </label>
+                            </div>
+                            <button class="button button_wide button_long js-form-button">Оставить заявку</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+        <footer class="footer">
+            <div class="footer-block">
+                <div class="footer-main-container container">
+                    <div class="footer-item footer-item_company">
+                        <a class="footer-logo" href="/">
+                            <img class="footer-logo-img" src="./images/geyser-logo-light.svg" alt="" />
+                        </a>
+                        <ul class="footer-menu footer-menu_simple">
+                            <li class="footer-menu-item">
+                                <a class="footer-menu-link" href="#">Публичная оферта</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a class="footer-menu-link" href="#">Политика конфиденциальности</a>
+                            </li>
+                        </ul>
+                        <a class="footer-button-download button button_simple-light" href="#">Скачать презентацию</a>
+                    </div>
+                    <div class="footer-item footer-item_menu">
+                        <div class="footer-menu-block">
+                            <span class="footer-menu-name">Продукция</span>
+                            <ul class="footer-menu">
+                                <li class="footer-menu-item">
+                                    <a class="footer-menu-link" href="#">Моечное оборудование</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a class="footer-menu-link" href="#">Испытальное оборудование</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a class="footer-menu-link" href="#">Вспомогательное оборудование</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a class="footer-menu-link" href="#">Моющие средства</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a class="footer-menu-link" href="#">Нестандартные проекты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu-block">
+                            <span class="footer-menu-name">Сферы применения</span>
+                            <ul class="footer-menu">
+                                <li class="footer-menu-item">
+                                    <a class="footer-menu-link" href="#">Оборудование для СТО</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a class="footer-menu-link" href="#">Промышленные моечные машины</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a class="footer-menu-link" href="#">Мойки тары</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu-block">
+                            <span class="footer-menu-name">Проекты</span>
+                            <ul class="footer-menu">
+                                <li class="footer-menu-item">
+                                    <a class="footer-menu-link" href="#">Нестанадартные проекты</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a class="footer-menu-link" href="#">Принципы и условия сотрудничества</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a class="footer-menu-link" href="#">Заказчики</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu-block">
+                            <span class="footer-menu-name">О нас</span>
+                            <ul class="footer-menu">
+                                <li class="footer-menu-item">
+                                    <a class="footer-menu-link" href="#">Этапы развития</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a class="footer-menu-link" href="#">Структура предприятия</a>
+                                </li>
+                                <li class="footer-menu-item">
+                                    <a class="footer-menu-link" href="#">Заказчики</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-item footer-item_buyers">
+                        <span class="footer-menu-name">Покупателям</span>
+                        <ul class="footer-menu">
+                            <li class="footer-menu-item">
+                                <a class="footer-menu-link" href="#">Преимущества и&nbsp;применение</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a class="footer-menu-link" href="#">Как выбрать моечное оборудование</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a class="footer-menu-link" href="#">Доставка и оплата</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a class="footer-menu-link" href="#">Сертификаты</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a class="footer-menu-link" href="#">Тестовая мойка</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a class="footer-menu-link" href="#">Отзывы</a>
+                            </li>
+                            <li class="footer-menu-item">
+                                <a class="footer-menu-link" href="#">Заказать звонок</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-item footer-item_contacts">
+                        <div class="footer-phone">
+                            <span class="footer-menu-name">Связаться с нами</span>
+                            <ul class="footer-phone-list">
+                                <li class="footer-phone-item">
+                                    <a href="tel:+78412603698">+7(8412) 60-36-98</a>
+                                </li>
+                                <li class="footer-phone-item">
+                                    <a href="tel:+78412603697">+7(8412) 60-36-97</a>
+                                </li>
+                            </ul>
+                            <div class="footer-time">Пн-Вс: с 9:00 до 18:00</div>
+                        </div>
+                        <ul class="footer-address">
+                            <li class="footer-address-item">
+                                <i class="footer-address-icon footer-address-icon_mail icon icon_mail"></i>
+                                <div class="footer-address-info"><a href="mailto:moykageyser@gmail.com">moykageyser@gmail.com</a></div>
+                            </li>
+                            <li class="footer-address-item">
+                                <i class="footer-address-icon icon icon_location"></i>
+                                <div class="footer-address-info">442961, Пензенская область, г.&nbsp;Заречный, ул.Восточная 7А</div>
+                            </li>
+                        </ul>
+                        <div class="footer-socials">
+                            <span class="footer-menu-name">Мы в соцсетях</span>
+                            <ul class="socials socials_light">
+                                <li class="socials-item">
+                                    <a class="socials-link" href="#">
+                                        <i class="socials-icon socials-icon_tg"></i>
+                                    </a>
+                                </li>
+                                <li class="socials-item">
+                                    <a class="socials-link" href="#">
+                                        <i class="socials-icon socials-icon_youtube"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-bottom-container container">
+                        <div class="footer-copyright">2022-Компания “Гейзер”</div>
+                        <div class="footer-develop">Разработка сайта-”Экспансия”</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="decor-popup"></div>
+
+        <div class="preloader g-hidden js-preloader">
+            <div class="preloader-container"></div>
+        </div>
+
+        <div class="form-popup-container js-form-popup"></div>
+
+    </div>
+
+    <script src="./libs/jquery/jquery-3.5.1.min.js"></script>
+    <script src="./libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="./libs/validate/jquery.validate.min.js"></script>
+    <script src="./libs/inputmask/jquery.inputmask.min.js"></script>
+    <script src="./libs/swiper/swiper.min.js"></script>
+    <script src="./libs/swiper/swiper-bundle.min.js"></script>
+    <script src="./libs/Selectric/public/jquery.selectric.min.js"></script>
+    <script src="./libs/simplebar/simplebar.min.js"></script>
+    <script defer src="./libs/wow/wow.min.js"></script>
+    <script src="./js/JSC.Dropdown.js"></script>
+    <script src="./js/JSC.MobileMenu.js"></script>
+    <script src="./js/JSC.AjaxMore.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="./js/map.js"></script>
+
+    <script src="./js/main.js"></script>
+
+</body>
+</html>

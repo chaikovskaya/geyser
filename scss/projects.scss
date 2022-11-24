@@ -1,0 +1,280 @@
+
+.projects {
+    position: relative;
+    margin-bottom: 78px;
+    &:before {
+        content: '';
+        position: absolute;
+        top: -37px;
+        right: 100%;
+        width: 335px;
+        height: 573px;
+        margin-right: 37px;
+        background: url("../images/projects/projects-decor-1.png") no-repeat 0 0;
+        background-size: 100% auto;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: -8px;
+        left: 100%;
+        width: 742px;
+        height: 827px;
+        margin-left: 55px;
+        background: url(../images/avail/avail-decor-1.png) no-repeat 0 0;
+        background-size: 100% auto;
+        transform: scaleX(-1);
+    }
+    &-list {
+        margin-bottom: 35px;
+    }
+    &-list-item {
+        display: flex;
+        overflow: hidden;
+        min-height: 295px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+        background-color: #ECF0FA;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &-list-col {
+    }
+    &-list-main {
+        width: 24.4%;
+        padding: 21px 37px 31px 30px;
+        background-color: #213194;
+    }
+    &-list-img {
+        width: 24.4%;
+        position: relative;
+    }
+    &-list-detail {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 21px 30px 31px;
+    }
+    &-list-pic {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &-list-title {
+        display: block;
+        margin-bottom: 15px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 64px;
+        color: #FFFFFF;
+    }
+    &-list-author {
+        margin-bottom: 21px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.025em;
+        color: #FFFFFF;
+    }
+    &-list-company {
+        font-size: 13px;
+        line-height:  20px;
+        letter-spacing: 0.025em;
+        color: #f7f7f7;
+        font-style: italic;
+    }
+    &-list-name {
+        margin-bottom: 16px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 23px;
+        letter-spacing: 0.01em;
+        color: #111111;
+    }
+    &-list-content {
+        margin-bottom: 14px;
+    }
+    &-list-more {
+        margin-top: auto;
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 0.01em;
+        text-decoration-line: underline;
+        color: #111111;
+        font-weight: 500;
+        &:hover {
+            text-decoration: none;
+            color: #111111;
+        }
+    }
+    &-list-item:nth-child(2n) &-list-img {
+        order: -1;
+    }
+    &-list-item:hover {
+        background-color: #FFFFFF;
+        box-shadow: 0 0 30px rgba(206, 206, 206, 0.4);
+    }
+
+    @media screen
+    and (max-width: $desktop){
+    }
+    @media screen
+    and (max-width: $tablet){
+        margin-bottom: 60px;
+        &-list {
+            margin-bottom: 25px;
+        }
+        &-list-item {
+            min-height: 194px;
+            margin-bottom: 25px;
+        }
+        &-list-main {
+            padding: 16px 16px 25px 18px;
+        }
+        &-list-detail {
+            padding: 16px 20px 25px;
+        }
+        &-list-title {
+            margin-bottom: 10px;
+            font-size: 20px;
+            line-height: 32px;
+        }
+        &-list-author {
+            margin-bottom: 11px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-list-company {
+            font-size: 11px;
+            line-height: 16px;
+            color: rgba(247, 247, 247, 0.7);
+        }
+        &-list-name {
+            margin-bottom: 10px;
+            font-size: 15px;
+            line-height: 22px;
+            @include fix-rows();
+            -ms-line-clamp: 3;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+        }
+        &-list-content {
+            margin-bottom: 13px;
+            @include fix-rows();
+            -ms-line-clamp: 2;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+        }
+        &-list-more {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+    @media screen
+    and (max-width: $mobile) {
+        margin-bottom: 57px;
+        &-list-item {
+            min-height: auto;
+            flex-wrap: wrap;
+        }
+        &-list-main {
+            width: 62%;
+            min-height: 194px;
+            padding-left: 20px;
+        }
+        &-list-img {
+            width: 38%;
+            min-height: 194px;
+        }
+        &-list-detail {
+            width: 100%;
+            height: 194px;
+        }
+    }
+}
+
+.order-test {
+    display: flex;
+    &-img {
+        width: 60%;
+        padding-right: 30px;
+    }
+    &-form {
+        width: 40%;
+    }
+    &-pic {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    &-name {
+        max-width: 360px;
+        margin-bottom: 10px;
+        font-size: 28px;
+        line-height: 38px;
+    }
+    &-content {
+        margin-bottom: 17px;
+        font-size: 14px;
+        color: #333333;
+    }
+    &-row {
+        display: flex;
+        margin-left: -13px;
+        margin-right: -13px;
+    }
+    &-col {
+        width: 50%;
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+    &-input {}
+
+    @media screen
+    and (max-width: $tablet){
+        &-img {
+            width: 50%;
+            padding-right: 25px;
+        }
+        &-form {
+            width: 50%;
+        }
+        &-row {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        &-col {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        &-input {
+            font-size: 13px;
+            &::placeholder {
+                text-transform: none;
+                font-size: 13px;
+            }
+        }
+    }
+    @media screen
+    and (max-width: $mobile){
+        flex-direction: column;
+        &-img {
+            width: 100%;
+            order: 1;
+            padding-right: 0;
+            height: 186px;
+        }
+        &-form {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+    }
+}
