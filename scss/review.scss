@@ -486,6 +486,11 @@
         }
         &-button {
             margin-right: 14px;
+            padding-left: 12px;
+            padding-right: 38px;
+            &:hover {
+                padding-right: 38px;
+            }
         }
     }
 }

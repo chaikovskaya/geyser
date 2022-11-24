@@ -737,9 +737,6 @@
         right: 0;
         width: 902px;
         height: 100%;
-        background: url("../images/stages/stages-bgr-1.jpg") no-repeat 0 0;
-        background-size: cover;
-        border-radius: 5px;
         &:before {
             content: '';
             position: absolute;
@@ -750,6 +747,18 @@
             background: linear-gradient(99.03deg, rgba(9, 19, 35, 0.22) 15.81%, rgba(9, 19, 35, 0) 62.7%);
             border-radius: 5px 0 0 5px;
         }
+    }
+    &-years-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        background: url(../images/stages/stages-bgr-1.jpg) no-repeat 0 0;
+        background-size: cover;
     }
     &-title {
         line-height: 48px;
@@ -847,6 +856,7 @@
         font-size: 15px;
         line-height: 22px;
         color: #FFFFFF;
+        font-weight: 500;
     }
     &-button {
         position: relative;
@@ -860,14 +870,18 @@
         margin-left: auto;
         margin-right: auto;
         cursor: pointer;
-        &:hover {
+        &:hover:not(.slider-button_disabled) {
             background-color: #213194;
             border-color: #213194;
         }
-        &:active {
+        &:active:not(.slider-button_disabled) {
             background-color: #0E1E82;
             border-color: #0E1E82;
         }
+    }
+    &-button.slider-button_disabled {
+        opacity: 0.5;
+        cursor: default;
     }
     &-button-icon {
         display: block;
@@ -886,6 +900,12 @@
     &-button_next &-button-icon {
         margin-top: 2px;
         background-image: url(../images/card/card-icons/arrow-bottom-light.svg);
+    }
+    &-years-current {
+        display: none;
+    }
+    &-years-next {
+        display: none;
     }
     &-years-item.swiper-slide-active &-years-name {
         width: 155px;
@@ -966,7 +986,7 @@
             width: 200px;
             padding-top: 13px;
             padding-bottom: 13px;
-            margin-right: 41px;
+            margin-right: 50px;
         }
         &-years-block {
             margin-top: 40px;
@@ -1006,45 +1026,66 @@
     @media screen
     and (max-width: $mobile){
         flex-direction: column;
+        height: 584px;
+        margin-left: -30px;
+        margin-right: -30px;
+        padding-left: 30px;
+        padding-right: 30px;
         &:before {
             display: none;
         }
         &-slider {
+            position: static;
             width: 100%;
             height: 0;
             order: 1;
         }
         &-years-wrapper {
             height: auto;
-            margin-top: -50px;
+            margin-top: -70px;
+            &:after {
+                display: none;
+            }
         }
         &-years-block {
+            position: absolute;
+            top:0;
+            left: 0;
+            visibility: hidden;
             overflow: hidden;
-            width: 100px;
+            width: 30px;
             height: 50px;
             margin-top: 0;
             margin-bottom: 0;
         }
         &-detail {
+            position: relative;
+            z-index: 1;
             width: auto;
-            height: 584px;
+            height: 100%;
             padding-top: 28px;
-            padding-bottom: 35px;
-            padding-left: 30px;
-            padding-right: 30px;
-            margin-left: -30px;
-            margin-right: -30px;
-            background: url("../images/stages/stages-bgr-1.jpg") no-repeat 0 0;
-            background-size: cover;
+            margin-bottom: 85px;
+            padding-left: 0;
         }
         &-years {
             overflow: visible;
             width: 100%;
             padding-top: 0;
             padding-bottom: 0;
+            margin-right: 0;
             display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            &:before {
+                display: none;
+            }
+        }
+        &-years-name {
+            width: auto;
+            min-width: 45px;
         }
         &-slider-inner {
+            position: static;
             width: 100%;
             &:before {
                 width: 100%;
@@ -1061,6 +1102,44 @@
         }
         &-content {
             color: #FFFFFF;
+        }
+        &-button {
+            width: 35px;
+            height: 35px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        &-button-icon {
+            width: 8px;
+            height: 12px;
+        }
+        &-button_prev &-button-icon {
+            margin-left: 0;
+            background-image: url(../images/icons/slider-arrow-left-light.svg);
+        }
+        &-button_next &-button-icon {
+            margin-top: 0px;
+            background-image: url(../images/icons/slider-arrow-right-light.svg);
+        }
+        &-button_next {
+            margin-left: 12px;
+        }
+        &-years-current {
+            display: block;
+            margin-right: 11px;
+        }
+        &-years-current &-years-name {
+            min-width: 52px;
+            font-size: 18px;
+        }
+        &-years-next {
+            display: block;
+            margin-left: 11px;
+            text-align: right;
+        }
+        &-years-img {
+            width: 100vw;
+            border-radius: 0;
         }
     }
 }

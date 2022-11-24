@@ -947,7 +947,9 @@ function initSliderStages() {
         var $slider = $(this),
             $list = $(this).find('.js-slider-list'),
             sliderLength = $slider.find('.swiper-slide').length,
-            $description = $slider.find('.js-slider-description');
+            $description = $slider.find('.js-slider-description'),
+            $current = $slider.find('.js-slider-val-current'),
+            $next = $slider.find('.js-slider-val-next');
 
         var isStart = sliderLength > 1 ? true : false;
 
@@ -979,13 +981,23 @@ function initSliderStages() {
                 beforeInit: function () {
                 },
                 init: function () {
+                    var current = $slider.find('.swiper-slide-active').html(),
+                        next = $slider.find('.swiper-slide-next').html();
+
+                    $current.html(current);
+                    $next.html(next);
                 },
                 slideChangeTransitionEnd: function () {
-                    var index = $slider.find('.swiper-slide-active').data('slider-index');
+                    var index = $slider.find('.swiper-slide-active').data('slider-index'),
+                        current = $slider.find('.swiper-slide-active').html(),
+                        next = $slider.find('.swiper-slide-next').html();
 
                     $description.removeClass('stages-list-item_active');
                     var item = $description.filter('[data-slider-index="' + index + '"]');
                     item.addClass('stages-list-item_active');
+
+                    $current.html(current);
+                    $next.html(next);
                 },
             },
         });
