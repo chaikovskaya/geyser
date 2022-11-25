@@ -99,6 +99,9 @@ $colorPlaceholder: #4F4F4F;
     and (max-width: $tablet){
         height: 35px;
         padding-top: 8px;
+        &_simple {
+            font-size: 13px;
+        }
     }
     @media screen
     and (max-width: $mobile){
