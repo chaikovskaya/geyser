@@ -1,0 +1,284 @@
+
+.buyers {
+
+
+    @media screen
+    and (max-width: $desktop){
+    }
+    @media screen
+    and (max-width: $tablet){
+    }
+    @media screen
+    and (max-width: $mobile) {
+    }
+}
+
+.factors {
+    position: relative;
+    display: flex;
+    height: 296px;
+    background-color: #213194;
+    padding-top: 60px;
+    padding-bottom: 70px;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 55%;
+        z-index: 2;
+        width: 100vw;
+        max-width: none;
+        height: 100%;
+        background-color: #213194;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100vw;
+        max-width: none;
+        height: 100%;
+        background-color: #213194;
+    }
+    &-info {
+        position: relative;
+        z-index: 2;
+        width: 45%;
+        padding-right: 30px;
+    }
+    &-title {
+        margin-bottom: 0;
+        color: #FFFFFF;
+    }
+    &-slider {
+        width: 50%;
+    }
+    &-list {
+        display: flex;
+        list-style-type: none;
+    }
+    &-list-item {
+        position: relative;
+        width: 300px;
+        padding-top: 12px;
+        padding-right: 20px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            opacity: 0.7;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: 0;
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+        &:last-child:before {
+            display: none;
+        }
+    }
+    &-number {
+        display: block;
+        margin-bottom: 14px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 58px;
+        color: transparent;
+        -webkit-text-stroke: 1px #fff;
+    }
+    &-name {
+        max-width: 248px;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0.01em;
+        color: #FFFFFF;
+    }
+
+    @media screen
+    and (min-width: $tablet){
+        &-title {
+            line-height: 51px;
+        }
+    }
+    @media screen
+    and (max-width: $tablet){
+        height: 166px;
+        padding-top: 39px;
+        padding-bottom: 33px;
+        &-title {
+            margin-top: -5px;
+            font-size: 20px;
+            line-height: 32px;
+        }
+        &-list-item {
+            width: 252px;
+            padding-top: 8px;
+            &:after {
+                top: -2px;
+                width: 6px;
+                height: 6px;
+            }
+        }
+        &-number {
+            margin-bottom: 3px;
+            font-size: 24px;
+            line-height: 38px;
+        }
+        &-name {
+            max-width: 214px;
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+    @media screen
+    and (max-width: $mobile){
+        flex-direction: column;
+        height: 508px;
+        padding-top: 45px;
+        padding-bottom: 40px;
+        &:before {
+            right: 100%;
+        }
+        &-info {
+            width: 100%;
+            padding-right: 0;
+            margin-bottom: 20px;
+        }
+        &-slider {
+            width: 100%;
+            height: 100%;
+            padding-top: 2px;
+            overflow: hidden;
+        }
+        &-list-item {
+            width: 100%;
+            height: 111px;
+            padding-top: 0;
+            padding-left: 31px;
+            &:before {
+                left: 2px;
+                width: 1px;
+                height: 100%;
+            }
+        }
+        &-number {
+            margin-top: -11px;
+        }
+        &-name {
+            max-width: none;
+        }
+    }
+}
+
+.service {
+    margin-bottom: 78px;
+    background-color: #EBF0FA;
+    &-block {
+        position: relative;
+        padding-top: 80px;
+        padding-bottom: 45px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 103px;
+            right: 100%;
+            margin-right: -11px;
+            width: 831px;
+            height: 838px;
+            background: url(../images/service/service-decor-1.png) no-repeat 0 0;
+            background-size: 100% auto;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 100%;
+            margin-left: -65px;
+            width: 883px;
+            height: 399px;
+            background: url(../images/service/service-decor-2.png) no-repeat 0 0;
+            background-size: 100% auto;
+        }
+    }
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    &-list-item {
+        width: 50%;
+        margin-bottom: 33px;
+        padding-left: 15px;
+        padding-right: 15px;
+        &:nth-child(1) {
+            order: -3;
+        }
+        &:nth-child(2) {
+            order: -2;
+        }
+    }
+    &-list-item_wide {
+        order: -1;
+        width: 100%;
+        margin-bottom: 41px;
+    }
+    &-panel {
+        display: flex;
+        margin-bottom: 22px;
+    }
+    &-info {
+    }
+    &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 17px;
+        width: 40px;
+        height: 40px;
+        padding: 5px;
+        border-radius: 50%;
+        background-color: #213194;
+    }
+    &-name {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 39px;
+        color: #111111;
+    }
+    &-link {
+        position: relative;
+        display: block;
+        height: 374px;
+    }
+    &-pic {
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media screen
+    and (max-width: $tablet){
+        &-block {
+            padding-top: 60px;
+        }
+    }
+    @media screen
+    and (max-width: $mobile){
+        &-block {
+            padding-top: 57px;
+        }
+    }
+}
