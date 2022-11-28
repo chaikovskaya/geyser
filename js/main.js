@@ -1094,6 +1094,54 @@ function initSliderFactors() {
     });
 }
 
+var sliderService;
+function initSliderService() {
+    jQuery('.js-slider-service').each(function() {
+        var $slider = $(this),
+            $list = $(this).find('.js-slider-list'),
+            sliderLength = $slider.find('.swiper-slide').length;
+
+        var isStart = sliderLength > 1 ? true : false;
+
+        sliderService = new Swiper($list[0], {
+            loop: false,
+            pagination: false,
+            navigation: {
+                nextEl: $slider.find('.js-slider-next')[0],
+                prevEl: $slider.find('.js-slider-prev')[0],
+                disabledClass: "slider-button_disabled",
+            },
+            slidesPerView: 'auto',
+            threshold: 10,
+            spaceBetween: 0,
+            watchSlidesProgress: true,
+            breakpoints: {
+                0: {
+                    simulateTouch: false,
+                },
+                768: {
+                },
+                992: {
+                },
+            },
+            on: {
+                beforeInit: function () {
+                },
+                init: function () {
+                },
+                slideChangeTransitionEnd: function () {
+                },
+            },
+        });
+    });
+}
+function reInitSliderService() {
+    if (sliderService) {
+        sliderService.destroy();
+    }
+    sliderService = undefined;
+}
+
 function initResizeWindow() {
     var width = $(window).outerWidth();
     if (width <= GLOBAL.mobile) {
@@ -1107,6 +1155,9 @@ function initResizeWindow() {
         if (sliderCharacteristicsNav == undefined) {
             initSliderCharacteristicsNav();
         }
+        if (sliderService == undefined) {
+            initSliderService();
+        }
     } else if (width <= GLOBAL.tablet) {
         GLOBAL.widthWindow = 'isTablet';
         if (sliderAvail) {
@@ -1118,6 +1169,9 @@ function initResizeWindow() {
         if (sliderCharacteristicsNav == undefined) {
             initSliderCharacteristicsNav();
         }
+        if (sliderService) {
+            reInitSliderService();
+        }
     } else {
         GLOBAL.widthWindow = '';
         if (sliderAvail) {
@@ -1128,6 +1182,9 @@ function initResizeWindow() {
         }
         if (sliderCharacteristicsNav) {
             reInitSliderCharacteristicsNav();
+        }
+        if (sliderService) {
+            reInitSliderService();
         }
     }
 }
@@ -1168,4 +1225,5 @@ $(document).ready(function () {
     initSliderStages();
     initSliderCooperation();
     initSliderFactors();
+    initSliderService();
 });

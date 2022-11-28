@@ -8384,17 +8384,21 @@ ymaps[class*="-image"] {
     align-items: center;
     justify-content: center;
     margin-right: 17px;
+    min-width: 40px;
     width: 40px;
     height: 40px;
     padding: 5px;
     border-radius: 50%;
     background-color: #213194; }
   .service-name {
+    margin-top: 1px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 28px;
     line-height: 39px;
     color: #111111; }
+  .service-link-mob {
+    display: none; }
   .service-link {
     position: relative;
     display: block;
@@ -8405,8 +8409,67 @@ ymaps[class*="-image"] {
     height: 100%;
     object-fit: cover; }
   @media screen and (max-width: 992px) {
-    .service-block {
-      padding-top: 60px; } }
+    .service {
+      margin-bottom: 60px; }
+      .service-block {
+        padding-top: 60px; }
+        .service-block:before {
+          top: -32px;
+          margin-right: -28px; }
+        .service-block:after {
+          top: -23px;
+          opacity: 0.5;
+          height: 158px;
+          margin-left: -71px; }
+      .service-panel {
+        margin-bottom: 12px; }
+      .service-list {
+        margin-left: -10px;
+        margin-right: -10px; }
+      .service-list-item {
+        margin-bottom: 21px;
+        padding-left: 10px;
+        padding-right: 10px; }
+      .service-list-item_wide {
+        margin-bottom: 19px; }
+      .service-name {
+        margin-top: 3px;
+        font-size: 20px;
+        line-height: 28px; }
+      .service-icon {
+        margin-right: 12px;
+        min-width: 35px;
+        width: 35px;
+        height: 35px;
+        padding: 7px; }
+      .service-link {
+        height: 221px; } }
   @media screen and (max-width: 768px) {
-    .service-block {
-      padding-top: 57px; } }
+    .service {
+      margin-bottom: 22px; }
+      .service-block {
+        padding-top: 57px;
+        padding-bottom: 35px; }
+        .service-block:before {
+          display: none; }
+        .service-block:after {
+          top: 42px;
+          width: 133px;
+          height: 127px;
+          margin-left: -122px;
+          background-image: url(../images/service/service-decor-3.png); }
+      .service-list {
+        position: static;
+        flex-wrap: nowrap;
+        margin-bottom: 28px; }
+      .service-list-item {
+        width: 296px;
+        margin-bottom: 0; }
+      .service-list-item_wide {
+        display: none; }
+      .service-link-mob {
+        display: block;
+        margin-left: -30px;
+        margin-right: -30px; }
+      .service-pic {
+        border-radius: 0; } }

@@ -244,6 +244,7 @@
         align-items: center;
         justify-content: center;
         margin-right: 17px;
+        min-width: 40px;
         width: 40px;
         height: 40px;
         padding: 5px;
@@ -251,11 +252,15 @@
         background-color: #213194;
     }
     &-name {
+        margin-top: 1px;
         font-family: 'Raleway', sans-serif;
         font-weight: 600;
         font-size: 28px;
         line-height: 39px;
         color: #111111;
+    }
+    &-link-mob {
+        display: none;
     }
     &-link {
         position: relative;
@@ -271,14 +276,87 @@
 
     @media screen
     and (max-width: $tablet){
+        margin-bottom: 60px;
         &-block {
             padding-top: 60px;
+            &:before {
+                top: -32px;
+                margin-right: -28px;
+            }
+            &:after {
+                top: -23px;
+                opacity: 0.5;
+                height: 158px;
+                margin-left: -71px;
+            }
+        }
+        &-panel {
+            margin-bottom: 12px;
+        }
+        &-list {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        &-list-item {
+            margin-bottom: 21px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        &-list-item_wide {
+            margin-bottom: 19px;
+        }
+        &-name {
+            margin-top: 3px;
+            font-size: 20px;
+            line-height: 28px;
+        }
+        &-icon {
+            margin-right: 12px;
+            min-width: 35px;
+            width: 35px;
+            height: 35px;
+            padding: 7px;
+        }
+        &-link {
+            height: 221px;
         }
     }
     @media screen
     and (max-width: $mobile){
+        margin-bottom: 22px;
         &-block {
             padding-top: 57px;
+            padding-bottom: 35px;
+            &:before {
+                display: none;
+            }
+            &:after {
+                top: 42px;
+                width: 133px;
+                height: 127px;
+                margin-left: -122px;
+                background-image: url(../images/service/service-decor-3.png);
+            }
+        }
+        &-list {
+            position: static;
+            flex-wrap: nowrap;
+            margin-bottom: 28px;
+        }
+        &-list-item {
+            width: 296px;
+            margin-bottom: 0;
+        }
+        &-list-item_wide {
+            display: none;
+        }
+        &-link-mob {
+            display: block;
+            margin-left: -30px;
+            margin-right: -30px;
+        }
+        &-pic {
+            border-radius: 0;
         }
     }
 }
