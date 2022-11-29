@@ -8853,3 +8853,39 @@ ymaps[class*="-image"] {
     width: 370px; }
   .review-slider-button {
     top: 240px; }
+  @media screen and (max-width: 992px) {
+    .review-slider {
+      position: relative;
+      margin-bottom: 65px; }
+      .review-slider:before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        right: 100%;
+        margin-right: 4px;
+        width: 136px;
+        height: 200px;
+        background: url(../images/articles/articles-decor-1.png) no-repeat 0 0; }
+      .review-slider-inner {
+        overflow: visible;
+        padding-bottom: 0;
+        margin-bottom: 25px; }
+      .review-slider-list-item {
+        width: 213px; } }
+  @media screen and (max-width: 768px) {
+    .review-slider .review-img {
+      height: 159px; }
+    .review-slider .review-photo-pic {
+      min-width: 35px;
+      width: 35px;
+      height: 35px; }
+    .review-slider .review-name {
+      font-size: 14px;
+      line-height: 18px; }
+    .review-slider .review-company {
+      font-size: 12px;
+      line-height: 15px; }
+    .review-slider .review-more-hide {
+      font-size: 14px; }
+    .review-slider .review-detail {
+      padding: 19px 20px 26px; } }

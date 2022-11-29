@@ -1218,9 +1218,11 @@ function initSliderReview() {
                 0: {
                     simulateTouch: false,
                     loop: sliderLength > 1 ? true : false,
+                    spaceBetween: 20,
                 },
                 768: {
                     loop: sliderLength > 3 ? true : false,
+                    spaceBetween: 25,
                 },
                 992: {
                     loop: sliderLength > 3 ? true : false,

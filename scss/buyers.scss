@@ -791,4 +791,53 @@
     &-button {
         top: 240px;
     }
+
+    @media screen
+    and (max-width: $tablet){
+        position: relative;
+        margin-bottom: 65px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            right: 100%;
+            margin-right: 4px;
+            width: 136px;
+            height: 200px;
+            background: url(../images/articles/articles-decor-1.png) no-repeat 0 0;
+        }
+        &-inner {
+            overflow: visible;
+            padding-bottom: 0;
+            margin-bottom: 25px;
+        }
+        &-list-item {
+            width: 213px;
+        }
+    }
+    @media screen
+    and (max-width: $mobile){
+        .review-img {
+            height: 159px;
+        }
+        .review-photo-pic {
+            min-width: 35px;
+            width: 35px;
+            height: 35px;
+        }
+        .review-name {
+            font-size: 14px;
+            line-height: 18px;
+        }
+        .review-company {
+            font-size: 12px;
+            line-height: 15px;
+        }
+        .review-more-hide {
+            font-size: 14px;
+        }
+        .review-detail {
+            padding: 19px 20px 26px;
+        }
+    }
 }
