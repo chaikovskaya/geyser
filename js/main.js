@@ -1142,6 +1142,53 @@ function reInitSliderService() {
     sliderService = undefined;
 }
 
+var sliderArticles;
+function initSliderArticles() {
+    jQuery('.js-slider-articles').each(function() {
+        var $slider = $(this),
+            $list = $(this).find('.js-slider-list'),
+            sliderLength = $slider.find('.swiper-slide').length;
+
+        var isStart = sliderLength > 1 ? true : false;
+
+        sliderArticles = new Swiper($list[0], {
+            loop: isStart,
+            pagination: false,
+            navigation: {
+                nextEl: $slider.find('.js-slider-next')[0],
+                prevEl: $slider.find('.js-slider-prev')[0],
+                disabledClass: "slider-button_disabled",
+            },
+            slidesPerView: 'auto',
+            threshold: 10,
+            spaceBetween: 0,
+            breakpoints: {
+                0: {
+                    simulateTouch: false,
+                },
+                768: {
+                },
+                992: {
+                },
+            },
+            on: {
+                beforeInit: function () {
+                },
+                init: function () {
+                },
+                slideChangeTransitionEnd: function () {
+                },
+            },
+        });
+    });
+}
+function reInitSliderArticles() {
+    if (sliderArticles) {
+        sliderArticles.destroy();
+    }
+    sliderArticles = undefined;
+}
+
 function initResizeWindow() {
     var width = $(window).outerWidth();
     if (width <= GLOBAL.mobile) {
@@ -1158,6 +1205,9 @@ function initResizeWindow() {
         if (sliderService == undefined) {
             initSliderService();
         }
+        if (sliderArticles == undefined) {
+            initSliderArticles();
+        }
     } else if (width <= GLOBAL.tablet) {
         GLOBAL.widthWindow = 'isTablet';
         if (sliderAvail) {
@@ -1172,6 +1222,9 @@ function initResizeWindow() {
         if (sliderService) {
             reInitSliderService();
         }
+        if (sliderArticles) {
+            reInitSliderArticles();
+        }
     } else {
         GLOBAL.widthWindow = '';
         if (sliderAvail) {
@@ -1185,6 +1238,9 @@ function initResizeWindow() {
         }
         if (sliderService) {
             reInitSliderService();
+        }
+        if (sliderArticles) {
+            reInitSliderArticles();
         }
     }
 }
