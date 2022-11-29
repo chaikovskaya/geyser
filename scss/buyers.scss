@@ -607,13 +607,188 @@
 }
 
 .buyers-delivery {
+    position: relative;
     margin-bottom: 78px;
+    &:after {
+        content: '';
+        position: absolute;
+        top: -55px;
+        right: -778px;
+        width: 742px;
+        height: 827px;
+        background: url(../images/avail/avail-decor-1.png) no-repeat 0 0;
+        background-size: 100% auto;
+        transform: scaleX(-1);
+    }
+    h2 {
+        font-size: 28px;
+        line-height: 41px;
+    }
     &-block {
         display: flex;
     }
     &-detail {
-        width: 60%;
+        width: 73%;
         padding-right: 30px;
         color: #2B1B35;
+    }
+    &-text {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+    &-banner {
+        width: 27%;
+        margin-top: auto;
+    }
+    &-banner-link {
+        display: block;
+        position: relative;
+        max-width: 285px;
+        height: 360px;
+        margin-left: auto;
+        border-radius: 5px;
+        overflow: hidden;
+        padding: 26px 30px 30px;
+        text-decoration: none;
+    }
+    &-banner-name {
+        display: block;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 17px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+    &-banner-info {
+        display: block;
+        position: relative;
+        z-index: 1;
+        max-width: 154px;
+        font-size: 12px;
+        line-height: 19px;
+        color: #FFFFFF;
+    }
+    &-banner-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &-banner-decor {
+        position: absolute;
+        width: 280px;
+        height: 280px;
+        top: -68px;
+        left: -52px;
+        border-radius: 50%;
+        background-color: #FF9016;
+    }
+
+    @media screen
+    and (max-width: $tablet){
+        margin-bottom: 56px;
+        &:after {
+            top: -110px;
+            right: -307px;
+            width: 277px;
+            height: 827px;
+            transform: scaleX(-1) rotate(39deg);
+        }
+        &-detail {
+            width: 69%;
+        }
+        &-banner {
+            width: 31%;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        h2 {
+            font-size: 20px;
+            line-height: 29px;
+        }
+        &-banner-link {
+            height: 249px;
+            padding: 18px 20px 20px;
+        }
+        &-banner-name {
+            margin-bottom: 15px;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        &-banner-info {
+            font-size: 12px;
+            line-height: 17px;
+        }
+        &-banner-decor {
+            top: -34px;
+            left: -32px;
+            width: 194px;
+            height: 194px;
+        }
+    }
+    @media screen
+    and (max-width: $mobile){
+        &:after {
+            display: none;
+        }
+        &-block {
+           flex-direction: column;
+        }
+        &-detail {
+            width: 100%;
+            padding-right: 0;
+            margin-bottom: 18px;
+        }
+        &-banner {
+            width: 100%;
+        }
+        &-banner-link {
+            max-width: none;
+            height: 177px;
+        }
+        &-banner-name {
+            max-width: 155px;
+            margin-bottom: 12px;
+        }
+        &-banner-decor {
+            top: -40px;
+            left: -14px;
+            width: 177px;
+            height: 177px;
+        }
+    }
+}
+
+
+.review-slider {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 85px;
+    &-block {
+        width: 100%;
+        position: relative;
+    }
+    &-inner {
+        overflow: hidden;
+        padding: 20px;
+        margin: -20px;
+    }
+    &-list {
+        display: flex;
+    }
+    &-list-item {
+        width: 370px;
+    }
+    &-button {
+        top: 240px;
     }
 }

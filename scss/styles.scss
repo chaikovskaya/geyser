@@ -352,9 +352,6 @@ blockquote {
 
 .content {
 	color: #4F4F4F;
-	b {
-		color: #111;
-	}
     ul {
 		overflow: hidden;
         margin-left: 0;
@@ -652,6 +649,9 @@ blockquote {
 		color: #213194;
 	}
 	&-nav_dark &-count-current {
+		color: #213194;
+	}
+	&-nav_dark &-count-common {
 		color: #213194;
 	}
 	&-nav_dark &-count-decor {

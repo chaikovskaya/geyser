@@ -1189,6 +1189,56 @@ function reInitSliderArticles() {
     sliderArticles = undefined;
 }
 
+var sliderReview;
+function initSliderReview() {
+    jQuery('.js-slider-review').each(function() {
+        var $slider = $(this),
+            $list = $(this).find('.js-slider-list'),
+            sliderLength = $slider.find('.swiper-slide').length;
+
+        var isStart = sliderLength > 1 ? true : false;
+
+        sliderReview = new Swiper($list[0], {
+            loop: isStart,
+            pagination: false,
+            navigation: {
+                nextEl: $slider.find('.js-slider-next')[0],
+                prevEl: $slider.find('.js-slider-prev')[0],
+                disabledClass: "slider-button_disabled",
+            },
+            slidesPerView: 'auto',
+            threshold: 10,
+            spaceBetween: 0,
+            preloadImages: false,
+            lazy: {
+                loadPrevNext: true,
+                loadPrevNextAmount: 10,
+            },
+            breakpoints: {
+                0: {
+                    simulateTouch: false,
+                    loop: sliderLength > 1 ? true : false,
+                },
+                768: {
+                    loop: sliderLength > 3 ? true : false,
+                },
+                992: {
+                    loop: sliderLength > 3 ? true : false,
+                    spaceBetween: 30,
+                },
+            },
+            on: {
+                beforeInit: function () {
+                },
+                init: function () {
+                },
+                slideChangeTransitionEnd: function () {
+                },
+            },
+        });
+    });
+}
+
 function initResizeWindow() {
     var width = $(window).outerWidth();
     if (width <= GLOBAL.mobile) {
@@ -1282,4 +1332,5 @@ $(document).ready(function () {
     initSliderCooperation();
     initSliderFactors();
     initSliderService();
+    initSliderReview();
 });

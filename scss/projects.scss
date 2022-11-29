@@ -241,6 +241,22 @@
     }
     &-input {}
 
+    &_simple {
+        position: relative;
+        margin-bottom: 78px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: -182px;
+            right: 100%;
+            width: 1214px;
+            height: 1051px;
+            margin-right: -11px;
+            background: url(../images/buyers/review-slider-decor.png) no-repeat 0 0;
+            background-size: 100% auto;
+        }
+    }
+
     @media screen
     and (max-width: $tablet){
         position: relative;
@@ -289,6 +305,9 @@
             font-size: 24px;
             line-height: 33px;
         }
+        &_simple {
+            margin-bottom: 57px;
+        }
     }
     @media screen
     and (max-width: $mobile){
@@ -313,6 +332,9 @@
         }
         &-name {
             margin-top: 0;
+        }
+        &_simple {
+            margin-bottom: 60px;
         }
     }
 }
