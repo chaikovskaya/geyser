@@ -27,8 +27,8 @@
         background: url(../images/catalog-subcategory/catalog-subcategory-decor.png) no-repeat 0 0;
         background-size: 100% auto;
     }
-    &-container {
-    }
+    &-main-block {}
+    &-container {}
     &-list {
         display: flex;
         flex-wrap: wrap;
@@ -46,7 +46,7 @@
         display: block;
         min-height: 261px;
         height: 100%;
-        padding: 19px 20px 16px 25px;
+        padding: 19px 17px 16px 20px;
         background-color: #ECF0FA;
         border-radius: 5px;
         text-decoration: none;
@@ -96,6 +96,8 @@
         }
         &-list {
             flex-wrap: nowrap;
+            margin-left: 0;
+            margin-right: 0;
         }
         &-list-item {
             width: 216px;

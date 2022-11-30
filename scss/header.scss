@@ -355,9 +355,22 @@
     @media screen
     and (max-width: $tablet){
         margin-right: 15px;
+        &-container {
+            padding-bottom: 20px;
+        }
+        &-block {
+            max-height: calc(100vh - 168px);
+        }
         &-switcher {
             padding: 11px 22px 10px;
             font-size: 13px;
+        }
+        &-item {
+            margin-bottom: 25px;
+        }
+        &-link {
+            font-size: 15px;
+            line-height: 24px;
         }
         &-label {
             display: none;
@@ -387,6 +400,21 @@
         line-height: 22px;
         &:hover {
             color: #213194;
+        }
+    }
+
+    @media screen
+    and (max-width: $tablet){
+        &-list {
+            padding-top: 11px;
+        }
+        &-item {
+            margin-bottom: 14px;
+            line-height: 20px;
+        }
+        &-link {
+            font-size: 13px;
+            line-height: 20px;
         }
     }
 }
@@ -471,9 +499,16 @@
 
     @media screen
     and (max-width: $tablet){
+        width: 220px;
         left: -17px;
         padding-left: 17px;
         padding-right: 17px;
+        padding-bottom: 25px;
+        &-item {
+            margin-bottom: 15px;
+            font-size: 13px;
+            line-height: 16px;
+        }
     }
 }
 .main-menu-item:hover .main-submenu {

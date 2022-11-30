@@ -417,6 +417,10 @@
     @media screen
     and (min-width: $tablet){
         &-list {
+            display: -ms-grid;
+            -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
+            -ms-grid-rows: 140px 140px 140px;
+
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-auto-rows: 1fr;
@@ -424,14 +428,38 @@
             grid-row-gap: 0;
         }
         &-list-item {
+            -ms-grid-column-span: 1;
             &:nth-child(1) {
+                -ms-grid-row-span: 3;
+                -ms-grid-row: 1;
                 grid-row: 1/4;
             }
             &:nth-child(2) {
+                -ms-grid-row-span: 3;
+                -ms-grid-row: 1;
+                -ms-grid-column: 3;
                 grid-row: 1/4;
             }
             &:nth-child(3) {
+                -ms-grid-row-span: 3;
+                -ms-grid-row: 1;
+                -ms-grid-column: 5;
                 grid-row: 1/4;
+            }
+            &:nth-child(4) {
+                -ms-grid-row-span: 3;
+                -ms-grid-row: 1;
+                -ms-grid-column: 7;
+            }
+            &:nth-child(5) {
+                -ms-grid-row-span: 1;
+                -ms-grid-row: 2;
+                -ms-grid-column: 7;
+            }
+            &:nth-child(6) {
+                -ms-grid-row-span: 3;
+                -ms-grid-row: 3;
+                -ms-grid-column: 7;
             }
         }
         &-list-item:nth-child(3) ~ &-list-item {
@@ -462,6 +490,7 @@
             padding-bottom: 25px;
         }
         &-list-item:nth-child(3) ~ &-list-item &-list-img {
+            min-width: 100px;
             width: 100px;
             height: 90px;
             border-radius: 4px;
@@ -526,6 +555,7 @@
             padding-bottom: 15px;
         }
         &-list-item:nth-child(2) ~ &-list-item &-list-img {
+            min-width: 82px;
             width: 82px;
             height: 73px;
             border-radius: 4px;

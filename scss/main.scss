@@ -571,6 +571,9 @@
             color: #fff;
             font-size: 14px;
             line-height: 21px;
+            ul li {
+                margin-bottom: 22px;
+            }
         }
         &-content li {
             margin-bottom: 14px;
@@ -1426,6 +1429,7 @@
             max-width: none;
             height: 1347px;
             background: url("../images/company/company-bgr-1.png") no-repeat 0 0;
+            background-size: 100% auto;
         }
         &:after {
             content: '';
@@ -1484,6 +1488,12 @@
         &-container {
             padding-top: 65px;
             padding-bottom: 65px;
+            &:before {
+                top: 84px;
+                left: -665px;
+                width: 700px;
+                height: 700px;
+            }
             &:after {
                 top: 23px;
                 left: 79px;
@@ -1493,6 +1503,7 @@
         }
         &-detail {
             width: 50%;
+            padding-top: 0;
         }
         &-video {
             width: 50%;
@@ -1662,6 +1673,18 @@
     @media screen
     and (max-width: $tablet) {
         padding-bottom: 60px;
+        &-container {
+            &:before {
+                display: none;
+            }
+            &:after {
+                top: -106px;
+                right: -399px;
+                width: 434px;
+                height: 300px;
+                opacity: 0.4;
+            }
+        }
         &-detail {
             padding-top: 0;
         }
@@ -1689,6 +1712,9 @@
     and (max-width: $mobile) {
         &-container {
             flex-direction: column;
+            &:after {
+                display: none;
+            }
         }
         &-detail {
             width: 100%;
@@ -1730,7 +1756,8 @@
         min-height: 100%;
     }
     &-list-link {
-        display: block;
+        display: flex;
+        flex-direction: column;
         overflow: hidden;
         height: 100%;
         border-radius: 5px;
@@ -1750,6 +1777,7 @@
     &-list-block {
         display: flex;
         flex-direction: column;
+        height: 100%;
         padding: 19px 20px 30px 26px;
     }
     &-list-title {
@@ -1778,6 +1806,7 @@
         letter-spacing: 0.01em;
     }
     &-list-more {
+        margin-top: auto;
         font-size: 15px;
         line-height: 19px;
         letter-spacing: 0.01em;
@@ -1791,6 +1820,17 @@
 
     @media screen
     and (max-width: $tablet) {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 12px;
+            left: -84px;
+            width: 110px;
+            height: 110px;
+            background: url("../images/production/production-decor.png") no-repeat 0 0;
+            background-size: 100% auto;
+        }
         &-list-item {
             width: 213px;
         }
@@ -1822,6 +1862,10 @@
     }
     @media screen
     and (max-width: $mobile) {
+        &:before {
+            top: 72px;
+            left: -87px;
+        }
         &-block {
             margin-bottom: 25px;
         }
@@ -2090,6 +2134,8 @@
         }
     }
 
+    &_catalog-subcategory {}
+
     @media screen
     and (max-width: $tablet) {
         height: 193px;
@@ -2201,6 +2247,16 @@
                 height: 267px;
                 margin-left: -14px;
                 background: url("../images/contacts/contacts-main-decor-2.png") no-repeat 0 0;
+            }
+        }
+        &_catalog-subcategory &-container {
+            &:after {
+                bottom: 8px;
+                right: 0;
+                width: 190px;
+                height: 221px;
+                margin-right: 0;
+                background-image: url(../images/catalog-subcategory/catalog-subcategory-decor-2.png);
             }
         }
     }

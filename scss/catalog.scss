@@ -181,6 +181,9 @@
 
     @media screen
     and (max-width: $mobile){
+        &:before {
+            display: none;
+        }
         &-filter {
             flex-wrap: wrap;
             padding-bottom: 23px;
