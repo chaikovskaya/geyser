@@ -654,6 +654,23 @@
         }
     }
 
+    &_modified {
+        &:before {
+            content: '';
+            position: absolute;
+            top: 59px;
+            left: 100%;
+            width: 242px;
+            height: 209px;
+            margin-left: 90px;
+            background: url(../images/catalog-subcategory/catalog-subcategory-decor-1.png) no-repeat 0 0;
+            background-size: 100% auto;
+        }
+        &:after {
+            display: none;
+        }
+    }
+
     @media screen
     and (max-width: $tablet){
         margin-bottom: 65px;
@@ -672,6 +689,14 @@
         &_simple {
             &:after {
                 top: -1px;
+            }
+        }
+        &_modified {
+            &:before {
+                display: none;
+            }
+            &:after {
+                display: block;
             }
         }
     }

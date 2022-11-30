@@ -1241,6 +1241,57 @@ function initSliderReview() {
     });
 }
 
+var sliderCatalogSubcategory;
+function initSliderCatalogSubcategory() {
+    jQuery('.js-slider-catalog-subcategory').each(function() {
+        var $slider = $(this),
+            $list = $(this).find('.js-slider-list'),
+            sliderLength = $slider.find('.swiper-slide').length;
+
+        var isStart = sliderLength > 1 ? true : false;
+
+        sliderCatalogSubcategory = new Swiper($list[0], {
+            loop: isStart,
+            pagination: false,
+            navigation: {
+                nextEl: $slider.find('.js-slider-next')[0],
+                prevEl: $slider.find('.js-slider-prev')[0],
+                disabledClass: "slider-button_disabled",
+            },
+            slidesPerView: 'auto',
+            threshold: 10,
+            spaceBetween: 0,
+            breakpoints: {
+                0: {
+                    simulateTouch: false,
+                    spaceBetween: 20,
+                    loop: sliderLength > 1 ? true : false,
+                },
+                768: {
+                    spaceBetween: 20,
+                    loop: sliderLength > 3 ? true : false,
+                },
+                992: {
+                },
+            },
+            on: {
+                beforeInit: function () {
+                },
+                init: function () {
+                },
+                slideChangeTransitionEnd: function () {
+                },
+            },
+        });
+    });
+}
+function reInitSliderCatalogSubcategory() {
+    if (sliderCatalogSubcategory) {
+        sliderCatalogSubcategory.destroy();
+    }
+    sliderCatalogSubcategory = undefined;
+}
+
 function initResizeWindow() {
     var width = $(window).outerWidth();
     if (width <= GLOBAL.mobile) {
@@ -1260,6 +1311,9 @@ function initResizeWindow() {
         if (sliderArticles == undefined) {
             initSliderArticles();
         }
+        if (sliderCatalogSubcategory == undefined) {
+            initSliderCatalogSubcategory();
+        }
     } else if (width <= GLOBAL.tablet) {
         GLOBAL.widthWindow = 'isTablet';
         if (sliderAvail) {
@@ -1277,6 +1331,9 @@ function initResizeWindow() {
         if (sliderArticles) {
             reInitSliderArticles();
         }
+        if (sliderCatalogSubcategory == undefined) {
+            initSliderCatalogSubcategory();
+        }
     } else {
         GLOBAL.widthWindow = '';
         if (sliderAvail) {
@@ -1293,6 +1350,9 @@ function initResizeWindow() {
         }
         if (sliderArticles) {
             reInitSliderArticles();
+        }
+        if (sliderCatalogSubcategory) {
+            reInitSliderCatalogSubcategory();
         }
     }
 }

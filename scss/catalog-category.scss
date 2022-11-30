@@ -296,6 +296,12 @@
         text-decoration: none;
     }
 
+    &_simple {
+        &:after {
+            display: none;
+        }
+    }
+
     @media screen
     and (max-width: $desktop){
         &-socials {
@@ -368,6 +374,11 @@
         &-callback-link {
             font-size: 14px;
             line-height: 18px;
+        }
+        &_simple {
+            &:after {
+                display: block;
+            }
         }
     }
     @media screen
