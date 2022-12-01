@@ -74,6 +74,10 @@
     }
     @media screen
     and (max-width: $mobile) {
+        &-block {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
         &-name {
             font-size: 25px;
             line-height: 30px;

@@ -1416,6 +1416,10 @@ label.form-error {
       font-size: 13px; }
     .button-icon-pic {
       margin-top: 1px; } }
+  @media screen and (max-width: 768px) {
+    .button_modified {
+      padding-top: 11px;
+      padding-bottom: 9px; } }
 
 /*selectric*/
 .selectric {
@@ -4076,7 +4080,9 @@ body.mob-menu-show {
         height: 25px; } }
 
 .company {
-  overflow: hidden; }
+  overflow: hidden;
+  /* IE 11 */
+  /* /IE 11 */ }
   .company-container {
     position: relative;
     display: flex;
@@ -4119,6 +4125,7 @@ body.mob-menu-show {
     width: 862px;
     height: 458px; }
   .company-pic {
+    display: block;
     border-radius: 5px;
     max-width: none;
     width: 100%;
@@ -4126,6 +4133,11 @@ body.mob-menu-show {
     object-fit: cover; }
   .company-play {
     margin-left: -55px; }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .company-pic {
+      width: auto;
+      margin-left: auto;
+      margin-right: auto; } }
   @media screen and (max-width: 1250px) {
     .company-play {
       margin-left: 0; }
@@ -6244,7 +6256,6 @@ body.mob-menu-show {
     padding-right: 15px; }
   .review-block {
     overflow: hidden;
-    height: 100%;
     background-color: #EBF0FA;
     border-radius: 5px; }
     .review-block:hover {
@@ -6276,6 +6287,7 @@ body.mob-menu-show {
   .review-photo {
     margin-right: 17px; }
   .review-company {
+    display: block;
     font-size: 17px;
     line-height: 22px;
     letter-spacing: 0.025em;
@@ -6415,7 +6427,6 @@ body.mob-menu-show {
     .review-detail {
       padding: 13px 12px 16px; }
     .review-name {
-      margin-bottom: 0;
       font-size: 12px;
       line-height: 16px; }
     .review-company {
@@ -8432,6 +8443,9 @@ ymaps[class*="-image"] {
       padding-left: 20px;
       padding-right: 20px; } }
   @media screen and (max-width: 768px) {
+    .error-404-block {
+      padding-left: 30px;
+      padding-right: 30px; }
     .error-404-name {
       font-size: 25px;
       line-height: 30px; }

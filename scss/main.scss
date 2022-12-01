@@ -1464,6 +1464,7 @@
         height: 458px;
     }
     &-pic {
+        display: block;
         border-radius: 5px;
         max-width: none;
         width: 100%;
@@ -1473,6 +1474,16 @@
     &-play {
         margin-left: -55px;
     }
+
+    /* IE 11 */
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        &-pic {
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    /* /IE 11 */
 
     @media screen
     and (max-width: $desktop){

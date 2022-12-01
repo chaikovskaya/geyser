@@ -801,7 +801,7 @@ function initSliderCertificates() {
 }
 
 function initViewText() {
-    jQuery('.js-view-text').each(function() {
+    jQuery('.js-view-text').not('.js-view-text-ready').each(function() {
         var $element = $(this),
             $parent = $element.find('.js-view-text-parent'),
             $child = $element.find('.js-view-text-child'),
@@ -809,7 +809,9 @@ function initViewText() {
             classStart = $element.data('view-start'),
             classActive = $element.data('view-active');
 
-        $switcher.on('click.js-view-text', function(e) {
+        $element.addClass('js-view-text-ready');
+
+        $switcher.on('click', function(e) {
             if (!$element.hasClass(classActive)) {
                 $element.addClass(classActive);
             } else {

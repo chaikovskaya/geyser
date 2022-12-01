@@ -489,6 +489,10 @@ label.form-error {
     }
     @media screen
     and (max-width: $mobile){
+        &_modified {
+            padding-top: 11px;
+            padding-bottom: 9px;
+        }
     }
 }
 
